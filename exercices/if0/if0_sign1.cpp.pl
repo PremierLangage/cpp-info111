@@ -2,9 +2,9 @@
 #
 # ...
 
-author=Nicolas Borie
+author=Nicolas Thiéry
 name=deviner la sortie
-title=deviner la sortie: if basics
+title=deviner la sortie: if basiques
 tag=if0
 
 type=sandbox
@@ -12,16 +12,11 @@ type=sandbox
 # chargement des fichiers utiles
 @/template/plutils.py
 @/template/grader.py
-#@/template/feedbackC.py
-#@/template/__init__.py
-#@/template/templateC.html
-#@/template/templateConglet.html
 
-# interface exercice standard plbank
-form=@plbank:/python/form/editorform.html
+form=@/template/form/editorform.html
 
 text==
-Exécuter pas à pas le programme suivant et saisir ce que vous prevoyez
+Exécuter pas à pas le programme suivant et saisir ce que vous prévoyez
 qu'il affiche.
 ==
 
@@ -49,4 +44,3 @@ response = grader.grader_expected_output(exo,user_solution)
 print(json.dumps(response))
 ==
 
-form=@/template/form/editorform.html
