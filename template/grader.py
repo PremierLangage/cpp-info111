@@ -58,6 +58,7 @@ def grader_expected_output(exo, user_solution):
     log = compile_and_run(code=exo['code'], )
     response = { 'success': True }
     assert not log['compile_err']
+    assert not log['err']
     if not equal_out(log['std_out'], user_solution):
         response['success'] = False
         response['feedback'] = "Votre réponse:\n"+user_solution+"Obtenu:\n"+log['std_out']
