@@ -14,7 +14,7 @@
     editor.session.setMode("ace/mode/{% if language and language in authorized_lang %}{{language}}{% else %}python{% endif %}");
 
     var input = $('input[name="form_txt_answer"]');
-        editor.getSession().on("change", function() {
+    editor.getSession().on("change", function() {
         input.val(editor.getSession().getValue());
     });
 </script>
