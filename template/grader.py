@@ -2,8 +2,6 @@ import os
 import io
 import plutils
 
-print("coucou")
-
 # Similar to exectojson
 def compile_and_run(code, input=""):
     r"""
@@ -64,3 +62,14 @@ def grader_expected_output(exo, user_solution):
         response['success'] = False
         response['feedback'] = "Votre réponse:\n"+user_solution+"Obtenu:\n"+log['std_out']
     return response
+
+import io, plutils, json
+exo = plutils.getpldic()
+user_solution = io.open("student.py").read()
+response = grader_expected_output(exo,user_solution)
+print(json.dumps(response))
+
+
+
+
+

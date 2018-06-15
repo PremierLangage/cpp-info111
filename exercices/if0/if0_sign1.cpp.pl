@@ -35,13 +35,13 @@ int main() {
 }
 ==
 
-
 grader==
 print("foo")
 import io, plutils, grader
-exo = plutils getpldict()
+exo = plutils.getpldic()
 user_solution = io.open("student.py")
 response = grader.grader_expected_output(exo,user_solution)
 print(json.dumps(response))
 ==
+
 
