@@ -37,6 +37,7 @@ int main() {
 
 
 grader==
+print("foo")
 import io, plutils, grader
 exo = plutils getpldict()
 user_solution = io.open("student.py")

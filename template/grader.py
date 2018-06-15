@@ -2,6 +2,8 @@ import os
 import io
 import plutils
 
+print("coucou")
+
 # Similar to exectojson
 def compile_and_run(code, input=""):
     r"""
