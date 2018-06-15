@@ -1,0 +1,132 @@
+{%- if feedback.compile %}
+     
+      <div style="border:1px solid black;padding:1%;margin:1%;background-color:Tomato;border-radius:4px;">
+     {%- for text,type in feedback.div %}
+             {%- if type == 'errcompilfin' %}
+              <div style="border:1px solid black;padding:1%;margin:1%;background-color:Black;border-radius:4px;">    
+                <font style="color:Tomato;font-family:Monospace;font-size:0.8em;font-style:normal;font-weight:normal;">
+                    <p>{{text}}</p>
+                </font></div>
+            {%- else %}
+            <p>{{text}}</p>
+           {%- endif %}
+           
+            {%- endfor %}
+    
+     <font style="color:Tomato;font-family:Monospace;font-size:0.8em;font-style:normal;font-weight:normal;"></font></div>
+             
+               
+   
+{%- else %}
+  <ul class="nav nav-tabs">
+ 
+ 
+    {% if feedback.asio %}
+        {%- for type,text in feedback.executionhistory %}
+            {%- if feedback.showinput and type=="input" %}
+                
+                    <p>{{text,type}}</p>
+               
+            {%- endif %}
+            {%- if  type== "output" %}
+         <p>{{text}}</p>
+            {%- elif type=="optained" %}
+              
+                    <p>Obtenu:<br/>{{text,type}}</p>
+                
+            {%- elif type=="expected" %}
+               
+                    <p>Attendu:<br/>{{text,type}}</p>
+                
+            {%- endif %}
+        {%- endfor %}
+    {%- else %}
+        {%- if feedback.success %}
+                
+            {%- for text,type in feedback.div %}
+                {%- if type == 'compil' or type == 'vresume' %}
+                 <li><a data-toggle="tab" href="#{{type}}">{{type}}</a></li>
+            <div class="tab-content">
+    <div id="{{type}}" class="tab-pane fade in active">
+                <div style="border:1px solid black;padding:1%;margin:1%;background-color:LightGreen;border-radius:4px;">
+                <p>{{text}}</p>
+                <font style="color:Green;font-family:Monospace;font-size:0.8em;font-style:normal;font-weight:normal;"></font></div>
+                </div></div>
+                {%- else %}
+                <li><a data-toggle="tab" href="#{{type}}">{{type}}</a></li>
+            <div class="tab-content">
+    <div id="{{type}}" class="tab-pane fade ">
+                 <div style="border:1px solid black;padding:1%;margin:1%;background-color:LightGreen;border-radius:4px;">
+                <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo{{type}}" aria-expanded="true" aria-controls="demo{{type}}">Test True <div id="demo{{type}}" class=collapse>
+             <div class="card card-success"><p>{{text}}</p></div></button>
+                
+                <font style="color:Green;font-family:Monospace;font-size:0.8em;font-style:normal;font-weight:normal;"></font></div>
+             </div></div>
+                {%- endif %}
+            
+    
+           
+           
+            {%- endfor %}
+        
+    
+    {%- else %}
+   
+         {%- for text,type in feedback.div %}
+        {%- if type == 'compil'%}
+         <li><a data-toggle="tab" href="#{{type}}">{{type}}</a></li>
+            <div class="tab-content">
+    <div id="{{type}}" class="tab-pane fade in active">
+            <div style="border:1px solid black;padding:1%;margin:1%;background-color:LightGreen;border-radius:4px;">
+            <p>{{text}}</p>
+            <font style="color:Green;font-family:Monospace;font-size:0.8em;font-style:normal;font-weight:normal;"></font></div>
+       </div>
+       </div>   
+        {%- elif type == 'fresume' %}
+           <li><a data-toggle="tab" href="#{{type}}">{{type}}</a></li>
+            <div class="tab-content">
+    <div id="{{type}}" class="tab-pane fade ">
+            <div style="border:1px solid black;padding:1%;margin:1%;background-color:IndianRed;border-radius:4px;">
+            <p>{{text}}</p>
+            <font style="color:Red;font-family:Monospace;font-size:0.8em;font-style:normal;font-weight:normal;"></font></div>
+             </div>
+       </div> 
+        {%- else %}
+            {%- if type[0] == 'v'%}
+               <li><a data-toggle="tab" href="#{{type}}">{{type}}</a></li>
+            <div class="tab-content">
+    <div id="{{type}}" class="tab-pane fade ">
+             <div style="border:1px solid black;padding:1%;margin:1%;background-color:LightGreen;border-radius:4px;">
+            <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo{{type}}" aria-expanded="true" aria-controls="demo{{type}}">Test True <div id="demo{{type}}" class=collapse>
+         <div class="card card-success;"><p>{{text}}</p></div></button>
+            
+            <font style="color:Green;font-family:Monospace;font-size:0.8em;font-style:normal;font-weight:normal;"></font></div>
+             </div>
+       </div> 
+            {%- else %}
+               <li class="active"><a data-toggle="tab" href="#{{type}}">{{type}}</a></li>
+            <div class="tab-content">
+    <div id="{{type}}" class="tab-pane fade ">
+                 <div style="border:1px solid black;padding:1%;margin:1%;background-color:DarkRed;border-radius:4px;">
+            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo{{type}}" aria-expanded="true" aria-controls="demo{{type}}">Test False <div id="demo{{type}}" class="">
+         <div class="card card-danger"><p>{{text}}</p></div></button>
+            
+            <font style="color:Red;font-family:Monospace;font-size:0.8em;font-style:normal;font-weight:normal;"></font></div>
+             </div>
+       </div> 
+            {%- endif %}
+
+        {%- endif %}
+            
+    
+           
+           
+        {%- endfor %}
+        
+        
+    {%- endif %}
+    </ul>
+{%- endif %}
+ 
+{%- endif %}
+
