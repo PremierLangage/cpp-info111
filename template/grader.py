@@ -35,7 +35,7 @@ def compile_and_run(code, input=""):
 
     if not log['compile_err']:
         io.open("input", "w").write(input)
-        log['err'] = os.system("code 2> stderr.log > stdout.log")
+        log['err'] = os.system("./code 2> stderr.log > stdout.log")
         log['err_out'] = open("stderr.log", "r").read()
         log['std_out'] = open("stdout.log", "r").read()
     return log
