@@ -70,6 +70,3 @@ response = grader_expected_output(exo,user_solution)
 print(json.dumps(response))
 
 
-
-
-
