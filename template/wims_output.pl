@@ -19,7 +19,7 @@ qu'il affiche.
 ==
 
 before==
-title=title+" "+topic
+title=title+": "+topic
 ==
 
 grader==
