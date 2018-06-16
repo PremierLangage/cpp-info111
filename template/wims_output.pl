@@ -8,6 +8,7 @@ title=Deviner la sortie
 type=sandbox
 
 # chargement des fichiers utiles
+@/template/utils.py
 @/template/plutils.py
 @/template/graderCpp.py
 
