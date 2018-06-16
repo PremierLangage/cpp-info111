@@ -28,7 +28,7 @@ def code_randomizer():
     d['I'],d['J'],d['K'],d['N'] = random.sample('IJKN',4)
     def randomize_code(code):
         return re.sub('|'.join(d.keys()), lambda i: d[i.group()], code)
-    return randomize_code()
+    return randomize_code
 
 code = code_randomizer()(code)
 
