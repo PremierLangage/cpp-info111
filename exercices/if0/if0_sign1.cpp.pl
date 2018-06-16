@@ -1,5 +1,4 @@
-@/template/wims_output.pl
-title=Deviner la sortie: if basiques
+template=/template/wims_output.pl
 code==
 #include <iostream>
 using namespace std;
