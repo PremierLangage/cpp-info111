@@ -20,6 +20,9 @@ qu'il affiche.
 
 before==
 title=title+": "+topic
+import utils
+code = utils.code_randomizer()(code)
+
 ==
 
 grader==
