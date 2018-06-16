@@ -37,8 +37,8 @@ def code_randomizer():
 
 code = code_randomizer()(code)
 
-items = [{'type':'code', 'content': code}
-         {'type':'input', 'content': ''}
+items = [{'type':'code', 'content': code},
+         {'type':'input', 'content': ''}]
 
 ==
 
