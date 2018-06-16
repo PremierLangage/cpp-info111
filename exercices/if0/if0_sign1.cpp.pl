@@ -5,7 +5,7 @@ code==
 using namespace std;
 
 int main() {
-    int X = -2;
+    int X = CI1;
     if ( X < 0 ) {
         cout << "negatif" << endl;
     } else {
