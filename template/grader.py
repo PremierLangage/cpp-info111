@@ -66,7 +66,10 @@ def grader_expected_output(exo, user_solution):
 
 import io, plutils, json
 exo = plutils.getpldic()
-user_solution = io.open("student.py").read()
+try:
+    user_solution = io.open("student.py").read()
+except FileNotFoundError:
+    user_solution = "" # Temporary work around: student.py does not get created if the input is empty
 response = grader_expected_output(exo,user_solution)
 print(json.dumps(response))
 
