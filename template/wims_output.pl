@@ -4,9 +4,7 @@
 
 author=MPI Info 111's team
 name=deviner la sortie
-title=Deviner la sortie: if basiques
-tag=if0
-
+title=Deviner la sortie
 type=sandbox
 
 # chargement des fichiers utiles
@@ -18,6 +16,10 @@ form=@/template/form/editorform.html
 text==
 Exécuter pas à pas le programme suivant et saisir ce que vous prévoyez
 qu'il affiche.
+==
+
+before==
+title=title+" "+if0
 ==
 
 grader==

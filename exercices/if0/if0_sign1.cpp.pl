@@ -1,4 +1,5 @@
 template=/template/wims_output.pl
+topic=if0
 code==
 #include <iostream>
 using namespace std;
