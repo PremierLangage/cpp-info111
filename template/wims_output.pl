@@ -21,13 +21,13 @@ qu'il affiche.
 ==
 
 grader==
-import io, plutils, json
+import io, plutils, json, graderCpp
 exo = plutils.getpldic()
 try:
     user_solution = io.open("student.py").read()
 except FileNotFoundError:
     user_solution = "" # Temporary work around: student.py does not get created if the input is empty
-response = grader_expected_output(exo,user_solution)
+response = graderCpp.grader_expected_output(exo,user_solution)
 print(json.dumps(response))
 ==
 
