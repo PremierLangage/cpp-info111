@@ -37,6 +37,9 @@ def code_randomizer():
 
 code = code_randomizer()(code)
 
+items = [{'type':'code', 'content': code}
+         {'type':'input', 'content': ''}
+
 ==
 
 grader==

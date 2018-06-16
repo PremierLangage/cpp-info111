@@ -1,12 +1,17 @@
 {% load static %}
-<!-- Do not tabulate this div as the tabulation will appear in the editor -->
-<pre>{{ code }}</pre>
-
-<div id="editor" style="border: 1px #E7E7E7 solid; border-width: 1px; border-color: #5bc0de; border-radius: 4px; height: 100px; #E7E7E7 solid;"></div>
-<input id="form_txt_answer" type="hidden" name="form_txt_answer" style="display: none;" value="">
-<br>
 <script src="{% static 'ace/ace.js' %}" type="text/javascript" charset="utf-8"></script>
 <script src="{% static 'ace/ext-modelist.js' %}"></script>
+
+{% for item in items %}
+  {% if item.type == 'input' %}
+    <!-- Do not tabulate this div as the tabulation will appear in the editor -->
+    <div id="editor" style="border: 1px #E7E7E7 solid; border-width: 1px; border-color: #5bc0de; border-radius: 4px; height: 100px; #E7E7E7 solid;"></div>
+    <input id="form_txt_answer" type="hidden" name="form_txt_answer" style="display: none;" value="">
+  {% elif item.type == 'code' %}
+    <pre>{{item.content}}</pre>
+  {% endif %}
+{% endfor %}
+
 <script>
     var editor = ace.edit('editor');
     editor.setTheme("{{ request.user.profile.editor_theme.template }}");
