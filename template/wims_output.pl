@@ -18,9 +18,7 @@ Exécuter pas à pas le programme suivant et saisir ce que vous prévoyez
 qu'il affiche.
 ==
 
-before==
-title=title+": "+topic
-
+build==
 import random, re
 def code_randomizer():
     d={}
@@ -35,10 +33,13 @@ def code_randomizer():
                      code)
     return randomize_code
 
-code = code_randomizer()(code)
+def build(exo):
+    exo['title'] += ": "+exo['topic']
+    exo['code'] = code_randomizer()(exo['code'])
 
-items = [{'type':'code', 'content': code},
-         {'type':'input', 'content': ''}]
+    exo['items'] = [{'type':'code', 'content': exo['code']},
+                    {'type':'input', 'content': ''}]
+    return exo
 
 ==
 
