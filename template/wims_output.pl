@@ -30,7 +30,7 @@ def code_randomiser():
         return re.sub('|'.join(d.keys()), lambda i: d[i.group()], code)
     return randomize_code()
 
-code = utils.code_randomizer()(code)
+code = code_randomizer()(code)
 
 ==
 
