@@ -11,7 +11,7 @@ type=sandbox
 
 # chargement des fichiers utiles
 @/template/plutils.py
-@/template/grader.py
+@/template/graderCpp.py
 
 form=@/template/form/editorform.html
 
