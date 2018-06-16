@@ -63,14 +63,3 @@ def grader_expected_output(exo, user_solution):
         response['success'] = False
         response['feedback'] = "Le programme a affiché:\n"+log['std_out']
     return response
-
-import io, plutils, json
-exo = plutils.getpldic()
-try:
-    user_solution = io.open("student.py").read()
-except FileNotFoundError:
-    user_solution = "" # Temporary work around: student.py does not get created if the input is empty
-response = grader_expected_output(exo,user_solution)
-print(json.dumps(response))
-
-
