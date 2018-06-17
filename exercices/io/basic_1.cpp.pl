@@ -2,6 +2,7 @@ template=/template/wims_input.pl
 topic=io
 code==
 /// BEGIN HIDDEN
+#include "randomization.h"
 #include <iostream>
 using namespace std;
 
