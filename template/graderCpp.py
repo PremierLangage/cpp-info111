@@ -58,9 +58,9 @@ def grader_expected_output(exo, user_solution):
     log = compile_and_run(code=exo['code'], )
     response = { 'success': True, 'feedback':'' }
     if log['compile_err']:
-        response['feedback'] = log['compile_err_log']
+        response['feedback'] = log['compile_err_out']
     if log['err']:
-        response['feedback'] = log['err_log']
+        response['feedback'] = log['err_out']
     if not equal_out(log['std_out'], user_solution):
         response['success'] = False
         response['feedback'] = "Le programme a affiché:\n"+log['std_out']
