@@ -9,17 +9,17 @@ def code_randomizer():
         >>> randomize_code("int XX=3;")
         'int XX=3;'
         >>> randomize_code("int X=3; int Y=4; int Z=5;")
-        'int Y=3; int Z=4; int X=5;'
+        'int y=3; int z=4; int x=5;'
         >>> randomize_code("I, J, K, N")
-        'K, N, J, I'
+        'k, n, j, i'
         >>> randomize_code("CI1, CI2, CI3")
         '0, 1, 0'
         >>> randomize_code("int X=1;\nint Y=CI2;")
-        'int Y=1;\nint Z=1;'
+        'int y=1;\nint z=1;'
     """
     d={}
-    d['X'],d['Y'],d['Z'] = random.sample('XYZ',3)
-    d['I'],d['J'],d['K'],d['N'] = random.sample('IJKN',4)
+    d['X'],d['Y'],d['Z'] = random.sample('xyz',3)
+    d['I'],d['J'],d['K'],d['N'] = random.sample('ijkn',4)
     d['CI1'] = str(random.randint(-2,2))
     d['CI2'] = str(random.randint(-2,2))
     d['CI3'] = str(random.randint(-2,2))
