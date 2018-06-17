@@ -24,7 +24,7 @@ def build(exo):
     exo['title'] += ": "+exo['topic']
     code = exo['code']
     code = code_randomizer()(code)
-
+    exo['code'] = code
     exo['items'] = [{'type':'code', 'content': code},
                     {'type':'input', 'content': ''}]
     return exo
