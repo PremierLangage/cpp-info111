@@ -1,17 +1,9 @@
-# Copyright 2016 Nicolas M. Thiéry ...
-#
-# ...
+# Copyright 2018 Nicolas M. Thiéry ...
 
-author=MPI Info 111's team
+template=/template/wims.pl
 name=deviner la sortie
 title=Deviner la sortie
 type=sandbox
-
-# chargement des fichiers utiles
-@/template/plutils.py
-@/template/graderCpp.py
-
-form=@/template/form/editorform.html
 
 text==
 Exécuter pas à pas le programme suivant et saisir ce que vous prévoyez
