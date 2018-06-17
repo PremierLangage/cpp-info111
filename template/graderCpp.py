@@ -73,5 +73,5 @@ def grade(grader):
         user_solution = io.open("student.py").read()
     except FileNotFoundError:
         user_solution = "" # Temporary work around: student.py does not get created if the input is empty
-    response = grader((exo,user_solution)
+    response = grader(exo,user_solution)
     print(json.dumps(response))
