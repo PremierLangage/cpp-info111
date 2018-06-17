@@ -31,16 +31,6 @@ def build(exo):
 ==
 
 grader==
-import io, plutils, json, graderCpp
-exo = plutils.getpldic()
-try:
-    user_solution = io.open("student.py").read()
-except FileNotFoundError:
-    user_solution = "" # Temporary work around: student.py does not get created if the input is empty
-response = graderCpp.grader_expected_output(exo,user_solution)
-print(json.dumps(response))
+from graderCpp import grade, grader_expected_output
+grade(grader_expected_output)
 ==
-
-
-
-
