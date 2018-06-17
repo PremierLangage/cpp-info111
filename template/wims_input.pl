@@ -22,6 +22,6 @@ def build(exo):
 ==
 
 grader==
-from graderCpp import grade, grader_expected_output
+from graderCpp import grade, grader_input
 grade(grader_input)
 ==
