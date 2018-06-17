@@ -25,8 +25,8 @@ def build(exo):
     code = exo['code']
     code = code_randomizer()(code)
     exo['code'] = code
-    exo['items'] = [{'type':'code', 'content': code},
-                    {'type':'input', 'content': ''}]
+    exo['items'] = split_code(code)
+    exo['items'].append({'type':'input', 'content': ''})
     return exo
 ==
 

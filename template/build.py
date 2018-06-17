@@ -30,3 +30,55 @@ def code_randomizer():
         return pattern.sub(lambda i: d[i.group()],
                            code)
     return randomize_code
+
+def split_code(code):
+    r"""
+        Split the code in chunks according to BEGIN / END markers
+
+        >>> import build
+        >>> code = '''foo code 1
+        ... foo code 1b
+        ... /// BEGIN A
+        ... foo A
+        ... foo Ab
+        ... /// END A
+        ... foo code 2
+        ... /// BEGIN B
+        ... foo B
+        ... /// END B
+        ... /// BEGIN C
+        ... foo C
+        ... /// END C
+        ... foo code 3
+        ... '''
+        >>> build.split_code(code)                 # doctest: +NORMALIZE_WHITESPACE
+        [{'content': 'foo code 1\nfoo code 1b\n', 'type': 'code'},
+         {'content': 'foo A\nfoo Ab\n',           'type': 'a'},
+         {'content': 'foo code 2\n',              'type': 'code'},
+         {'content': 'foo B\n',                   'type': 'b'},
+         {'content': 'foo C\n',                   'type': 'c'},
+         {'content': 'foo code 3\n',              'type': 'code'}]
+
+    """
+    begin_or_end = re.compile(r'\s*/// (BEGIN|END) (\w+)')
+    loose_begin_or_end = re.compile('BEGIN|END')
+    items = []
+    item = {'content': '', 'type': 'code'}
+    for line in code.splitlines():
+        match = begin_or_end.match(line)
+        if match:
+            if item['content']:
+                items.append(item)
+            type = match.group(2).lower()
+            if match.group(1) == 'BEGIN':
+                item = {'content': '', 'type': type}
+            else:
+                if type != item['type']:
+                    raise ValueError("END `{}` does not match BEGIN `{}`".format(type, item['type']))
+                item = {'content': '', 'type': 'code'}
+            continue
+        assert not loose_begin_or_end.search(line)
+        item['content'] += line + "\n"
+    if item['content']:
+        items.append(item)
+    return items
