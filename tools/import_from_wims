@@ -1,0 +1,29 @@
+#!/usr/bin/python
+import io, os.path, sys
+
+topics = "variable io if if0 for0 for while dowhile fornested function vector1D vector2D0 vector2D file procedure_math procedure_calling procedure_loop procedure_simplest struct_fonction struct_gros struct_hard struct_procedure struct_profond struct_simple struct_tableaux struct_tableau_struct".split()
+
+template = """
+template=/template/wims_{}.pl
+topic={}
+code=@/exercices_src/io/basic_1.cpp
+"""
+
+def create_template(filename):
+    basename = os.path.basename(filename)
+    for topic in topics:
+        if basename.startswith(topic+"_"):
+            pl_name = basename[len(topic+"_"):]+".pl"
+            pl_dirname = os.path.join("exercices", topic)
+            pl_fullname = os.path.join(pl_dirname, pl_name)
+            try:
+                os.mkdir(pl_dirname)
+            except FileExistsError:
+                pass
+            type = "input" if "input" in pl_name else "output"
+            io.open(pl_fullname, "w").write(template.format(type, topic))
+            return
+    print("No topic matched for {}".format(filename))
+
+for filename in sys.argv[1:]:
+    create_template(filename)
