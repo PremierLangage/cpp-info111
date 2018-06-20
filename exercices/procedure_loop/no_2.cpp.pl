@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
 topic=procedure_loop
-code=@/exercices_src/io/basic_1.cpp
+code=@/exercices_src/procedure_loop_no_2.cpp

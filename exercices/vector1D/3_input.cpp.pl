@@ -1,4 +1,4 @@
 
 template=/template/wims_input.pl
 topic=vector1D
-code=@/exercices_src/io/basic_1.cpp
+code=@/exercices_src/vector1D_3_input.cpp

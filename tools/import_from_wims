@@ -6,7 +6,7 @@ topics = "variable io if if0 for0 for while dowhile fornested function vector1D 
 template = """
 template=/template/wims_{}.pl
 topic={}
-code=@/exercices_src/io/basic_1.cpp
+code=@/exercices_src/{}
 """
 
 def create_template(filename):
@@ -21,7 +21,7 @@ def create_template(filename):
             except FileExistsError:
                 pass
             type = "input" if "input" in pl_name else "output"
-            io.open(pl_fullname, "w").write(template.format(type, topic))
+            io.open(pl_fullname, "w").write(template.format(type, topic, basename))
             return
     print("No topic matched for {}".format(filename))
 

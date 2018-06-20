@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
 topic=fornested
-code=@/exercices_src/io/basic_1.cpp
+code=@/exercices_src/fornested_facile0a.cpp

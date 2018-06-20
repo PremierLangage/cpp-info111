@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
 topic=for
-code=@/exercices_src/io/basic_1.cpp
+code=@/exercices_src/for_accumulateur_trivial1a.cpp
