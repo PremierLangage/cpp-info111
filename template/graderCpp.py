@@ -42,17 +42,21 @@ def compile_and_run(code, input=""):
 def equal_out(a, b):  # Should use plutils.check_output instead
     return a.strip().splitlines() == b.strip().splitlines()
 
-def grader_expected_output(exo, user_solution):
+def grader_expected_output(exo):
     r"""
         >>> import graderCpp
         >>> code = '#include<iostream>\n int main() { std::cout << "coucou" << std::endl;}'
-        >>> graderCpp.grader_expected_output({'code': code }, 'coucou')
+        >>> graderCpp.grader_expected_output({'code': code,
+        ...                                   'response': {'answer': 'coucou'}})
         {'success': True, 'feedback': ''}
-        >>> graderCpp.grader_expected_output({'code': code }, '\n\ncoucou\n')
+        >>> graderCpp.grader_expected_output({'code': code,
+        ...                                   'response': {'answer': '\n\ncoucou\n'}})
         {'success': True, 'feedback': ''}
-        >>> graderCpp.grader_expected_output({'code': code }, 'foo')
+        >>> graderCpp.grader_expected_output({'code': code,
+        ...                                   'response': {'answer': 'foo'}})
         {'success': False, 'feedback': 'Le programme a affiché:\ncoucou\n'}
     """
+    answer = exo['response']['answer']
     log = compile_and_run(code=exo['code'], )
     response = { 'success': True, 'feedback':'' }
     if log['compile_err']:
@@ -61,12 +65,12 @@ def grader_expected_output(exo, user_solution):
     if log['err']:
         response['feedback'] = log['err_out']
         return response
-    if not equal_out(log['std_out'], user_solution):
+    if not equal_out(log['std_out'], answer):
         response['success'] = False
         response['feedback'] = "Le programme a affiché:\n"+log['std_out']
     return response
 
-def grader_input(exo, user_solution):
+def grader_input(exo):
     r"""
         >>> import graderCpp
         >>> code = '''#include<iostream>
@@ -76,12 +80,15 @@ def grader_input(exo, user_solution):
         ...     std::cout << i+1 << std::endl;
         ... }
         ... '''
-        >>> graderCpp.grader_input({'code': code }, '41')
+        >>> graderCpp.grader_input({'code': code,
+        ...                         'response': {'answer': '41'}})
         {'success': True, 'feedback': ''}
-        >>> graderCpp.grader_input({'code': code }, '42')
+        >>> graderCpp.grader_input({'code': code,
+        ...                         'response': {'answer': '42'}})
         {'success': False, 'feedback': 'Le programme a affiché:\n43\n'}
     """
-    log = compile_and_run(code=exo['code'], input=user_solution)
+    answer = exo['response']['answer']
+    log = compile_and_run(code=exo['code'], input=answer)
     response = { 'success': True, 'feedback':'' }
     if log['compile_err']:
         response['feedback'] = log['compile_err_out']
@@ -97,9 +104,5 @@ def grader_input(exo, user_solution):
 
 def grade(grader):
     exo = plutils.getpldic()
-    try:
-        user_solution = io.open("student.py").read()
-    except FileNotFoundError:
-        user_solution = "" # Temporary work around: student.py does not get created if the input is empty
-    response = grader(exo,user_solution)
+    response = grader(exo)
     print(json.dumps(response))
