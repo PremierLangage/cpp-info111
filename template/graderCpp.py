@@ -48,17 +48,17 @@ def grader_expected_output(exo):
         >>> code = '#include<iostream>\n int main() { std::cout << "coucou" << std::endl;}'
         >>> graderCpp.grader_expected_output({'code': code,
         ...                                   'response': {'answer': 'coucou'}})
-        {'success': True, 'feedback': ''}
+        {'success': True, 'feedback': 'Bonne réponse'}
         >>> graderCpp.grader_expected_output({'code': code,
         ...                                   'response': {'answer': '\n\ncoucou\n'}})
-        {'success': True, 'feedback': ''}
+        {'success': True, 'feedback': 'Bonne réponse'}
         >>> graderCpp.grader_expected_output({'code': code,
         ...                                   'response': {'answer': 'foo'}})
         {'success': False, 'feedback': 'Le programme a affiché:\ncoucou\n'}
     """
     answer = exo['response']['answer']
     log = compile_and_run(code=exo['code'], )
-    response = { 'success': True, 'feedback':'' }
+    response = { 'success': True, 'feedback':'Bonne réponse' }
     if log['compile_err']:
         response['feedback'] = log['compile_err_out']
         return response
@@ -82,14 +82,14 @@ def grader_input(exo):
         ... '''
         >>> graderCpp.grader_input({'code': code,
         ...                         'response': {'answer': '41'}})
-        {'success': True, 'feedback': ''}
+        {'success': True, 'feedback': 'Bonne réponse'}
         >>> graderCpp.grader_input({'code': code,
         ...                         'response': {'answer': '42'}})
         {'success': False, 'feedback': 'Le programme a affiché:\n43\n'}
     """
     answer = exo['response']['answer']
     log = compile_and_run(code=exo['code'], input=answer)
-    response = { 'success': True, 'feedback':'' }
+    response = { 'success': True, 'feedback':'Bonne réponse' }
     if log['compile_err']:
         response['feedback'] = log['compile_err_out']
         return response
