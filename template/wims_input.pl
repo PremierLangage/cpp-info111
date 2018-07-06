@@ -12,6 +12,7 @@ Quel nombre devrait saisir l'utilisateur pour que le programme C++ suivant affic
 build=@/template/build.py
 build+=
 def build(exo):
+    random.seed(exo['seed'])
     exo['title'] += ": "+exo['topic']
     code = exo['code']
     code = code_randomizer()(code)

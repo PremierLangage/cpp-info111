@@ -13,6 +13,7 @@ qu'il affiche.
 build=@/template/build.py
 build+=
 def build(exo):
+    random.seed(exo['seed'])
     exo['title'] += ": "+exo['topic']
     code = exo['code']
     code = code_randomizer()(code)
