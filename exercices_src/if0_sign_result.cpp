@@ -5,11 +5,11 @@ using namespace std;
 int main() {
 /// END HIDDEN
     int r;
-    int x = -2;
-    if ( x < 0 ) {
-        r = 2;
+    int X = CI1;
+    if ( X < 0 ) {
+        r = CI2;
     } else {
-        r = 3;
+        r = CI3;
     }
 /// BEGIN HIDDEN
     cout << r << endl;
