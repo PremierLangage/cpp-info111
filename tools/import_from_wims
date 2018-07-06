@@ -20,7 +20,13 @@ def create_template(filename):
                 os.mkdir(pl_dirname)
             except FileExistsError:
                 pass
-            type = "input" if "input" in pl_name else "output"
+            # TODO: use a regexp match instead
+            if "input" in pl_name:
+                type = "input"
+            elif "result" in pl_name:
+                type = "result"
+            else:
+                type = "output"
             io.open(pl_fullname, "w").write(template.format(type, topic, basename))
             return
     print("No topic matched for {}".format(filename))
