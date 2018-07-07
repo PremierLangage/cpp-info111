@@ -4,7 +4,7 @@
 int main() {
 /// END HIDDEN
      int I;
-     // Initialiser I à la valeur CI1
+     // Initialiser la variable I à la valeur CI1
      /// BEGIN SOLUTION
      I = CI1;
      /// END SOLUTION
