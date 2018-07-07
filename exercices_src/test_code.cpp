@@ -1,5 +1,5 @@
 /// BEGIN HIDDEN
-#define ASSERT(test) if (!(test)) cout << "Test failed: " #test << endl
+#define ASSERT(test) if (!(test)) std::cout << "Test failed: " #test << std::endl
 #include<iostream>
 int main() {
 /// END HIDDEN
@@ -9,6 +9,6 @@ int main() {
      i = 42;
      /// END SOLUTION
 /// BEGIN HIDDEN
-     ASSERT( i == 2 );
+     ASSERT( i == 42 );
 }
 /// END HIDDEN
