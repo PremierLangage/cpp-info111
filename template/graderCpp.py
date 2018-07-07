@@ -246,7 +246,7 @@ def grader_generic(exo):
         response['success'] = False
         feedback = ""
         if exo['answer_failure_message']:
-            feedback += "{}<pre>{}<pre>".format(exo['answer_failure_message'], log_answer['std_out'])
+            feedback += "{}<pre>{}</pre>".format(exo['answer_failure_message'], log_answer['std_out'])
         if exo['solution_failure_message']:
             feedback += "{}<pre>{}</pre>".format(exo['solution_failure_message'], log_solution['std_out'])
         response['feedback'] = feedback
