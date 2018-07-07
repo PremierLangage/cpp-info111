@@ -127,6 +127,7 @@ def build_finalize(exo):
     i = 0
     for item in exo['items']:
         if item['type'] == 'answer':
-            item['key'] = "form_txt_answer{}".format(i)
+            item['key'] = "answer"
+            #item['key'] = "answer{}".format(i)
             i += 1
     return exo
