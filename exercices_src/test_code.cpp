@@ -1,14 +1,33 @@
 /// BEGIN HIDDEN
-#define ASSERT(test) if (!(test)) std::cout << "Test failed: " #test << std::endl
 #include<iostream>
-int main() {
+#include<string>
+using namespace std;
+#include "randomization.h"
 /// END HIDDEN
-     int I;
-     // Initialiser la variable I à la valeur CI1
-     /// BEGIN SOLUTION
-     I = CI1;
-     /// END SOLUTION
+/** Dessine un triangle
+ * @param N
+ *  @return une chaîne de caractère avec N lignes, avec
+ *          une étoile sur la première ligne,
+ *          deux étoiles sur la seconde,
+ *          trois étoiles sur la troisième, ...
+**/
+string triangle(int N) {
+    string s = "";
+    /// BEGIN SOLUTION
+    for (int I=1; I<=N; I++) {
+        for (int J=1; J<= I; J++) {
+            s = s + "*";
+        }
+        s = s + "\n";
+    }
+    /// END SOLUTION
+    return s;
+}
+
 /// BEGIN HIDDEN
-     ASSERT( I == CI1 );
+int main() {
+     int N = CI1+5;
+     cout << "Un triangle de taille " << N << endl;
+     cout << triangle(N);
 }
 /// END HIDDEN
