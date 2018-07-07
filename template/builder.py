@@ -51,19 +51,19 @@ def split_code(code):
         ... /// END C
         ... foo code 3
         ... '''
-        >>> build.split_code(code)                 # doctest: +NORMALIZE_WHITESPACE
-        [{'content': 'foo code 1\nfoo code 1b\n', 'type': 'code'},
+        >>> split_code(code)                 # doctest: +NORMALIZE_WHITESPACE
+        [{'content': 'foo code 1\nfoo code 1b\n', 'type': 'default'},
          {'content': 'foo A\nfoo Ab\n',           'type': 'a'},
-         {'content': 'foo code 2\n',              'type': 'code'},
+         {'content': 'foo code 2\n',              'type': 'default'},
          {'content': 'foo B\n',                   'type': 'b'},
          {'content': 'foo C\n',                   'type': 'c'},
-         {'content': 'foo code 3\n',              'type': 'code'}]
+         {'content': 'foo code 3\n',              'type': 'default'}]
 
     """
     begin_or_end = re.compile(r'\s*/// (BEGIN|END) (\w+)')
     loose_begin_or_end = re.compile('BEGIN|END')
     items = []
-    item = {'content': '', 'type': 'code'}
+    item = {'content': '', 'type': 'default'}
     for line in code.splitlines():
         match = begin_or_end.match(line)
         if match:
@@ -75,10 +75,34 @@ def split_code(code):
             else:
                 if type != item['type']:
                     raise ValueError("END `{}` does not match BEGIN `{}`".format(type, item['type']))
-                item = {'content': '', 'type': 'code'}
+                item = {'content': '', 'type': 'default'}
             continue
         assert not loose_begin_or_end.search(line)
         item['content'] += line + "\n"
     if item['content']:
         items.append(item)
     return items
+
+def insert_answer_items(items):
+    items = []
+    for item in items:
+        items.append(item)
+        if item['type'] == 'solution':
+            items.append({'type': 'answer'})
+    return items
+
+def build_generic(exo):
+    random.seed(exo['seed'])
+    exo['title'] += ": "+exo['topic']
+    code = exo['code']
+    code = code_randomizer()(code)
+    exo['items'] = insert_answer_items(split_code(code))
+    return exo
+
+def build_finalize(exo):
+    i = 0
+    for item in exo['items']:
+        if item['type'] == 'answer':
+            item['key'] = "form_txt_answer{}".format(i)
+            i += 1
+    return exo

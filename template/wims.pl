@@ -7,3 +7,9 @@ author=MPI Info 111's team
 @/template/randomization.h
 
 form=@/template/form/editorform.html
+build=@/template/builder.py
+
+grader==
+from graderCpp import grade, grader_generic
+grade(grader_generic)
+==

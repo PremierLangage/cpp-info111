@@ -9,20 +9,9 @@ text==
 Quel nombre devrait saisir l'utilisateur pour que le programme C++ suivant affiche 42?
 ==
 
-build=@/template/build.py
 build+=
 def build(exo):
-    random.seed(exo['seed'])
-    exo['title'] += ": "+exo['topic']
-    code = exo['code']
-    code = code_randomizer()(code)
-    exo['code'] = code
-    exo['items'] = split_code(code)
-    exo['items'] = [{'type':'input', 'content': ''}] + exo['items']
-    return exo
-==
-
-grader==
-from graderCpp import grade, grader_input
-grade(grader_input)
+    exo = build_generic(exo)
+    exo['items'] = [{'type':'answer', 'subtype': 'stdin', 'content': ''}] + exo['items'] + [{'type':'solution', 'subtype': 'stdout', 'content': '42'}]
+    return build_finalize(exo)
 ==
