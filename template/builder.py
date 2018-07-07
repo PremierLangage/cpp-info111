@@ -84,14 +84,38 @@ def split_code(code):
     return items
 
 def insert_answer_items(items):
-    items = []
+    r"""
+    Insert an answer item after each solution item.
+
+        >>> items = [{'type':'default'}, {'type':'solution'}, {'type':'default'}, {'type':'solution'}, {'type':'solution'}]
+        >>> insert_answer_items(items)
+        [{'type': 'default'},
+         {'type': 'solution'}, {'type': 'answer'},
+         {'type': 'default'},
+         {'type': 'solution'}, {'type': 'answer'},
+         {'type': 'solution'}, {'type': 'answer'}]
+    """
+    res = []
     for item in items:
-        items.append(item)
+        res.append(item)
         if item['type'] == 'solution':
-            items.append({'type': 'answer'})
-    return items
+            res.append({'type': 'answer'})
+    return res
 
 def build_generic(exo):
+    r"""
+        >>> import graderCpp, builder
+        >>> res = build_generic({'code': graderCpp.test_code_generic, 'seed':34, 'title':'foo', 'topic':'bar'})
+        >>> res['title']
+        'foo: bar'
+        >>> res['items']
+        [{'content': '#include<iostream>\nint main() {\n', 'type': 'hidden'},
+         {'content': '     int i;\n', 'type': 'default'},
+         {'content': '     i = 42;\n', 'type': 'solution'},
+         {'type': 'answer'},
+         {'content': '     std::cout << i << std::endl;\n', 'type': 'default'},
+         {'content': '}\n', 'type': 'hidden'}]
+    """
     random.seed(exo['seed'])
     exo['title'] += ": "+exo['topic']
     code = exo['code']
