@@ -213,8 +213,7 @@ def grader_generic(exo):
 
     for item in items:
         if item['type'] == 'answer':
-            # item['content'] = response[item['key']]
-            item['content'] = response['answer']
+            item['content'] = response[item['key']]
 
     log_solution = compile_and_run_items(items, variant="solution")
     log_answer   = compile_and_run_items(items, variant="answer")
