@@ -27,7 +27,7 @@ string triangle(int N) {
 /// BEGIN HIDDEN
 int main() {
      int N = CI1+5;
-     cout << "Un triangle de taille " << N << endl;
+     cout << "Résultat de triangle(" << N << "):" << endl;
      cout << triangle(N);
 }
 /// END HIDDEN
