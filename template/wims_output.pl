@@ -10,6 +10,7 @@ Exécuter pas à pas le programme suivant et saisir ce que vous prévoyez
 qu'il affiche.
 ==
 
+build=@/template/builder.py
 build+=
 def build(exo):
     exo = build_generic(exo)

@@ -9,6 +9,7 @@ text==
 Quel nombre devrait saisir l'utilisateur pour que le programme C++ suivant affiche 42?
 ==
 
+build=@/template/builder.py
 build+=
 def build(exo):
     exo = build_generic(exo)
