@@ -9,7 +9,7 @@ topic={}
 code=@/exercices_src/{}
 """
 
-type_re = re.compile("_(input|output|result|code)\.")
+type_re = re.compile("_(input|output|result|code|silentcode)\.")
 
 def create_template(filename):
     basename = os.path.basename(filename)

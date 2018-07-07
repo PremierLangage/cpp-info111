@@ -2,7 +2,7 @@
 
 template=/template/wims.pl
 name=code
-title=Compléter un programmes
+title=Compléter un programme
 type=sandbox
 
 text==
