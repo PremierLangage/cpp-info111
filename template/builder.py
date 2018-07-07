@@ -105,17 +105,27 @@ def insert_answer_items(items):
 def build_generic(exo):
     r"""
         >>> import graderCpp, builder
-        >>> res = build_generic({'code': graderCpp.test_code_generic, 'seed':34, 'title':'foo', 'topic':'bar'})
-        >>> res['title']
+        >>> exo = build_generic({'code': graderCpp.test_code_generic, 
+        ...                     'seed': 34,
+        ...                     'title':'foo',
+        ...                     'topic':'bar',
+        ...                     'solution_failure_message': ' '
+        ...                     })
+        >>> exo['title']
         'foo: bar'
-        >>> res['items']
+        >>> exo['items']
         [{'content': '#include<iostream>\nint main() {\n', 'type': 'hidden'},
          {'content': '     int i;\n', 'type': 'default'},
          {'content': '     i = 42;\n', 'type': 'solution'},
          {'type': 'answer'},
          {'content': '     std::cout << i << std::endl;\n', 'type': 'default'},
          {'content': '}\n', 'type': 'hidden'}]
+         >>> len(exo['solution_failure_message'])
     """
+    # For some reason, empty values in the PL file are stored as strings of length 1
+    for key in ['solution_failure_message', 'answer_failure_message']:
+        if key in exo:
+            exo[key] = exo[key].strip()
     random.seed(exo['seed'])
     exo['title'] += ": "+exo['topic']
     code = exo['code']
