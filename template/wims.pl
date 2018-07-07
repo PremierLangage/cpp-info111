@@ -9,6 +9,9 @@ author=MPI Info 111's team
 form=@/template/form/editorform.html
 build=@/template/builder.py
 
+solution_failure_message="Affichage souhaité"
+answer_failure_message="Le programme a affiché"
+
 grader==
 from graderCpp import grade, grader_generic
 grade(grader_generic)

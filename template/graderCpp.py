@@ -174,15 +174,20 @@ def compile_and_run_items(items, variant):
 
 def grader_generic(exo):
     r"""
+        >>> exo_base = {'solution_failure_message':'Attendu:',
+        ...             'answer_failure_message':'Le programme a affiché:'}
+
         >>> import graderCpp, builder
         >>> items = builder.split_code(test_code_input)
         >>> items = [{'type': 'answer', 'key': 'in', 'subtype': 'stdin'}] + items + [{'type': 'solution',  'subtype': 'stdout', 'content':'42'}]
 
-        >>> exo = {'items': items, 'response': {'in': '41'} }
+        >>> exo = exo_base.copy()
+        >>> exo.update({'items': items, 'response': {'in': '41'} })
         >>> graderCpp.grader_generic(exo)
         {'success': True, 'feedback': 'Bonne réponse'}
 
-        >>> exo = {'items': items, 'response': {'in': '42'} }
+        >>> exo = exo_base.copy()
+        >>> exo.update({'items': items, 'response': {'in': '42'} })
         >>> graderCpp.grader_generic(exo)
         {'success': False, 'feedback': 'Le programme a affiché:<hr>43\n<hr>Attendu:<hr>42<hr>'}
 
@@ -196,15 +201,18 @@ def grader_generic(exo):
          {'content': '     std::cout << i << std::endl;\n', 'type': 'default'},
          {'content': '}\n', 'type': 'hidden'}]
 
-        >>> exo = {'items': items, 'response': {'in': '    i = 42;'} }
+        >>> exo = exo_base.copy()
+        >>> exo.update({'items': items, 'response': {'in': '    i = 42;'} })
         >>> graderCpp.grader_generic(exo)
         {'success': True, 'feedback': 'Bonne réponse'}
 
-        >>> exo = {'items': items, 'response': {'in': '    i = 41;'} }
+        >>> exo = exo_base.copy()
+        >>> exo.update({'items': items, 'response': {'in': '    i = 41;'} })
         >>> graderCpp.grader_generic(exo)
         {'success': False, 'feedback': 'Le programme a affiché:<hr>41\n<hr>Attendu:<hr>42\n<hr>'}
 
-        >>> exo = {'items': items, 'response': {'in': '    i = 41'} }
+        >>> exo = exo_base.copy()
+        >>> exo.update({'items': items, 'response': {'in': '    i = 41'} })
         >>> graderCpp.grader_generic(exo)
         {'success': False, 'feedback': 'code.cpp: In function ‘int main()’:\ncode.cpp:4:16: error: expected ‘;’ before ‘std’\n     i = 41     std::cout << i << std::endl;\n                ^~~\n'}
     """
@@ -236,9 +244,13 @@ def grader_generic(exo):
     # Report failure if the two outputs do not match
     if not equal_out(log_answer['std_out'], log_solution['std_out']):
         response['success'] = False
-        response['feedback'] = "Le programme a affiché:<hr>{}<hr>Attendu:<hr>{}<hr>".format(log_answer['std_out'], log_solution['std_out'])
+        feedback = ""
+        if exo['answer_failure_message']:
+            feedback += "{}<hr>{}<hr>".format(exo['answer_failure_message'], log_answer['std_out'])
+        if exo['solution_failure_message']:
+            feedback += "{}<hr>{}<hr>".format(exo['solution_failure_message'], log_solution['std_out'])
+        response['feedback'] = feedback
     return response
-
 
 def grade(grader):
     exo = plutils.getpldic()
