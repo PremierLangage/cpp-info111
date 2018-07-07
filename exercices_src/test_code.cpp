@@ -3,12 +3,12 @@
 #include<iostream>
 int main() {
 /// END HIDDEN
-     int i;
-     // Initialiser i à la valeur 42
+     int I;
+     // Initialiser I à la valeur CI1
      /// BEGIN SOLUTION
-     i = 42;
+     I = CI1;
      /// END SOLUTION
 /// BEGIN HIDDEN
-     ASSERT( i == 42 );
+     ASSERT( I == CI1 );
 }
 /// END HIDDEN
