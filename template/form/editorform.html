@@ -14,7 +14,7 @@
 
 <script>
 {% for item in items %}
-  {% if item.type == 'input' %}
+  {% if item.type == 'answer' %}
     var editor = ace.edit('editor');
     editor.setTheme("{{ request.user.profile.editor_theme.template }}");
     editor.session.setMode("ace/mode/{% if language and language in authorized_lang %}{{language}}{% else %}python{% endif %}");
