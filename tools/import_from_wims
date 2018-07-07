@@ -1,13 +1,15 @@
 #!/usr/bin/python
-import io, os.path, sys
+import io, os.path, re, sys
 
-topics = "variable io if if0 for0 for while dowhile fornested function vector1D vector2D0 vector2D file procedure_math procedure_calling procedure_loop procedure_simplest struct_fonction struct_gros struct_hard struct_procedure struct_profond struct_simple struct_tableaux struct_tableau_struct".split()
+topics = "variable io if if0 for0 for while dowhile fornested function vector1D vector2D0 vector2D file procedure_math procedure_calling procedure_loop procedure_simplest struct_fonction struct_gros struct_hard struct_procedure struct_profond struct_simple struct_tableaux struct_tableau_struct test".split()
 
 template = """
 template=/template/wims_{}.pl
 topic={}
 code=@/exercices_src/{}
 """
+
+type_re = re.compile("_(input|output|result|code)\.")
 
 def create_template(filename):
     basename = os.path.basename(filename)
@@ -20,11 +22,9 @@ def create_template(filename):
                 os.mkdir(pl_dirname)
             except FileExistsError:
                 pass
-            # TODO: use a regexp match instead
-            if "input" in pl_name:
-                type = "input"
-            elif "result" in pl_name:
-                type = "result"
+            match = re.search(type_re, basename)
+            if match:
+                type = match.group(1)
             else:
                 type = "output"
             io.open(pl_fullname, "w").write(template.format(type, topic, basename))
