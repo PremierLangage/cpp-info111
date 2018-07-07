@@ -126,6 +126,8 @@ def build_generic(exo):
 def build_finalize(exo):
     i = 0
     for item in exo['items']:
+        if i > 0:
+            raise NotImplementedError("Only one answer field is supported for now")
         if item['type'] == 'answer':
             item['key'] = "answer"
             #item['key'] = "answer{}".format(i)
