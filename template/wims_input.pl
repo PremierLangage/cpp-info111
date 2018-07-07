@@ -9,8 +9,8 @@ text==
 Quel nombre devrait saisir l'utilisateur pour que le programme C++ suivant affiche 42?
 ==
 
-solution_failure_message=None
-answer_failure_message="Le programme a affiché"
+solution_failure_message=
+answer_failure_message=Le programme a affiché:
 
 build=@/template/builder.py
 build+=

@@ -10,8 +10,8 @@ Exécuter pas à pas le programme suivant et saisir ce que vous prévoyez
 qu'il affiche.
 ==
 
-solution_failure_message="Le programme a affiché"
-answer_failure_message=None
+solution_failure_message=Le programme a affiché
+answer_failure_message=
 
 build=@/template/builder.py
 build+=
