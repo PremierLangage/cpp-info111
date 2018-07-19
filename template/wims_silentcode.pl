@@ -6,7 +6,7 @@
 
 template=/template/wims_code.pl
 name=code
-title=Compléter un programme avec tests
+typename=Compléter un programme avec tests
 type=sandbox
 
 text==

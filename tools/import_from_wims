@@ -27,7 +27,7 @@ topicnames = {"variable": "variables",
           "struct_simple": "enregistrements faciles",
           "struct_tableaux": "enregistrements de tableaux",
           "struct_tableau_struct": "enregistrements de tableaux d'enregistrements",
-          "test": "tests",
+          "test": "tests des fonctionalités de la plateforme",
           }
 
 template = """
