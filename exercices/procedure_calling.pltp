@@ -1,0 +1,29 @@
+
+title= Exercices sur: procedure_calling
+introduction==
+Une collection d'exercices
+==
+@ /exercices/procedure_calling/1.cpp.pl
+@ /exercices/procedure_calling/1_input.cpp.pl
+@ /exercices/procedure_calling/1a.cpp.pl
+@ /exercices/procedure_calling/1a_input.cpp.pl
+@ /exercices/procedure_calling/1b.cpp.pl
+@ /exercices/procedure_calling/1b_input.cpp.pl
+@ /exercices/procedure_calling/1c.cpp.pl
+@ /exercices/procedure_calling/1c_input.cpp.pl
+@ /exercices/procedure_calling/2.cpp.pl
+@ /exercices/procedure_calling/2_input.cpp.pl
+@ /exercices/procedure_calling/2a.cpp.pl
+@ /exercices/procedure_calling/2a_input.cpp.pl
+@ /exercices/procedure_calling/2b.cpp.pl
+@ /exercices/procedure_calling/2b_input.cpp.pl
+@ /exercices/procedure_calling/2c.cpp.pl
+@ /exercices/procedure_calling/2c_input.cpp.pl
+@ /exercices/procedure_calling/2d.cpp.pl
+@ /exercices/procedure_calling/2d_input.cpp.pl
+@ /exercices/procedure_calling/2e.cpp.pl
+@ /exercices/procedure_calling/2e_input.cpp.pl
+@ /exercices/procedure_calling/2f.cpp.pl
+@ /exercices/procedure_calling/2f_input.cpp.pl
+@ /exercices/procedure_calling/2g.cpp.pl
+@ /exercices/procedure_calling/2g_input.cpp.pl

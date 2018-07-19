@@ -1,0 +1,12 @@
+
+title= Exercices sur: vector2D0
+introduction==
+Une collection d'exercices
+==
+@ /exercices/vector2D0/basic_1.cpp.pl
+@ /exercices/vector2D0/basic_2.cpp.pl
+@ /exercices/vector2D0/basic_3.cpp.pl
+@ /exercices/vector2D0/det.cpp.pl
+@ /exercices/vector2D0/size_1.cpp.pl
+@ /exercices/vector2D0/size_2.cpp.pl
+@ /exercices/vector2D0/size_3.cpp.pl

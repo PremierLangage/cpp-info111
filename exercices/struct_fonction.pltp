@@ -1,0 +1,11 @@
+
+title= Exercices sur: struct_fonction
+introduction==
+Une collection d'exercices
+==
+@ /exercices/struct_fonction/1.cpp.pl
+@ /exercices/struct_fonction/1bis.cpp.pl
+@ /exercices/struct_fonction/2.cpp.pl
+@ /exercices/struct_fonction/2bis.cpp.pl
+@ /exercices/struct_fonction/3.cpp.pl
+@ /exercices/struct_fonction/3bis.cpp.pl

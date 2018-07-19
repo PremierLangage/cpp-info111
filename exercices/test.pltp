@@ -1,0 +1,10 @@
+
+title= Exercices sur: test
+introduction==
+Une collection d'exercices
+==
+@ /exercices/test/code.cpp.pl
+@ /exercices/test/input.cpp.pl
+@ /exercices/test/output.cpp.pl
+@ /exercices/test/result.cpp.pl
+@ /exercices/test/silentcode.cpp.pl

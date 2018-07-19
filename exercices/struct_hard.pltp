@@ -1,0 +1,8 @@
+
+title= Exercices sur: struct_hard
+introduction==
+Une collection d'exercices
+==
+@ /exercices/struct_hard/1.cpp.pl
+@ /exercices/struct_hard/1_input.cpp.pl
+@ /exercices/struct_hard/2.cpp.pl

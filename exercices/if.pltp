@@ -1,0 +1,17 @@
+
+title= Exercices sur: if
+introduction==
+Une collection d'exercices
+==
+@ /exercices/if/booleen0.cpp.pl
+@ /exercices/if/booleen0a.cpp.pl
+@ /exercices/if/booleen1.cpp.pl
+@ /exercices/if/booleen1a.cpp.pl
+@ /exercices/if/booleen2.cpp.pl
+@ /exercices/if/booleen2a.cpp.pl
+@ /exercices/if/booleen3.cpp.pl
+@ /exercices/if/calculation.cpp.pl
+@ /exercices/if/file_correct.cpp.pl
+@ /exercices/if/file_faux.cpp.pl
+@ /exercices/if/oppose.cpp.pl
+@ /exercices/if/semicolon.cpp.pl

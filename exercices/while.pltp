@@ -1,0 +1,14 @@
+
+title= Exercices sur: while
+introduction==
+Une collection d'exercices
+==
+@ /exercices/while/1_input.cpp.pl
+@ /exercices/while/accumulateur.cpp.pl
+@ /exercices/while/count_subtract.cpp.pl
+@ /exercices/while/factorial.cpp.pl
+@ /exercices/while/indices.cpp.pl
+@ /exercices/while/indices_2.cpp.pl
+@ /exercices/while/substract.cpp.pl
+@ /exercices/while/syracuse.cpp.pl
+@ /exercices/while/vide.cpp.pl

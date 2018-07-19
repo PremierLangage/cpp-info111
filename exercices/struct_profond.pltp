@@ -1,0 +1,11 @@
+
+title= Exercices sur: struct_profond
+introduction==
+Une collection d'exercices
+==
+@ /exercices/struct_profond/1.cpp.pl
+@ /exercices/struct_profond/1a.cpp.pl
+@ /exercices/struct_profond/2.cpp.pl
+@ /exercices/struct_profond/2a.cpp.pl
+@ /exercices/struct_profond/3.cpp.pl
+@ /exercices/struct_profond/3a.cpp.pl

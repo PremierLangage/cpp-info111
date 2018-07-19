@@ -1,0 +1,6 @@
+
+title= Exercices sur: test
+introduction==
+Une collection d'exercices
+==
+@ exercices/test/code.cpp.pl@ exercices/test/input.cpp.pl@ exercices/test/output.cpp.pl@ exercices/test/result.cpp.pl@ exercices/test/silentcode.cpp.plcices/struct_tableau_struct/2.cpp.pl@ exercices/struct_tableau_struct/2a.cpp.pl@ exercices/struct_tableau_struct/2b.cpp.pl@ exercices/struct_tableau_struct/3.cpp.pl@ exercices/struct_tableau_struct/3a.cpp.pl@ exercices/struct_tableau_struct/3b.cpp.pl@ exercices/struct_tableau_struct/4.cpp.pl@ exercices/struct_tableau_struct/4a.cpp.pl@ exercices/struct_tableau_struct/4b.cpp.pl

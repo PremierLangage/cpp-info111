@@ -1,0 +1,14 @@
+
+title= Exercices sur: function
+introduction==
+Une collection d'exercices
+==
+@ /exercices/function/blackjack.cpp.pl
+@ /exercices/function/call_1.cpp.pl
+@ /exercices/function/call_2.cpp.pl
+@ /exercices/function/call_3.cpp.pl
+@ /exercices/function/call_4.cpp.pl
+@ /exercices/function/factorial.cpp.pl
+@ /exercices/function/if.cpp.pl
+@ /exercices/function/inversion_arguments.cpp.pl
+@ /exercices/function/max.cpp.pl

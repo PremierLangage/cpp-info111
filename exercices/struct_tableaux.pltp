@@ -1,0 +1,11 @@
+
+title= Exercices sur: struct_tableaux
+introduction==
+Une collection d'exercices
+==
+@ /exercices/struct_tableaux/1.cpp.pl
+@ /exercices/struct_tableaux/1a.cpp.pl
+@ /exercices/struct_tableaux/2.cpp.pl
+@ /exercices/struct_tableaux/2a.cpp.pl
+@ /exercices/struct_tableaux/3.cpp.pl
+@ /exercices/struct_tableaux/3a.cpp.pl

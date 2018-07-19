@@ -1,0 +1,14 @@
+
+title= Exercices sur: procedure_loop
+introduction==
+Une collection d'exercices
+==
+@ /exercices/procedure_loop/no_1.cpp.pl
+@ /exercices/procedure_loop/no_1a.cpp.pl
+@ /exercices/procedure_loop/no_2.cpp.pl
+@ /exercices/procedure_loop/no_2a.cpp.pl
+@ /exercices/procedure_loop/yes_1.cpp.pl
+@ /exercices/procedure_loop/yes_1a.cpp.pl
+@ /exercices/procedure_loop/yes_2.cpp.pl
+@ /exercices/procedure_loop/yes_2a.cpp.pl
+@ /exercices/procedure_loop/yes_2b.cpp.pl

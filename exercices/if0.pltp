@@ -1,0 +1,8 @@
+
+title= Exercices sur: if0
+introduction==
+Une collection d'exercices
+==
+@ /exercices/if0/sign1.cpp.pl
+@ /exercices/if0/sign2.cpp.pl
+@ /exercices/if0/sign_result.cpp.pl

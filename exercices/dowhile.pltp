@@ -1,0 +1,7 @@
+
+title= Exercices sur: dowhile
+introduction==
+Une collection d'exercices
+==
+@ /exercices/dowhile/factorial.cpp.pl
+@ /exercices/dowhile/presque_vide.cpp.pl

@@ -1,0 +1,11 @@
+
+title= Exercices sur: struct_simple
+introduction==
+Une collection d'exercices
+==
+@ /exercices/struct_simple/1.cpp.pl
+@ /exercices/struct_simple/1bis.cpp.pl
+@ /exercices/struct_simple/2.cpp.pl
+@ /exercices/struct_simple/2bis.cpp.pl
+@ /exercices/struct_simple/3.cpp.pl
+@ /exercices/struct_simple/3bis.cpp.pl

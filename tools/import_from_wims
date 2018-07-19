@@ -9,7 +9,16 @@ topic={}
 code=@/exercices_src/{}
 """
 
+template_pltp = """
+title= Exercices sur: {}
+introduction==
+Une collection d'exercices
+==
+"""
+
 type_re = re.compile("_(input|output|result|code|silentcode)\.")
+
+exercises = {topic: [] for topic in topics}
 
 def create_template(filename):
     basename = os.path.basename(filename)
@@ -28,8 +37,16 @@ def create_template(filename):
             else:
                 type = "output"
             io.open(pl_fullname, "w").write(template.format(type, topic, basename))
+            exercises[topic].append(pl_fullname)
             return
     print("No topic matched for {}".format(filename))
 
 for filename in sys.argv[1:]:
     create_template(filename)
+
+for topic in topics:
+    pltp_fullname = os.path.join("exercices", topic + ".pltp")
+    fd = io.open(pltp_fullname, "w")
+    fd.write(template_pltp.format(topic))
+    for filename in exercises[topic]:
+        fd.write("@ /" + filename + "\n")
