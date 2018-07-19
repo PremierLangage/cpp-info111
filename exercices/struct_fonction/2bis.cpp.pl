@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=struct_fonction
+topicname=enregistrements et fonctions
 code=@/exercices_src/struct_fonction_2bis.cpp

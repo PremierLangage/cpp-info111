@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=struct_gros
+topicname=gros enregistrements
 code=@/exercices_src/struct_gros_4a.cpp

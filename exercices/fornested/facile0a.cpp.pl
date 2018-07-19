@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=fornested
+topicname=boucles for imbriquées
 code=@/exercices_src/fornested_facile0a.cpp

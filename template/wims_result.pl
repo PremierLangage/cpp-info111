@@ -2,7 +2,7 @@
 
 template=/template/wims_output.pl
 name=deviner le résultat
-title=Deviner la résultat
+typename=Deviner le résultat
 type=sandbox
 
 solution_failure_message=La variable r contient

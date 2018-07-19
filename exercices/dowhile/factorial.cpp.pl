@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=dowhile
+topicname=boucles do-while
 code=@/exercices_src/dowhile_factorial.cpp

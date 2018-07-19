@@ -1,4 +1,4 @@
 
 template=/template/wims_input.pl
-topic=test
+topicname=tests
 code=@/exercices_src/test_input.cpp

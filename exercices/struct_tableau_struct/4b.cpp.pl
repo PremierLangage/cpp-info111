@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=struct_tableau_struct
+topicname=enregistrements de tableaux d'enregistrements
 code=@/exercices_src/struct_tableau_struct_4b.cpp

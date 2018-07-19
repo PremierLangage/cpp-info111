@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=variable
+topicname=variables
 code=@/exercices_src/variable_string1.cpp

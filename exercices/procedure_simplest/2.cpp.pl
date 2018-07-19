@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=procedure_simplest
+topicname=procedures simples
 code=@/exercices_src/procedure_simplest_2.cpp

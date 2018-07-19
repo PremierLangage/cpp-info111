@@ -12,6 +12,8 @@ build=@/template/builder.py
 solution_failure_message=Affichage souhaité:
 answer_failure_message=Le programme a affiché:
 
+title=Exercice
+
 grader==
 from graderCpp import grade, grader_generic
 grade(grader_generic)

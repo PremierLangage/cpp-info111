@@ -1,4 +1,4 @@
 
 template=/template/wims_silentcode.pl
-topic=test
+topicname=tests
 code=@/exercices_src/test_silentcode.cpp

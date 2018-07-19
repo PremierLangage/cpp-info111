@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=vector1D
+topicname=vecteurs
 code=@/exercices_src/vector1D_tri_3c.cpp

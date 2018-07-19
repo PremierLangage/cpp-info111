@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=if
+topicname=conditionnelles
 code=@/exercices_src/if_booleen0a.cpp

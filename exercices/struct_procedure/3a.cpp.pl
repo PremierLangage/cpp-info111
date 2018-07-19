@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=struct_procedure
+topicname=enregistrements et procédures
 code=@/exercices_src/struct_procedure_3a.cpp

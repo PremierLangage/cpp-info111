@@ -1,4 +1,4 @@
 
 template=/template/wims_result.pl
-topic=test
+topicname=tests
 code=@/exercices_src/test_result.cpp

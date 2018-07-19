@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=procedure_math
+topicname=procédures mathématiques
 code=@/exercices_src/procedure_math_2c.cpp

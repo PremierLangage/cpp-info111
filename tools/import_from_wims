@@ -1,12 +1,39 @@
 #!/usr/bin/python
 import io, os.path, re, sys
 
-topics = "variable io if if0 for0 for while dowhile fornested function vector1D vector2D0 vector2D file procedure_math procedure_calling procedure_loop procedure_simplest struct_fonction struct_gros struct_hard struct_procedure struct_profond struct_simple struct_tableaux struct_tableau_struct test".split()
+topicnames = {"variable": "variables",
+          "io": "entrées-sorties",
+          "if0": "conditionnelles simples",
+          "if": "conditionnelles",
+          "for0": "boucles for faciles",
+          "for": "boucles for",
+          "while": "boucles while",
+          "dowhile": "boucles do-while",
+          "fornested": "boucles for imbriquées",
+          "function": "fonctions",
+          "vector1D": "vecteurs",
+          "vector2D0": "vecteurs à deux dimensions faciles",
+          "vector2D": "vecteurs à deux dimensions",
+          "file": "fichiers",
+          "procedure_math": "procédures mathématiques",
+          "procedure_calling": "appel de procédures",
+          "procedure_loop": "procedures avec des boucles",
+          "procedure_simplest": "procedures simples",
+          "struct_fonction": "enregistrements et fonctions",
+          "struct_procedure": "enregistrements et procédures",
+          "struct_gros": "gros enregistrements",
+          "struct_hard": "enregistrements difficiles",
+          "struct_profond": "enregistrements imbriqués",
+          "struct_simple": "enregistrements faciles",
+          "struct_tableaux": "enregistrements de tableaux",
+          "struct_tableau_struct": "enregistrements de tableaux d'enregistrements",
+          "test": "tests",
+          }
 
 template = """
-template=/template/wims_{}.pl
-topic={}
-code=@/exercices_src/{}
+template=/template/wims_{type}.pl
+topicname={topicname}
+code=@/exercices_src/{basename}
 """
 
 template_pltp = """
@@ -18,11 +45,11 @@ Une collection d'exercices
 
 type_re = re.compile("_(input|output|result|code|silentcode)\.")
 
-exercises = {topic: [] for topic in topics}
+exercises = {topic: [] for topic in topicnames.keys()}
 
 def create_template(filename):
     basename = os.path.basename(filename)
-    for topic in topics:
+    for topic, topicname in topicnames.items():
         if basename.startswith(topic+"_"):
             pl_name = basename[len(topic+"_"):]+".pl"
             pl_dirname = os.path.join("exercices", topic)
@@ -36,7 +63,7 @@ def create_template(filename):
                 type = match.group(1)
             else:
                 type = "output"
-            io.open(pl_fullname, "w").write(template.format(type, topic, basename))
+            io.open(pl_fullname, "w").write(template.format(type=type, topicname=topicname, basename=basename))
             exercises[topic].append(pl_fullname)
             return
     print("No topic matched for {}".format(filename))
@@ -44,7 +71,7 @@ def create_template(filename):
 for filename in sys.argv[1:]:
     create_template(filename)
 
-for topic in topics:
+for topic in topicnames.keys():
     pltp_fullname = os.path.join("exercices", topic + ".pltp")
     fd = io.open(pltp_fullname, "w")
     fd.write(template_pltp.format(topic))

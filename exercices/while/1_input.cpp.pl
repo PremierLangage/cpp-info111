@@ -1,4 +1,4 @@
 
 template=/template/wims_input.pl
-topic=while
+topicname=boucles while
 code=@/exercices_src/while_1_input.cpp

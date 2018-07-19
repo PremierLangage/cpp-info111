@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=io
+topicname=entrées-sorties
 code=@/exercices_src/io_output_enchaine_2.cpp

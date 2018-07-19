@@ -2,7 +2,7 @@
 
 template=/template/wims.pl
 name=deviner la sortie
-title=Deviner la sortie
+typename=Deviner la sortie
 type=sandbox
 
 text==

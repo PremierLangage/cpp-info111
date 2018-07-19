@@ -1,4 +1,4 @@
 
 template=/template/wims_output.pl
-topic=struct_simple
+topicname=enregistrements faciles
 code=@/exercices_src/struct_simple_1.cpp
