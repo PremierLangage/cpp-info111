@@ -1,7 +1,7 @@
 
-title= Exercices sur: boucles for faciles
+title=Boucles for faciles
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les boucles for faciles.
 ==
 @ /exercices/for0/0.cpp.pl
 @ /exercices/for0/1.cpp.pl

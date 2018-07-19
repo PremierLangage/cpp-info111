@@ -1,7 +1,7 @@
 
-title= Exercices sur: enregistrements faciles
+title=Enregistrements faciles
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les enregistrements faciles.
 ==
 @ /exercices/struct_simple/1.cpp.pl
 @ /exercices/struct_simple/1bis.cpp.pl

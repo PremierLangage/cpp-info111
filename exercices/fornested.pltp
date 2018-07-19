@@ -1,7 +1,7 @@
 
-title= Exercices sur: boucles for imbriquées
+title=Boucles for imbriquées
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les boucles for imbriquées.
 ==
 @ /exercices/fornested/facile0.cpp.pl
 @ /exercices/fornested/facile0a.cpp.pl

@@ -1,7 +1,7 @@
 
-title= Exercices sur: vecteurs à deux dimensions faciles
+title=Vecteurs à deux dimensions faciles
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les vecteurs à deux dimensions faciles.
 ==
 @ /exercices/vector2D0/basic_1.cpp.pl
 @ /exercices/vector2D0/basic_2.cpp.pl

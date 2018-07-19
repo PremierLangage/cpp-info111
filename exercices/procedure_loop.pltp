@@ -1,7 +1,7 @@
 
-title= Exercices sur: procedures avec des boucles
+title=Procedures avec des boucles
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les procedures avec des boucles.
 ==
 @ /exercices/procedure_loop/no_1.cpp.pl
 @ /exercices/procedure_loop/no_1a.cpp.pl

@@ -127,7 +127,7 @@ def build_generic(exo):
         if key in exo:
             exo[key] = exo[key].strip()
     random.seed(exo['seed'])
-    exo['title'] = "{typename} ({topicname})".format(typename=exo['typename'], topicname=exo['topicname'])
+    exo['title'] = "{typename}: {topicname}".format(typename=exo['typename'], topicname=exo['topicname'])
     code = exo['code']
     code = code_randomizer()(code)
     exo['items'] = insert_answer_items(split_code(code))

@@ -1,7 +1,7 @@
 
-title= Exercices sur: vecteurs à deux dimensions
+title=Vecteurs à deux dimensions
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les vecteurs à deux dimensions.
 ==
 @ /exercices/vector2D/1_input.cpp.pl
 @ /exercices/vector2D/2a_input.cpp.pl

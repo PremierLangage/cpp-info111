@@ -1,7 +1,7 @@
 
-title= Exercices sur: fonctions
+title=Fonctions
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les fonctions.
 ==
 @ /exercices/function/blackjack.cpp.pl
 @ /exercices/function/call_1.cpp.pl

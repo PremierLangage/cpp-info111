@@ -1,7 +1,7 @@
 
-title= Exercices sur: tests
+title=Tests
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les tests.
 ==
 @ /exercices/test/code.cpp.pl
 @ /exercices/test/input.cpp.pl

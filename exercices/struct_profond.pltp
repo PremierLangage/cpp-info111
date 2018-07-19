@@ -1,7 +1,7 @@
 
-title= Exercices sur: enregistrements imbriqués
+title=Enregistrements imbriqués
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les enregistrements imbriqués.
 ==
 @ /exercices/struct_profond/1.cpp.pl
 @ /exercices/struct_profond/1a.cpp.pl

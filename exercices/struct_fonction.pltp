@@ -1,7 +1,7 @@
 
-title= Exercices sur: enregistrements et fonctions
+title=Enregistrements et fonctions
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les enregistrements et fonctions.
 ==
 @ /exercices/struct_fonction/1.cpp.pl
 @ /exercices/struct_fonction/1bis.cpp.pl

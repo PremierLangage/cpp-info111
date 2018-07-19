@@ -1,7 +1,7 @@
 
-title= Exercices sur: appel de procédures
+title=Appel de procédures
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les appel de procédures.
 ==
 @ /exercices/procedure_calling/1.cpp.pl
 @ /exercices/procedure_calling/1_input.cpp.pl

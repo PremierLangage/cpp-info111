@@ -1,7 +1,7 @@
 
-title= Exercices sur: enregistrements de tableaux
+title=Enregistrements de tableaux
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les enregistrements de tableaux.
 ==
 @ /exercices/struct_tableaux/1.cpp.pl
 @ /exercices/struct_tableaux/1a.cpp.pl

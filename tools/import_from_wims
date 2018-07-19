@@ -37,9 +37,9 @@ code=@/exercices_src/{basename}
 """
 
 template_pltp = """
-title= Exercices sur: {topicname}
+title={capitalized_topicname}
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les {topicname}.
 ==
 """
 
@@ -74,6 +74,6 @@ for filename in sys.argv[1:]:
 for topic, topicname in topicnames.items():
     pltp_fullname = os.path.join("exercices", topic + ".pltp")
     fd = io.open(pltp_fullname, "w")
-    fd.write(template_pltp.format(topicname=topicname))
+    fd.write(template_pltp.format(capitalized_topicname=topicname.capitalize(), topicname=topicname))
     for filename in exercises[topic]:
         fd.write("@ /" + filename + "\n")

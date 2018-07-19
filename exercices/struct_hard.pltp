@@ -1,7 +1,7 @@
 
-title= Exercices sur: enregistrements difficiles
+title=Enregistrements difficiles
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les enregistrements difficiles.
 ==
 @ /exercices/struct_hard/1.cpp.pl
 @ /exercices/struct_hard/1_input.cpp.pl

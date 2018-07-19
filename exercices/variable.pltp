@@ -1,7 +1,7 @@
 
-title= Exercices sur: variables
+title=Variables
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les variables.
 ==
 @ /exercices/variable/assign.cpp.pl
 @ /exercices/variable/caractere.cpp.pl

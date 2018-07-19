@@ -1,7 +1,7 @@
 
-title= Exercices sur: conditionnelles
+title=Conditionnelles
 introduction==
-Une collection d'exercices
+Une collection d'exercices sur les conditionnelles.
 ==
 @ /exercices/if/booleen0.cpp.pl
 @ /exercices/if/booleen0a.cpp.pl
