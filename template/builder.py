@@ -125,7 +125,7 @@ def build_generic(exo):
     - filter `exo` through `build_finalize`
 
         >>> import graderCpp, builder
-        >>> exo = build_generic({'code': graderCpp.test_code_generic, 
+        >>> exo = build_generic({'code': graderCpp.test_code_generic,
         ...                     'seed': 34,
         ...                     'title':'foo',
         ...                     'topic':'bar',
