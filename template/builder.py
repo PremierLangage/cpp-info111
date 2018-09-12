@@ -107,6 +107,10 @@ def build_generic(exo):
     Generic exercise builder
 
     This builder is in charge of:
+
+    - making a deep copy of `exo` to make sure the exercise building
+      is purely functional and avoid side effects when calling several
+      times the same exercise;
     - setting the exercise title;
     - doing some cleanup;
     - randomizing the code;
@@ -121,7 +125,7 @@ def build_generic(exo):
 
     The exercise builder should therefore:
     - filter `exo` through `build_generic`
-    - do its own magic
+    - do its own magic, modifying `exo` in place if so it wishes
     - filter `exo` through `build_finalize`
 
         >>> import graderCpp, builder
@@ -142,6 +146,7 @@ def build_generic(exo):
          {'content': '}\n', 'type': 'hidden'}]
          >>> len(exo['solution_failure_message'])
     """
+    exo = copy.deepcopy(exo)
     # For some reason, empty values in the PL file are stored as strings of length 1
     for key in ['solution_failure_message', 'answer_failure_message']:
         if key in exo:
@@ -157,6 +162,7 @@ def build_finalize(exo):
     r"""
     Set the input field name for each item that is an answer.
 
+    .. WARNING:: at this stage the input `exo` is modified in place
     """
     i = 0
     for item in exo['items']:
