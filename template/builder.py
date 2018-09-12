@@ -1,10 +1,9 @@
-import random, re
+import copy, random, re
 def code_randomizer():
     r"""
 
         >>> import random
         >>> random.seed(0)
-        >>> import build
         >>> randomize_code = code_randomizer()
         >>> randomize_code("int XX=3;")
         'int XX=3;'
@@ -35,7 +34,6 @@ def split_code(code):
     r"""
         Split the code in chunks according to BEGIN / END markers
 
-        >>> import build
         >>> code = '''foo code 1
         ... foo code 1b
         ... /// BEGIN A
