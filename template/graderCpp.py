@@ -37,9 +37,12 @@ def compile_and_run(code, input=""):
     r"""
 
         >>> import graderCpp
-        >>> graderCpp.compile_and_run('it main() {}') == {
+        >>> result = graderCpp.compile_and_run('it main() {}')
+        >>> result['compile_std_err']
+        'code.cpp:1:1: ...does not name a type...'
+        >>> del result['compile_std_err']
+        >>> result == {
         ...    'compile_err': 256,
-        ...    'compile_std_err': 'code.cpp:1:1: error: ‘it’ does not name a type; did you mean ‘int’?\n it main() {}\n ^~\n int\n',
         ...    'compile_std_out': ''}
         True
 
@@ -55,7 +58,7 @@ def compile_and_run(code, input=""):
         >>> graderCpp.compile_and_run(graderCpp.test_code_coucou) == {'compile_err': 0, 'compile_std_err': '', 'compile_std_out': '', 'err': 0, 'std_err': '', 'std_out': 'coucou\n'}
         True
     """
-    log = {}
+    log = {'code': code}
     io.open("code.cpp", "w").write(code)
     gcc_cmd = "g++ -Wall -Wno-sign-compare -Wno-unused-value -pedantic -std=c++11 " + "code.cpp -o code"
     log['compile_err'] = os.system(gcc_cmd + "> compilCstdout.log 2> compilCstderr.log ")
@@ -172,10 +175,17 @@ def compile_and_run_items(items, variant):
     else:
         return compile_and_run(code, stdin)
 
+def pre(text):
+    return "<pre>"+text+"</pre>"
+
 def grader_generic(exo):
     r"""
         >>> exo_base = {'solution_failure_message':'Attendu:',
-        ...             'answer_failure_message':'Le programme a affiché:'}
+        ...             'answer_failure_message':'Le programme a affiché:',
+        ...             'solution_compile_error_message': 'solution compile error:',
+        ...             'solution_errors_message': 'solution error:',
+        ...             'answer_compile_error_message': 'answer compile error:',
+        ...            }
 
         >>> import graderCpp, builder
         >>> items = builder.split_code(test_code_input)
@@ -189,7 +199,7 @@ def grader_generic(exo):
         >>> exo = exo_base.copy()
         >>> exo.update({'items': items, 'response': {'in': '42'} })
         >>> graderCpp.grader_generic(exo)
-        {'success': False, 'feedback': 'Le programme a affiché:<hr>43\n<hr>Attendu:<hr>42<hr>'}
+        {'success': False, 'feedback': 'Le programme a affiché:<pre>43\n</pre>Attendu:<pre>42</pre>'}
 
         >>> items = builder.split_code(test_code_generic)
         >>> items[3:3] = [{'type': 'answer', 'subtype':'code', 'key': 'in'}]
@@ -209,12 +219,12 @@ def grader_generic(exo):
         >>> exo = exo_base.copy()
         >>> exo.update({'items': items, 'response': {'in': '    i = 41;'} })
         >>> graderCpp.grader_generic(exo)
-        {'success': False, 'feedback': 'Le programme a affiché:<hr>41\n<hr>Attendu:<hr>42\n<hr>'}
+        {'success': False, 'feedback': 'Le programme a affiché:<pre>41\n</pre>Attendu:<pre>42\n</pre>'}
 
         >>> exo = exo_base.copy()
         >>> exo.update({'items': items, 'response': {'in': '    i = 41'} })
         >>> graderCpp.grader_generic(exo)
-        {'success': False, 'feedback': 'code.cpp: In function ‘int main()’:\ncode.cpp:4:16: error: expected ‘;’ before ‘std’\n     i = 41     std::cout << i << std::endl;\n                ^~~\n'}
+        {'success': False, 'feedback': 'answer compile error:<pre>code.cpp: ...:\ncode.cpp:4:16: ...</pre>'}
     """
     items = exo['items']
     response = exo['response']
@@ -229,16 +239,19 @@ def grader_generic(exo):
 
     # The solution program should compile and run without error
     if log_solution['compile_err']:
-        response['feedback'] = log_solution['compile_std_err']
+        response['feedback'] = exo['solution_compile_error_message'] +\
+                               pre(log_solution['compile_std_err']) # +pre(log_solution['code']) # for debugging
         return response
     if log_solution['err']:
-        response['feedback'] = log_solution['std_err']
+        response['feedback'] = exo['solution_errors_message'] +\
+                               pre(log_solution['std_err']) # +pre(log_solution['code']) # for debugging
         return response
 
     # Report failure if the answer program does not compile
     if log_answer['compile_err']:
         response['success'] = False
-        response['feedback'] = log_answer['compile_std_err']
+        response['feedback'] = exo['answer_compile_error_message'] +\
+                               pre(log_answer['compile_std_err']) # +pre(log_answer['code']) # for debugging
         return response
 
     # Report failure if the two outputs do not match
@@ -246,9 +259,9 @@ def grader_generic(exo):
         response['success'] = False
         feedback = ""
         if exo['answer_failure_message']:
-            feedback += "{}<pre>{}</pre>".format(exo['answer_failure_message'], log_answer['std_out'])
+            feedback += exo['answer_failure_message'] + pre(log_answer['std_out'])
         if exo['solution_failure_message']:
-            feedback += "{}<pre>{}</pre>".format(exo['solution_failure_message'], log_solution['std_out'])
+            feedback += exo['solution_failure_message']+pre(log_solution['std_out'])
         response['feedback'] = feedback
     return response
 

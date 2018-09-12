@@ -3,5 +3,5 @@ import_from_wims:
 
 test:
 	pyflakes template/builder.py template/graderCpp.py
-	cd template; python -m doctest -o NORMALIZE_WHITESPACE builder.py
-	cd template; python -m doctest -o NORMALIZE_WHITESPACE graderCpp.py
+	cd template; python -m doctest -o NORMALIZE_WHITESPACE -o ELLIPSIS builder.py
+	cd template; python -m doctest -o NORMALIZE_WHITESPACE -o ELLIPSIS  graderCpp.py

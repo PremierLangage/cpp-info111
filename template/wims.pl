@@ -11,6 +11,9 @@ build=@/template/builder.py
 
 solution_failure_message=Affichage souhaité:
 answer_failure_message=Le programme a affiché:
+solution_compile_error_message=Erreur interne: le programme solution ne compile pas:
+solution_errors_message=Erreur interne: le programme solution affiche des erreurs:
+answer_compile_error_message=Le programme ne compile pas:
 
 title=Exercice
 
