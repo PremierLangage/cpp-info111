@@ -104,6 +104,26 @@ def insert_answer_items(items):
 
 def build_generic(exo):
     r"""
+    Generic exercise builder
+
+    This builder is in charge of:
+    - setting the exercise title;
+    - doing some cleanup;
+    - randomizing the code;
+    - splitting the code into items of various types according to the
+      annotations (default, hidden, solution, answer).
+
+    An additional step is required to set the html input field name
+    for each item that is an answer. This can't be done here because
+    the exercise builder may later insert answer items in additions to
+    those already specified in the code. This is therefore postponed to
+    a separate function `build_finalize`.
+
+    The exercise builder should therefore:
+    - filter `exo` through `build_generic`
+    - do its own magic
+    - filter `exo` through `build_finalize`
+
         >>> import graderCpp, builder
         >>> exo = build_generic({'code': graderCpp.test_code_generic, 
         ...                     'seed': 34,
@@ -134,6 +154,10 @@ def build_generic(exo):
     return exo
 
 def build_finalize(exo):
+    r"""
+    Set the input field name for each item that is an answer.
+
+    """
     i = 0
     for item in exo['items']:
         if item['type'] == 'answer':
