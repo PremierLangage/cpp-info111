@@ -129,8 +129,8 @@ def build_generic(exo):
         >>> import graderCpp, builder
         >>> exo = build_generic({'code': graderCpp.test_code_generic,
         ...                     'seed': 34,
-        ...                     'title':'foo',
-        ...                     'topic':'bar',
+        ...                     'typename':'foo',
+        ...                     'topicname':'bar',
         ...                     'solution_failure_message': ' '
         ...                     })
         >>> exo['title']
@@ -143,6 +143,7 @@ def build_generic(exo):
          {'content': '     std::cout << i << std::endl;\n', 'type': 'default'},
          {'content': '}\n', 'type': 'hidden'}]
          >>> len(exo['solution_failure_message'])
+         0
     """
     exo = copy.deepcopy(exo)
     # For some reason, empty values in the PL file are stored as strings of length 1
