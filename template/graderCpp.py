@@ -37,16 +37,20 @@ def compile_and_run(code, input=""):
     r"""
 
         >>> import graderCpp
-        >>> result = graderCpp.compile_and_run('it main() {}')
+        >>> code = 'it main() {}'
+        >>> result = graderCpp.compile_and_run(code)
         >>> result['compile_std_err']
         'code.cpp:1:1: ...does not name a type...'
         >>> del result['compile_std_err']
         >>> result == {
+        ...    'code': code,
         ...    'compile_err': 256,
         ...    'compile_std_out': ''}
         True
 
-        >>> graderCpp.compile_and_run('int main() {}') == {
+        >>> code = 'int main() {}'
+        >>> graderCpp.compile_and_run(code) == {
+        ...     'code': code,
         ...     'compile_err': 0,
         ...     'compile_std_err': '',
         ...     'compile_std_out': '',
@@ -55,7 +59,13 @@ def compile_and_run(code, input=""):
         ...     'std_out': ''}
         True
 
-        >>> graderCpp.compile_and_run(graderCpp.test_code_coucou) == {'compile_err': 0, 'compile_std_err': '', 'compile_std_out': '', 'err': 0, 'std_err': '', 'std_out': 'coucou\n'}
+        >>> graderCpp.compile_and_run(graderCpp.test_code_coucou) == {
+        ...      'code': graderCpp.test_code_coucou,
+        ...      'compile_err': 0,
+        ...      'compile_std_err': '',
+        ...      'compile_std_out': '',
+        ...      'err': 0, 'std_err': '',
+        ...      'std_out': 'coucou\n'}
         True
     """
     log = {'code': code}
@@ -139,12 +149,12 @@ def compile_and_run_items(items, variant):
         >>> compile_and_run_items(items, "answer")
         {'compile_err': 0, 'compile_std_err': '', 'compile_std_out': '', 'err': 0, 'std_err': '', 'std_out': 'foo'}
         >>> compile_and_run_items(items, "solution")
-        {'compile_err': 0, 'compile_std_err': '', 'compile_std_out': '', 'err': 0, 'std_err': '', 'std_out': 'coucou\n'}
+        {'code': '...', 'compile_err': 0, 'compile_std_err': '', 'compile_std_out': '', 'err': 0, 'std_err': '', 'std_out': 'coucou\n'}
 
         >>> items = builder.split_code(graderCpp.test_code_input)
         >>> items = [{'type': 'answer', 'subtype': 'stdin', 'content':'10'}] + items + [{'type': 'solution', 'subtype': 'stdout', 'content':'42'}]
         >>> compile_and_run_items(items, "answer")
-        {'compile_err': 0, 'compile_std_err': '', 'compile_std_out': '', 'err': 0, 'std_err': '', 'std_out': '11\n'}
+        {'code': '...', 'compile_err': 0, 'compile_std_err': '', 'compile_std_out': '', 'err': 0, 'std_err': '', 'std_out': '11\n'}
         >>> compile_and_run_items(items, "solution")
         {'compile_err': 0, 'compile_std_err': '', 'compile_std_out': '', 'err': 0, 'std_err': '', 'std_out': '42'}
     """
