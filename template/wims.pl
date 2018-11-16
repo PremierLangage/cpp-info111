@@ -7,6 +7,7 @@ author=MPI Info 111's team
 @/template/randomization.h
 
 form=@/template/form/editorform.html
+@ /lib/builder/build.py [builder.py]
 build=@/template/builder.py
 
 solution_failure_message=Affichage souhaité:
