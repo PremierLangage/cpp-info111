@@ -27,9 +27,9 @@ if __name__ == "__main__":
     with open(sys.argv[1]) as f:
         context = json.load(f)
     with open(sys.argv[2]) as f:
-        responses = json.load(f)
+        response = json.load(f)
 
-    context["responses"] = responses
+    context["response"] = response
 
     result = grader_generic(context)
 
