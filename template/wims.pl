@@ -7,7 +7,7 @@ author=MPI Info 111's team
 @/template/randomization.h
 
 form=@/template/form/editorform.html
-@ /lib/builder/build.py [builder.py]
+@ /builder/build.py [builder.py]
 build=@/template/builder.py
 
 solution_failure_message=Affichage souhaité:
@@ -19,6 +19,26 @@ answer_compile_error_message=Le programme ne compile pas:
 title=Exercice
 
 grader==
-from graderCpp import grade, grader_generic
-grade(grader_generic)
+import sys
+from graderCpp import grader_generic
+
+if __name__ == "__main__":
+    import json
+    with open(sys.argv[1]) as f:
+        context = json.load(f)
+    with open(sys.argv[2]) as f:
+        responses = json.load(f)
+
+    context["responses"] = responses
+
+    result = grader_generic(context)
+
+    if result['success']:
+        print(100)
+    else:
+        print(50)
+    with open(sys.argv[4], 'w+') as f:
+        print(response['feedback', file=f)
+
+    sys.exit(0)
 ==
