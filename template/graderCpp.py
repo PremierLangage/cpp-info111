@@ -1,4 +1,4 @@
-import io, json, os
+import json, os
 import plutils
 
 test_code_coucou='''
@@ -80,11 +80,13 @@ def compile_and_run(code, input=""):
         log['compile_std_out'] = f.read()
 
     if not log['compile_err']:
-        with io.open("stdin", "w") as f:
+        with open("stdin", "w") as f:
             f.write(input)
         log['err'] = os.system("./code < stdin 2> stderr.log > stdout.log")
-        log['std_err'] = open("stderr.log", "r").read()
-        log['std_out'] = open("stdout.log", "r").read()
+        with open("stderr.log", "r") as f:
+            log['std_err'] = f.read()
+        with open("stdout.log", "r") as f:
+            log['std_out'] = f.read()
     return log
 
 def equal_out(a, b):  # Should use plutils.check_output instead
