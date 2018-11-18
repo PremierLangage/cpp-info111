@@ -69,15 +69,19 @@ def compile_and_run(code, input=""):
         True
     """
     log = {'code': code}
-    io.open("code.cpp", "w").write(code)
+    with open("code.cpp", "w") as f :
+        f.write(code)
     gcc_cmd = "g++ -Wall -Wno-sign-compare -Wno-unused-value -pedantic -std=c++11 " + "code.cpp -o code"
     log['compile_err'] = os.system(gcc_cmd + "> compilCstdout.log 2> compilCstderr.log ")
     # Get back the standard/error output of compilation
-    log['compile_std_err'] = open("compilCstderr.log", "r").read()
-    log['compile_std_out'] = open("compilCstdout.log", "r").read()
+    with open("compilCstderr.log", "r") as f:
+        log['compile_std_err'] = f.read()
+    with open("compilCstdout.log", "r") as f:
+        log['compile_std_out'] = f.read()
 
     if not log['compile_err']:
-        io.open("stdin", "w").write(input)
+        with io.open("stdin", "w") as f:
+            f.write(input)
         log['err'] = os.system("./code < stdin 2> stderr.log > stdout.log")
         log['std_err'] = open("stderr.log", "r").read()
         log['std_out'] = open("stdout.log", "r").read()
