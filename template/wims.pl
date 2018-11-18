@@ -38,7 +38,7 @@ if __name__ == "__main__":
     else:
         print(50)
     with open(sys.argv[4], 'w+') as f:
-        print(response['feedback'], file=f)
+        print(result['feedback'], file=f)
 
     sys.exit(0)
 ==
