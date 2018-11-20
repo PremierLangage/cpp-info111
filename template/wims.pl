@@ -36,7 +36,7 @@ if __name__ == "__main__":
     if result['success']:
         print(100)
     else:
-        print(50)
+        print(0)
     with open(sys.argv[4], 'w+') as f:
         print(response['feedback'], file=f)
 
