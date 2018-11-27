@@ -33,12 +33,16 @@ if __name__ == "__main__":
 
     result = grader_generic(context)
 
+    feedback = result['feedback']
     if result['success']:
+        feedback = '<div id="success" class="alert alert-success feedback">'+feedback+'</div>'
         print(100)
     else:
+        feedback = '<div id="success" class="alert alert-danger feedback">'+feedback+'</div>'
         print(0)
+
     with open(sys.argv[4], 'w+') as f:
-        print(result['feedback'], file=f)
+        print(feedback, file=f)
 
     sys.exit(0)
 ==
