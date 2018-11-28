@@ -5,8 +5,7 @@ name=deviner le résultat
 typename=Deviner le résultat
 type=sandbox
 
-solution_failure_message=La variable r contient
-answer_failure_message=
+failure_message=Réponse incorrecte:{answer_out}. La variable r contient: {solution_out}
 
 text==
 Exécuter pas à pas le programme suivant. Quelle est la valeur

@@ -13,5 +13,4 @@ text==
 Compléter le programme suivant en suivant les instructions
 ==
 
-solution_failure_message=
-answer_failure_message=Erreurs:
+answer_failure_message=Erreurs:{answer_out}

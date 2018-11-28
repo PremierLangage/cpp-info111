@@ -276,14 +276,9 @@ def grader_generic(exo):
     # Report failure if the two outputs do not match
     if not equal_out(log_answer['std_out'], log_solution['std_out']):
         response['success'] = False
-        feedback = ""
-        if exo['answer_failure_message']:
-            feedback += exo['answer_failure_message'].format(
-                out=pre(log_answer['std_out']))
-        if exo['solution_failure_message']:
-            feedback += exo['solution_failure_message'].format(
-                out=pre(log_solution['std_out']))
-        response['feedback'] = feedback
+        response['feedback'] = exo['failure_message'].format(
+                solution_out=log_solution['std_out'],
+                answer_out=log_solution['std_out'])
     return response
 
 def grade(grader):
