@@ -9,7 +9,7 @@ text==
 Quel nombre devrait saisir l'utilisateur pour que le programme C++ suivant affiche 42?
 ==
 
-failure_message=Réponse incorrecte:{answer}Le programme a affiché: <pre>{answer_out}</pre>
+failure_message=Réponse incorrecte:<pre>{answer}</pre>Le programme a affiché: <pre>{answer_out}</pre>
 
 build=@/template/builder.py
 build+=
