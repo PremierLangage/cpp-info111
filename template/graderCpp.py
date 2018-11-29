@@ -277,8 +277,8 @@ def grader_generic(exo):
     if not equal_out(log_answer['std_out'], log_solution['std_out']):
         response['success'] = False
         response['feedback'] = exo['failure_message'].format(
-                solution_out=log_solution['std_out'],
-                answer_out=log_solution['std_out'])
+                solution_out=pre(log_solution['std_out']),
+                answer_out=pre(log_solution['std_out']))
     return response
 
 def grade(grader):
