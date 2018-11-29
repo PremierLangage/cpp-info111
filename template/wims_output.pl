@@ -10,7 +10,7 @@ Exécuter pas à pas le programme suivant et saisir ce que vous prévoyez
 qu'il affiche.
 ==
 
-failure_message=Réponse incorrecte:<pre>{answer}</pre>. Le programme a affiché:<pre>{solution_out}</pre>
+failure_message=Réponse incorrecte:<pre>{answer}</pre>Le programme a affiché:<pre>{solution_out}</pre>
 
 build=@/template/builder.py
 build+=
