@@ -13,4 +13,4 @@ text==
 Compléter le programme suivant en suivant les instructions
 ==
 
-answer_failure_message=Erreurs:{answer_out}
+failure_message=Erreurs:<pre>{answer_out}</pre>

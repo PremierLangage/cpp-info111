@@ -10,10 +10,10 @@ form=@/template/form/editorform.html
 @ /builder/build.py [builder.py]
 build=@/template/builder.py
 
-failure_message=Le programme a affiché: {answer_out}Affichage souhaité: {solution_out}
-solution_compile_error_message=Erreur interne: le programme solution ne compile pas:
-solution_errors_message=Erreur interne: le programme solution affiche des erreurs:
-answer_compile_error_message=Le programme ne compile pas:
+solution_compile_error_message=Erreur interne: le programme solution ne compile pas:<pre>{err}</pre>Code:<pre>{code}</pre>
+solution_error_message=Erreur interne: erreur à l'exécution du programme solution: <pre>{err}</pre>Code:<pre>{code}</pre>
+answer_compile_error_message=Le programme ne compile pas:<pre>{err}</pre>
+failure_message=Le programme a affiché:<pre>{answer_out}</pre>Affichage souhaité:<pre>{solution_out}</pre>
 
 title=Exercice
 

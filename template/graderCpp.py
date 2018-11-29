@@ -191,16 +191,12 @@ def compile_and_run_items(items, variant):
     else:
         return compile_and_run(code, stdin)
 
-def pre(text):
-    return "<pre>"+text+"</pre>"
-
 def grader_generic(exo):
     r"""
-        >>> exo_base = {'solution_failure_message':'Attendu:{out}',
-        ...             'answer_failure_message':'Le programme a affiché:{out}',
-        ...             'solution_compile_error_message': 'solution compile error:{err}',
-        ...             'solution_errors_message': 'solution error:{err}',
-        ...             'answer_compile_error_message': 'answer compile error:{err}',
+        >>> exo_base = {'failure_message':'Le programme a affiché:<pre>{answer_out}</pre>Attendu:<pre>{solution_out}</pre>',
+        ...             'solution_compile_error_message': 'solution compile error:<pre>{err}</pre>',
+        ...             'solution_error_message': 'solution error:<pre>{err}</pre>',
+        ...             'answer_compile_error_message': 'answer compile error:<pre>{err}</pre>',
         ...            }
 
         >>> import graderCpp, builder
@@ -244,10 +240,12 @@ def grader_generic(exo):
     """
     items = exo['items']
     response = exo['response']
+    answer = None
 
     for item in items:
         if item['type'] == 'answer':
-            item['content'] = response[item['key']]
+            answer = response[item['key']]
+            item['content'] = answer
 
     log_solution = compile_and_run_items(items, variant="solution")
     log_answer   = compile_and_run_items(items, variant="answer")
@@ -256,29 +254,30 @@ def grader_generic(exo):
     # The solution program should compile and run without error
     if log_solution['compile_err']:
         response['feedback'] = exo['solution_compile_error_message'].format(
-            err=pre(log_solution['compile_std_err']),
-            code=pre(log_solution['code']))
+            err=log_solution['compile_std_err'],
+            code=log_solution['code'])
         return response
     if log_solution['err']:
-        response['feedback'] = exo['solution_errors_message'].format(
-            err=pre(log_solution['std_err']),
-            code=pre(log_solution['code']))
+        response['feedback'] = exo['solution_error_message'].format(
+            err=log_solution['std_err'],
+            code=log_solution['code'])
         return response
 
     # Report failure if the answer program does not compile
     if log_answer['compile_err']:
         response['success'] = False
         response['feedback'] = exo['answer_compile_error_message'].format(
-            err=pre(log_answer['compile_std_err']),
-            code=pre(log_answer['code']))
+            err=log_answer['compile_std_err'],
+            code=log_answer['code'])
         return response
 
     # Report failure if the two outputs do not match
     if not equal_out(log_answer['std_out'], log_solution['std_out']):
         response['success'] = False
         response['feedback'] = exo['failure_message'].format(
-                solution_out=pre(log_solution['std_out']),
-                answer_out=pre(log_solution['std_out']))
+                answer=answer,
+                solution_out=log_solution['std_out'],
+                answer_out=log_answer['std_out'])
     return response
 
 def grade(grader):
