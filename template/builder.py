@@ -111,6 +111,7 @@ def build_generic(exo):
       times the same exercise;
     - setting the exercise title;
     - doing some cleanup;
+    - fetching the code from exo['code'] or the file exo['code_file']
     - randomizing the code;
     - splitting the code into items of various types according to the
       annotations (default, hidden, solution, answer).
@@ -152,7 +153,10 @@ def build_generic(exo):
             exo[key] = exo[key].strip()
     random.seed(exo['seed'])
     exo['title'] = "{typename}: {topicname}".format(typename=exo['typename'], topicname=exo['topicname'])
-    code = exo['code']
+    code = exo.get('code')
+    if code is None:
+        with open(exo['code_file']) as f:
+            code = f.read()
     code = code_randomizer()(code)
     exo['items'] = insert_answer_items(split_code(code))
     return exo
