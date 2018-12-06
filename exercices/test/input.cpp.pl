@@ -1,5 +1,5 @@
 
 template=/template/wims_input.pl
 topicname=tests des fonctionalités de la plateforme
-code=@/exercices_src/test_input.cpp [raw_code.cpp]
+@ /exercices_src/test_input.cpp [raw_code.cpp]
 code_file=raw_code.cpp
