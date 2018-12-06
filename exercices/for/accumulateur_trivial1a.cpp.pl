@@ -1,4 +1,5 @@
 
 template=/template/wims_output.pl
 topicname=boucles for
-code=@/exercices_src/for_accumulateur_trivial1a.cpp
+@ /exercices_src/for_accumulateur_trivial1a.cpp [raw_code.cpp]
+code_file=raw_code.cpp

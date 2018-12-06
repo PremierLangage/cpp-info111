@@ -1,4 +1,5 @@
 
 template=/template/wims_output.pl
 topicname=enregistrements de tableaux
-code=@/exercices_src/struct_tableaux_1.cpp
+@ /exercices_src/struct_tableaux_1.cpp [raw_code.cpp]
+code_file=raw_code.cpp

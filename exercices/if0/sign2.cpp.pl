@@ -1,4 +1,5 @@
 
 template=/template/wims_output.pl
 topicname=conditionnelles simples
-code=@/exercices_src/if0_sign2.cpp
+@ /exercices_src/if0_sign2.cpp [raw_code.cpp]
+code_file=raw_code.cpp

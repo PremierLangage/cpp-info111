@@ -1,4 +1,5 @@
 
 template=/template/wims_output.pl
 topicname=vecteurs
-code=@/exercices_src/vector1D_tri_6c.cpp
+@ /exercices_src/vector1D_tri_6c.cpp [raw_code.cpp]
+code_file=raw_code.cpp

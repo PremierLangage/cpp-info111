@@ -1,4 +1,5 @@
 
 template=/template/wims_output.pl
 topicname=conditionnelles
-code=@/exercices_src/if_calculation.cpp
+@ /exercices_src/if_calculation.cpp [raw_code.cpp]
+code_file=raw_code.cpp

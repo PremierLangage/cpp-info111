@@ -33,7 +33,8 @@ topicnames = {"variable": "variables",
 template = """
 template=/template/wims_{type}.pl
 topicname={topicname}
-code=@/exercices_src/{basename}
+@ /exercices_src/{basename} [raw_code.cpp]
+code_file=raw_code.cpp
 """
 
 template_pltp = """

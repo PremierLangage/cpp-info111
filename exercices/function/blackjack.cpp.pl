@@ -1,4 +1,5 @@
 
 template=/template/wims_output.pl
 topicname=fonctions
-code=@/exercices_src/function_blackjack.cpp
+@ /exercices_src/function_blackjack.cpp [raw_code.cpp]
+code_file=raw_code.cpp

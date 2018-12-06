@@ -1,4 +1,5 @@
 
 template=/template/wims_silentcode.pl
 topicname=tests des fonctionalités de la plateforme
-code=@/exercices_src/test_silentcode.cpp
+@ /exercices_src/test_silentcode.cpp [raw_code.cpp]
+code_file=raw_code.cpp

@@ -1,4 +1,5 @@
 
 template=/template/wims_input.pl
 topicname=appel de procédures
-code=@/exercices_src/procedure_calling_2d_input.cpp
+@ /exercices_src/procedure_calling_2d_input.cpp [raw_code.cpp]
+code_file=raw_code.cpp

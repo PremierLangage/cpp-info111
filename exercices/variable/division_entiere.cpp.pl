@@ -1,4 +1,5 @@
 
 template=/template/wims_output.pl
 topicname=variables
-code=@/exercices_src/variable_division_entiere.cpp
+@ /exercices_src/variable_division_entiere.cpp [raw_code.cpp]
+code_file=raw_code.cpp

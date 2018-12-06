@@ -1,4 +1,5 @@
 
 template=/template/wims_output.pl
 topicname=entrées-sorties
-code=@/exercices_src/io_output_float.cpp
+@ /exercices_src/io_output_float.cpp [raw_code.cpp]
+code_file=raw_code.cpp
