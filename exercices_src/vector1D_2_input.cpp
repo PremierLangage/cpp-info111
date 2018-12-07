@@ -1,11 +1,13 @@
+/// BEGIN HIDDEN
 #include <iostream>
 #include <vector>
 using namespace std;
 
 int main() {
-    vector<int> tab = {4, 10, 13, 7, 5, 6};
+/// END HIDDEN
+    vector<int> tab = Vlt10;
     int s = 0;
-    cin >> tab[3];
+    cin >> tab[CI4];
     for (int i = 0; i < tab.size(); i++) {
         if (tab[i] % 2 == 0) {
             s = s + tab[i];

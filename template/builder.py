@@ -22,6 +22,9 @@ def code_randomizer():
     d['CI1'] = str(random.randint(-2,2))
     d['CI2'] = str(random.randint(-2,2))
     d['CI3'] = str(random.randint(-2,2))
+    d['CI4'] = str(random.randint(0,3))
+    d['Vlt10'] = (str([random.randint(0,10) for i in range(random.randint(0,3)+4)]).replace("[", "{")).replace("]","}")
+    
     #print(d)
     pattern = re.compile(r'\b(' + '|'.join(d.keys()) + r')\b')
     #print(pattern)
