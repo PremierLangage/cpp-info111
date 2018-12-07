@@ -14,5 +14,7 @@ int main() {
         }
     }
     cout << s << endl;
+/// BEGIN HIDDEN
     return 0;
 }
+/// END HIDDEN
