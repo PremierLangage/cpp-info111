@@ -2,19 +2,19 @@ title=Info 111: Contrôle de fin de semestre
 introduction==
 Une fiche d'exercices pour le contrôle de fin de semestre
 ==
-@ /exercices/io/basic_1_input.cpp
-@ /exercices/io/output_basic_2.cpp
+@ /exercices/io/basic_1_input.cpp.pl
+@ /exercices/io/output_basic_2.cpp.pl
 @ /exercices/if0/sign_result.cpp.pl
 @ /exercices/if/booleen2_result.cpp.pl
 @ /exercices/for0/2.cpp.pl
-@ /exercices/for/accumulateur_trivial1.cpp
-@ /exercices/while/1_input.cpp
-@ /exercices/function_call_1.cpp
-@ /exercices/function_call_2.cpp
+@ /exercices/for/accumulateur_trivial1.cpp.pl
+@ /exercices/while/1_input.cpp.pl
+@ /exercices/function_call_1.cpp.pl
+@ /exercices/function_call_2.cpp.pl
 @ /exercices/vector1D/recherche1a.cpp.pl
 @ /exercices/vector1D/recherche2b.cpp.pl
 @ /exercices/vector1D/recherche5b.cpp.pl
 @ /exercices/vector2D0/basic_1.cpp.pl
-@ /exercices/file/istringstream_int1.cpp
-@ /exercices/file/fstream.cpp
-@ /exercices/file/file_state_open.cpp
+@ /exercices/file/istringstream_int1.cpp.pl
+@ /exercices/file/fstream.cpp.pl
+@ /exercices/file/file_state_open.cpp.pl
