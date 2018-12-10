@@ -11,8 +11,8 @@ Quel nombre devrait saisir l'utilisateur pour que le programme C++ suivant affic
 
 failure_message=Réponse incorrecte:<pre>{answer}</pre>Le programme a affiché: <pre>{answer_out}</pre>
 
-build=@/template/builder.py
-build+=
+build==
+from mybuilder import build_generic, build_finalize
 def build(exo):
     exo = build_generic(exo)
     exo['items'] = [{'type':'answer', 'subtype': 'stdin', 'content': ''}] + exo['items'] + [{'type':'solution', 'subtype': 'stdout', 'content': '42'}]

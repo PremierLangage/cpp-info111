@@ -8,7 +8,7 @@ author=MPI Info 111's team
 
 form=@/template/form/editorform.html
 @ /builder/build.py [builder.py]
-build=@/template/builder.py
+@ /template/builder.py [mybuilder.py]
 
 solution_compile_error_message=Erreur interne: le programme solution ne compile pas:<pre>{err}</pre>Code:<pre>{code}</pre>
 solution_error_message=Erreur interne: erreur à l'exécution du programme solution: <pre>{err}</pre>Code:<pre>{code}</pre>
