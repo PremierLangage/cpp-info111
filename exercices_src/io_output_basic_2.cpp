@@ -1,8 +1,13 @@
+/// BEGIN HIDDEN
 #include <iostream>
+#include "randomization.h"
 using namespace std;
 
 int main() {
-    int x = 4;
-    cout << "x" << endl;
+/// END HIDDEN
+    int X = CI1;
+    cout << "X" << endl;
+/// BEGIN HIDDEN
     return 0;
 }
+/// END HIDDEN
