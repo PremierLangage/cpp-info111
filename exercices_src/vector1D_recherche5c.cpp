@@ -1,6 +1,8 @@
+/// BEGIN HIDDEN
 #include <iostream>
 #include <vector>
 using namespace std;
+/// END HIDDEN
 
 int recherche(int x, vector<int> t) {
     int indice = -1;
@@ -16,7 +18,7 @@ int recherche(int x, vector<int> t) {
 
 
 int main() {
-    vector<int> tab = {3, 6, 4, 6};
-    cout << recherche(5, tab) << endl;
+    vector<int> tab = Vlt10;
+    cout << recherche(42, tab) << endl;
     return 0;
 }

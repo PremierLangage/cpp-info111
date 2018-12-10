@@ -1,10 +1,13 @@
+/// BEGIN HIDDEN
 #include <iostream>
 #include <vector>
 using namespace std;
 
 int main() {
-    vector<vector <int>> tab = {{1, 2, 3}, {4, 5, 6}};
+/// END HIDDEN
+    vector<vector <int>> tab = V23;
 
     cout << tab.size() << endl;
-
+/// BEGIN HIDDEN
 }
+/// END HIDDEN

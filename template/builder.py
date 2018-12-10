@@ -23,7 +23,27 @@ def code_randomizer():
     d['CI2'] = str(random.randint(-2,2))
     d['CI3'] = str(random.randint(-2,2))
     d['CI4'] = str(random.randint(0,3))
-    d['Vlt10'] = (str([random.randint(0,10) for i in range(random.randint(0,3)+4)]).replace("[", "{")).replace("]","}")
+    d['CI5'] = str(random.randint(0,1))
+    
+    v = [random.randint(0,10) for i in range(random.randint(0,3)+4)]
+    d['Vlt10'] = (str(v).replace("[", "{")).replace("]","}")
+    v[random.randint(0,2)] = 42
+    d['V42'] = (str(v).replace("[", "{")).replace("]","}")
+    v[3] = 42
+    d['V242'] = (str(v).replace("[", "{")).replace("]","}")
+    seq = [random.randint(0,5), random.randint(5,10), 42] 
+    d['V3v'] = (str([random.choice(seq) for i in range(random.randint(0,3)+4)]).replace("[", "{")).replace("]","}")
+    v_sorted = [random.randint(0,4), random.randint(5,9), random.randint(10,14), random.randint(15,20)]
+    d['Vsort'] = (str(v_sorted).replace("[", "{")).replace("]","}")
+    d['Vsort_rev'] = (str(v_sorted[::-1]).replace("[", "{")).replace("]","}")
+    v_sorted[0],v_sorted[2] = v_sorted[2],v_sorted[0]
+    d['Vunsort'] = (str(v_sorted).replace("[", "{")).replace("]","}")
+    d['V22'] = "{{" + str(random.randint(0,5)) + ", " + str(random.randint(0,5)) + "}, {"+ str(random.randint(0,5)) + ", " + str(random.randint(0,5)) + "}}"
+    d['V23'] = "{{" + str(random.randint(0,5)) + ", " + str(random.randint(0,5)) + "}, {"+ str(random.randint(0,5)) + ", " + str(random.randint(0,5)) + "}, {" + str(random.randint(0,5)) + "}}"
+    
+    
+    
+    
     
     #print(d)
     pattern = re.compile(r'\b(' + '|'.join(d.keys()) + r')\b')

@@ -1,6 +1,8 @@
+/// BEGIN HIDDEN
 #include <iostream>
 #include <vector>
 using namespace std;
+/// END HIDDEN
 
 int mystere(vector<int> tab, int v) {
     int c = 0;
@@ -13,9 +15,9 @@ int mystere(vector<int> tab, int v) {
 }
 
 int main() {
-    vector<int> tab = {10, 2, 5, 2, 10, 5, 5, 2};
+    vector<int> tab = V3v;
     int s;
     cin >> s;
-    cout << s + mystere(tab, 10) << endl;
+    cout << s + mystere(tab, 42) << endl;
     return 0;
 }

@@ -1,8 +1,10 @@
+/// BEGIN HIDDEN
 #include <iostream>
 #include <vector>
 using namespace std;
 
 int main() {
+/// END HIDDEN
     vector<vector<int>> tab = {
         {42,  0,  0,  0,  0},
         { 0, 42,  0,  0,  0},
@@ -13,5 +15,7 @@ int main() {
     int j;
     cin >> j;
     if (0 <= j and j < 5)
-        cout << tab[3][j] << endl;
+        cout << tab[CI4][j] << endl;
+/// BEGIN HIDDEN
 }
+/// END HIDDEN

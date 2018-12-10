@@ -1,10 +1,12 @@
+/// BEGIN HIDDEN
 #include <iostream>
 #include <vector>
 using namespace std;
 
 int main() {
+/// END HIDDEN
     int s;
-    vector<vector <int>> tab = {{2, 5}, {1, 3}};
+    vector<vector <int>> tab = V22;
 
     for (int i = 0; i < tab.size(); i++) {
         s = 0;
@@ -13,4 +15,6 @@ int main() {
         }
     }
     cout << s << endl;
+/// BEGIN HIDDEN
 }
+/// END HIDDEN

@@ -1,6 +1,8 @@
+/// BEGIN HIDDEN
 #include <iostream>
 #include <vector>
 using namespace std;
+/// END HIDDEN
 
 bool estTrie(vector<int> t) {
     bool res = true;
@@ -16,7 +18,7 @@ bool estTrie(vector<int> t) {
 
 
 int main() {
-    vector<int> tab = {5, 2, 8, 3};
+    vector<int> tab = Vunsort;
     if (estTrie(tab)) {
         cout << "il est trie";
     } else {

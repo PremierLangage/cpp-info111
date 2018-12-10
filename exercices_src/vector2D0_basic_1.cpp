@@ -1,10 +1,13 @@
+/// BEGIN HIDDEN
 #include <iostream>
 #include <vector>
 using namespace std;
 
 int main() {
-    vector<vector <int>> tab = {{1, 2, 3}, {4, 5, 6}, {7, 8}};
+/// END HIDDEN
+    vector<vector <int>> tab = V23;
 
-    cout << tab[0][2] << endl;
-
+    cout << tab[CI5][CI5] << endl;
+/// BEGIN HIDDEN
 }
+/// END HIDDEN
