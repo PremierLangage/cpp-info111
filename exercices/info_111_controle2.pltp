@@ -1,10 +1,10 @@
-
 title=Info 111: Contrôle de fin de semestre
 introduction==
 Une fiche d'exercices pour le contrôle de fin de semestre
 ==
-@ /exercices/if0_sign_result.cpp.pl
-@ /exercices/if_booleen2_result.cpp.pl
-@ /exercices/vector1D_recherche1a.cpp.pl
-@ /exercices/vector1D_recherche1a.cpp.pl
-@ /exercices/vector1D_recherche5b.cpp.pl
+@ /exercices/if0/sign_result.cpp.pl
+@ /exercices/if/booleen2_result.cpp.pl
+@ /exercices/vector1D/recherche1a.cpp.pl
+@ /exercices/vector1D/recherche1a.cpp.pl
+@ /exercices/vector1D/recherche5b.cpp.pl
+@ /exercices/vector2D0/basic_1.cpp
