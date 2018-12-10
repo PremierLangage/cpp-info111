@@ -10,7 +10,8 @@ Exécuter pas à pas le programme suivant et saisir ce que vous prévoyez
 qu'il affiche.
 ==
 
-failure_message=Réponse incorrecte:<pre>{answer}</pre>Le programme a affiché:<pre>{solution_out}</pre>
+feedback=false
+failure_message=Réponse incorrecte:<pre>{answer}</pre>{%if feedback %}Le programme a affiché:<pre>{solution_out}</pre>{% endif %}
 
 build==
 from mybuilder import build_generic, build_finalize
