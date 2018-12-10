@@ -11,10 +11,19 @@ def code_randomizer():
         'int y=3; int z=4; int x=5;'
         >>> randomize_code("I, J, K, N")
         'k, n, j, i'
-        >>> randomize_code("CI1, CI2, CI3")
-        '0, 1, 0'
+        >>> randomize_code("CI1, CI2, CI3, CI4, CI5")
+        '0, 1, 0, 3, 1'
         >>> randomize_code("int X=1;\nint Y=CI2;")
         'int y=1;\nint z=1;'
+        >>> randomize_code("Vlt10, V42, V242")
+        '{5, 7, 4, 8, 3}, {42, 7, 4, 8, 3}, {42, 7, 4, 42, 3}, '
+        >>> randomize_code("V3v")
+        '{4, 42, 4, 9, 42, 4}'
+        >>> randomize_code("Vsort, Vsort_rev, Vunsort")
+        '{2, 8, 10, 20}, {20, 10, 8, 2}, {10, 8, 2, 20}'
+        >>> randomize_code("V22, V23")
+        '{{2, 0}, {5, 2}}, {{4, 1}, {0, 3}, {4}}'
+
     """
     d={}
     d['X'],d['Y'],d['Z'] = random.sample('xyz',3)
