@@ -3,9 +3,11 @@
 #include <vector>
 using namespace std;
 
+CONST TAB = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 10)
+
 int main() {
 /// END HIDDEN
-    vector<int> tab = Vlt10;
+    vector<int> tab = TAB;
     int s = 0;
     cin >> tab[CI4];
     for (int i = 0; i < tab.size(); i++) {
