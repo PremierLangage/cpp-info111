@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-CONST TAB = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 10)
+CONST TAB = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 10);
 
 int main() {
 /// END HIDDEN

@@ -70,10 +70,10 @@ locals = {
     "RANDOM_CHOICE": RANDOM_CHOICE,
     "RANDOM_VECTOR": RANDOM_VECTOR}
 
-test_code = """CONST N = RANDOM_INT(3,3)
-CONST M = RANDOM_INT(4,4)
-CONST V = RANDOM_VECTOR(N, RANDOM_INT, 5, 5)
-CONST VV = RANDOM_VECTOR(N, RANDOM_VECTOR, M, RANDOM_INT, 1, 1)
+test_code = """CONST N = RANDOM_INT(3,3);
+CONST M = RANDOM_INT(4,4);
+CONST V = RANDOM_VECTOR(N, RANDOM_INT, 5, 5);
+CONST VV = RANDOM_VECTOR(N, RANDOM_VECTOR, M, RANDOM_INT, 1, 1);
 int main () {
     int a = N + M;
     vector<int> v = V;
@@ -98,10 +98,10 @@ def randomize_code(code):
         'int x=1;\nint y=2;'
 
         >>> print(test_code)
-        CONST N = RANDOM_INT(3,3)
-        CONST M = RANDOM_INT(4,4)
-        CONST V = RANDOM_VECTOR(N, RANDOM_INT, 5, 5)
-        CONST VV = RANDOM_VECTOR(N, RANDOM_VECTOR, M, RANDOM_INT, 1, 1)
+        CONST N = RANDOM_INT(3,3);
+        CONST M = RANDOM_INT(4,4);
+        CONST V = RANDOM_VECTOR(N, RANDOM_INT, 5, 5);
+        CONST VV = RANDOM_VECTOR(N, RANDOM_VECTOR, M, RANDOM_INT, 1, 1);
         int main () {
             int a = N + M;
             vector<int> v = V;
@@ -127,7 +127,7 @@ def randomize_code(code):
     for line in code.splitlines():
         pattern = re.compile(r'\b(' + '|'.join(consts.keys()) + r')\b')
 
-        match = re.match("CONST (\w+) = (.*)$", line)
+        match = re.match(r"CONST (\w+) = (.*?);?$", line)
         if match:
             # Define new constant
             variable, value = match[1], match[2]
