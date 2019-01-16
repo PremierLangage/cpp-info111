@@ -1,6 +1,7 @@
 /// BEGIN HIDDEN
 #include <iostream>
 #include <vector>
+#include "randomization.h"
 using namespace std;
 
 CONST TAB = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 10);
