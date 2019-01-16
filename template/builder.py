@@ -130,7 +130,7 @@ def randomize_code(code):
         match = re.match(r"CONST (\w+) = (.*?);?$", line)
         if match:
             # Define new constant
-            variable, value = match[1], match[2]
+            variable, value = match.groups()
             value = pattern.sub(lambda i: consts[i.group()], value)
             consts[variable] = to_language(eval(value, {}, locals))
         else:
