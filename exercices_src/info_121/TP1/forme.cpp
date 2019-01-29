@@ -22,7 +22,7 @@ string forme(int repos, int effort, int recup) {
   else if (cond < 10) return("bonne");
   else if (cond < 15) return("moyenne");
   else return("faible");
-  ///END SOLUTION
+  /// END SOLUTION
 }
 
 
