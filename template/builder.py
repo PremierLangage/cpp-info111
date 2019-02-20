@@ -118,6 +118,8 @@ def randomize_code(code):
     consts['X'],consts['Y'],consts['Z'] = random.sample('xyz',3)
     consts['I'],consts['J'],consts['K'],consts['N'] = random.sample('ijkn',4)
     consts['PLUSOUMOINS'] = str(random.choice(['+', '-']))
+
+    # To be deleted as soon as they are not used anymore in the exercises
     consts['CI1'] = str(random.randint(-2,2))
     consts['CI2'] = str(random.randint(-2,2))
     consts['CI3'] = str(random.randint(-2,2))
@@ -132,9 +134,13 @@ def randomize_code(code):
         if match:
             # Define new constant
             variable, value = match.groups()
+            # Substitutes all constants in the value
             value = pattern.sub(lambda i: consts[i.group()], value)
+            # Evaluates the value in a context containing all the RANDOM_*
+            # functions
             consts[variable] = to_language(eval(value, {}, locals))
         else:
+            # Substitutes all constants
             line = pattern.sub(lambda i: consts[i.group()], line)
             result.append(line)
     return "\n".join(result)

@@ -1,6 +1,9 @@
 #!/usr/bin/python
 import io, os.path, re, sys
 
+# This metadata should instead be stored in a file such as
+# exercices_src/<topic>/metadata.pl
+
 topicnames = {"variable": "variables",
           "io": "entrées-sorties",
           "if0": "conditionnelles simples",
@@ -34,6 +37,7 @@ template = """
 template=/template/wims_{type}.pl
 topicname={topicname}
 @ /exercices_src/{basename} [raw_code.cpp]
+# template=/exercises_src/{topicname}/metadata.pl
 code_file=raw_code.cpp
 """
 
@@ -49,25 +53,32 @@ type_re = re.compile("_(input|output|result|code|silentcode)\.")
 exercises = {topic: [] for topic in topicnames.keys()}
 
 def create_template(filename):
+    topic = os.path.split(os.path.dirname(filename))[-1]
     basename = os.path.basename(filename)
-    for topic, topicname in topicnames.items():
-        if basename.startswith(topic+"_"):
-            pl_name = basename[len(topic+"_"):]+".pl"
-            pl_dirname = os.path.join("exercices", topic)
-            pl_fullname = os.path.join(pl_dirname, pl_name)
-            try:
-                os.mkdir(pl_dirname)
-            except FileExistsError:
-                pass
-            match = re.search(type_re, basename)
-            if match:
-                type = match.group(1)
-            else:
-                type = "output"
-            io.open(pl_fullname, "w").write(template.format(type=type, topicname=topicname, basename=basename))
-            exercises[topic].append(pl_fullname)
-            return
-    print("No topic matched for {}".format(filename))
+    pl_name = None
+    if topic in topicnames:
+        pl_name = basename+".pl"
+    else:
+        for topic, topicname in topicnames.items():
+            if basename.startswith(topic+"_"):
+                pl_name = basename[len(topic+"_"):]+".pl"
+        # TODO: print this only if topic not found
+        if pl_name is None:
+            print("No topic matched for {}".format(filename))
+    pl_dirname = os.path.join("exercices", topic)
+    pl_fullname = os.path.join(pl_dirname, pl_name)
+    try:
+        os.mkdir(pl_dirname)
+    except FileExistsError:
+        pass
+    match = re.search(type_re, basename)
+    if match:
+        type = match.group(1)
+    else:
+        type = "output"
+    io.open(pl_fullname, "w").write(template.format(type=type, topicname=topicname, basename=basename))
+    exercises[topic].append(pl_fullname)
+    return
 
 for filename in sys.argv[1:]:
     create_template(filename)

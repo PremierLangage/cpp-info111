@@ -1,5 +1,5 @@
 import_from_wims:
-	python tools/import_from_wims exercices_src/*.cpp
+	python tools/import_from_wims exercices_src/*.cpp exercices_src/*/*.cpp
 
 test:
 	pyflakes template/builder.py template/graderCpp.py
