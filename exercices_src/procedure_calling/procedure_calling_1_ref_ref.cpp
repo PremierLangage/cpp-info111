@@ -6,20 +6,20 @@ using namespace std;
 #include "randomization.h"
 CONST I1 = RANDOM_INT(2, 5);
 CONST I2 = RANDOM_INT(2, 5);
+CONST I3 = RANDOM_INT(2, 5);
 /// END HIDDEN
 
 void g(int &X) {
     X = X * I1;
 }
 
-void f(int X) {
+void f(int &X) {
     X = X PLUSOUMOINS I2;
     g(X);
 }
 
 int main() {
-    int X;
-    cin >> X;
+    int X = I3;
     f(X);
     cout << X << endl;
     return 0;

@@ -6,9 +6,10 @@ using namespace std;
 #include "randomization.h"
 CONST I1 = RANDOM_INT(2, 5);
 CONST I2 = RANDOM_INT(2, 5);
+CONST I3 = RANDOM_INT(2, 5);
 /// END HIDDEN
 
-void g(int &X) {
+void g(int X) {
     X = X * I1;
 }
 
@@ -18,8 +19,7 @@ void f(int X) {
 }
 
 int main() {
-    int X;
-    cin >> X;
+    int X = I3;
     f(X);
     cout << X << endl;
     return 0;

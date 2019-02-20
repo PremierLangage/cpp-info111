@@ -14,7 +14,7 @@ void g(int &X) {
 }
 
 void f(int X) {
-    i = X PLUSOUMOINS I2;
+    X = X PLUSOUMOINS I2;
     g(X);
 }
 
