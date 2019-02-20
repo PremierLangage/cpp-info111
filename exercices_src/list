@@ -115,17 +115,18 @@
   procedure_math_3a.cpp
   procedure_math_3.cpp
   procedure_math_exam_1.cpp
-  procedure_simplest_1a_input.cpp
+
+- procedure_simplest_1a_input.cpp
 * procedure_simplest_1.cpp
 * procedure_simplest_1_input.cpp
 - procedure_simplest_2a_input.cpp
 - procedure_simplest_2.cpp
 * procedure_simplest_2_input.cpp
-  procedure_simplest_3a.cpp
-  procedure_simplest_3b.cpp
-  procedure_simplest_3.cpp
-  procedure_simplest_4.cpp
-  randomization.h
+- procedure_simplest_3a.cpp
+* procedure_simplest_3b.cpp
+* procedure_simplest_3.cpp
+- procedure_simplest_4.cpp
+
   struct_bof_fonction_1.cpp
   struct_bof_fonction_2.cpp
   struct_bof_fonction_3.cpp
