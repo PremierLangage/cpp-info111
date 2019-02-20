@@ -29,10 +29,10 @@
   for_odd.cpp
   for_sortie.cpp
   function_blackjack.cpp
-  function_call_1.cpp
-  function_call_2.cpp
-  function_call_3.cpp
-  function_call_4.cpp
+* function_call_1.cpp
+* function_call_2.cpp
+* function_call_3.cpp
+* function_call_4.cpp
   function_factorial.cpp
   function_if.cpp
   function_inversion_arguments.cpp
