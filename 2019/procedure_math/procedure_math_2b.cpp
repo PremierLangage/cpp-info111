@@ -3,6 +3,10 @@
 
 using namespace std;
 
+/// BEGIN HIDDEN
+#include "randomization.h"
+CONST I = RANDOM_CHOICE(7, 12, 15, 19);
+/// END HIDDEN
 
 bool foo(int n) {
     if (n % 2 == 0) return false;
@@ -13,7 +17,8 @@ bool foo(int n) {
 }
 
 int main() {
-    if (foo(15))
+    std::cout << I << endl;
+    if (foo(I))
         cout << "Oui" << endl;
     else
         cout << "Non" << endl;
