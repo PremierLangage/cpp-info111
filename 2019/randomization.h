@@ -1,1 +1,1 @@
-../exercices_src/randomization.h
+../template/randomization.h
