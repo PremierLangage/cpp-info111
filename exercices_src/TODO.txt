@@ -5,8 +5,8 @@ Config:
 
 Workflow/Admin:
 ===============
-- Pour le moment il y a deux git car seul Hugo à les droits d'accès sur le
-  repo en production à Marne-la-Vallée. Pas pratique.
+- ~~Pour le moment il y a deux git car seul Hugo à les droits d'accès sur le~~
+	~~  repo en production à Marne-la-Vallée. Pas pratique.~~
 
 Features:
 =========
@@ -16,6 +16,7 @@ Features:
 
 Questions
 =========
+- difference entre output et result
 
 - Faut-il donner la solution tout de suite à l'étudiant ?
   Si oui, il faudrait lui proposer un exo différent.

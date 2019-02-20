@@ -2,11 +2,21 @@
 
 This is an exerciser for PremierLanguage ...
 
-## vector
+# Makefile
 
-Quelques modifications ont été faites sur les exercices "vector" pour ajouté un peu d'aléatoire et cacher des lignes.
-Pour avoir des tableaux aléatoire j'ai créé plusieurs vector dans le dict d dans le builder, nous avons : Vlt10, V42, V242, V3v, Vsort, Vsort_rev, Vunsort, V22, V23. Tous ces vectors ont des particularités pour que les exercices soient variés.
+make dans le repertoire principale, à documenter mais ça c'est pour moi
 
+## tools/import from wims
+
+faire de la doc pour moi...
+
+# Contribution
+
+Un chargé de TP classique, ce qu'il fait c'est un sous dossier dans exe_src avec un topic parlant et dans le quel il créé plusieurs exercices qui dans le but qu'ils apparessent dans une fiche. Il fait ensuite un fichier metadata.pl dans le quel on a un petit text explicatif !!!
+
+# Randomisation
+
+parler de toutes les petites fonctionalité comme X,Y,Z ou RANDOM_INT (faire une liste de tout ce qui est possible)
 
 ## Running the tests
 

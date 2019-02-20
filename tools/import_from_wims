@@ -1,47 +1,52 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*
 import io, os.path, re, sys
 
 # This metadata should instead be stored in a file such as
 # exercices_src/<topic>/metadata.pl
 
-topicnames = {"variable": "variables",
-          "io": "entrées-sorties",
-          "if0": "conditionnelles simples",
-          "if": "conditionnelles",
-          "for0": "boucles for faciles",
-          "for": "boucles for",
-          "while": "boucles while",
-          "dowhile": "boucles do-while",
-          "fornested": "boucles for imbriquées",
-          "function": "fonctions",
-          "vector1D": "vecteurs",
-          "vector2D0": "vecteurs à deux dimensions faciles",
-          "vector2D": "vecteurs à deux dimensions",
-          "file": "fichiers",
-          "procedure_math": "procédures mathématiques",
-          "procedure_calling": "appel de procédures",
-          "procedure_loop": "procedures avec des boucles",
-          "procedure_simplest": "procedures simples",
-          "struct_fonction": "enregistrements et fonctions",
-          "struct_procedure": "enregistrements et procédures",
-          "struct_gros": "gros enregistrements",
-          "struct_hard": "enregistrements difficiles",
-          "struct_profond": "enregistrements imbriqués",
-          "struct_simple": "enregistrements faciles",
-          "struct_tableaux": "enregistrements de tableaux",
-          "struct_tableau_struct": "enregistrements de tableaux d'enregistrements",
-          "test": "tests des fonctionalités de la plateforme",
-          }
+# topicnames = {"variable": "variables",
+#           "io": "entrées-sorties",
+#           "if0": "conditionnelles simples",
+#           "if": "conditionnelles",
+#           "for0": "boucles for faciles",
+#           "for": "boucles for",
+#           "while": "boucles while",
+#           "dowhile": "boucles do-while",
+#           "fornested": "boucles for imbriquées",
+#           "function": "fonctions",
+#           "vector1D": "vecteurs",
+#           "vector2D0": "vecteurs à deux dimensions faciles",
+#           "vector2D": "vecteurs à deux dimensions",
+#           "file": "fichiers",
+#           "procedure_math": "procédures mathématiques",
+#           "procedure_calling": "appel de procédures",
+#           "procedure_loop": "procedures avec des boucles",
+#           "procedure_simplest": "procedures simples",
+#           "struct_fonction": "enregistrements et fonctions",
+#           "struct_procedure": "enregistrements et procédures",
+#           "struct_gros": "gros enregistrements",
+#           "struct_hard": "enregistrements difficiles",
+#           "struct_profond": "enregistrements imbriqués",
+#           "struct_simple": "enregistrements faciles",
+#           "struct_tableaux": "enregistrements de tableaux",
+#           "struct_tableau_struct": "enregistrements de tableaux d'enregistrements",
+#           "test": "tests des fonctionalités de la plateforme",
+#           }
 
-template = """
+topicnames = {
+    "procedure_simplest": u"procédures simples"
+}
+
+template = u"""
 template=/template/wims_{type}.pl
 topicname={topicname}
-@ /exercices_src/{basename} [raw_code.cpp]
+@ /exercices_src/{topic}/{basename} [raw_code.cpp]
 # template=/exercises_src/{topicname}/metadata.pl
 code_file=raw_code.cpp
 """
 
-template_pltp = """
+template_pltp = u"""
 title={capitalized_topicname}
 introduction==
 Une collection d'exercices sur les {topicname}.
@@ -55,37 +60,82 @@ exercises = {topic: [] for topic in topicnames.keys()}
 def create_template(filename):
     topic = os.path.split(os.path.dirname(filename))[-1]
     basename = os.path.basename(filename)
-    pl_name = None
-    if topic in topicnames:
-        pl_name = basename+".pl"
-    else:
-        for topic, topicname in topicnames.items():
-            if basename.startswith(topic+"_"):
-                pl_name = basename[len(topic+"_"):]+".pl"
-        # TODO: print this only if topic not found
-        if pl_name is None:
-            print("No topic matched for {}".format(filename))
+
+    # pour les fichier en vrac dans le dossier ex_src on ne fait rien
+    if topic == "exercises_src":
+        return
+
+    # on récupère le nom français qu'on a dans le topicnames
+    try:
+        topicname = topicnames[topic]
+    except KeyError:
+        return
+           
+    # pour les fichiers dans un sous dossier du type exercises_src/topic/exo.cpp
+    pl_name = basename+".pl"
     pl_dirname = os.path.join("exercices", topic)
     pl_fullname = os.path.join(pl_dirname, pl_name)
+
+    # on créé le dir où seront les exos .pl
     try:
         os.mkdir(pl_dirname)
-    except FileExistsError:
+    except OSError:
         pass
     match = re.search(type_re, basename)
+
+    # on initialise le type d'exo que l'on a avec output par deffaut
     if match:
         type = match.group(1)
     else:
         type = "output"
-    io.open(pl_fullname, "w").write(template.format(type=type, topicname=topicname, basename=basename))
-    exercises[topic].append(pl_fullname)
-    return
 
+    # enfin on ecrit le contenu du .pl
+    print topic
+    print topicname
+    print template
+    io.open(pl_fullname, "w").write(template.format(type=type, topicname=topicname, basename=basename, topic=topic))
+    exercises[topic].append(pl_fullname)
+    
+    
+    # on doit à un moment ajouter le nom du topic et la metadonné dans le dictionnaire topicnames
+    # pour l'instant c'est hard codé!...
+
+    
+    # pl_name = None
+    
+    # if topic in topicnames:
+    #     pl_name = basename+".pl"
+    # else:
+    #     for topic, topicname in topicnames.items():
+    #         if basename.startswith(topic+"_"):
+    #             pl_name = basename[len(topic+"_"):]+".pl"
+    #     # TODO: print this only if topic not found
+    #     if pl_name is None:
+    #         print("No topic matched for {}".format(filename))
+    # pl_dirname = os.path.join("exercices", topic)
+    # pl_fullname = os.path.join(pl_dirname, pl_name)
+    # try:
+    #     os.mkdir(pl_dirname)
+    # except FileExistsError:
+    #     pass
+    # match = re.search(type_re, basename)
+    # if match:
+    #     type = match.group(1)
+    # else:
+    #     type = "output"
+    # io.open(pl_fullname, "w").write(template.format(type=type, topicname=topicname, basename=basename))
+    # exercises[topic].append(pl_fullname)
+    # return
+
+
+    
 for filename in sys.argv[1:]:
     create_template(filename)
 
 for topic, topicname in topicnames.items():
     pltp_fullname = os.path.join("exercices", topic + ".pltp")
     fd = io.open(pltp_fullname, "w")
+    print topicname, topicname.capitalize()
     fd.write(template_pltp.format(capitalized_topicname=topicname.capitalize(), topicname=topicname))
     for filename in exercises[topic]:
-        fd.write("@ /" + filename + "\n")
+        fd.write(u"@ /" + filename + "\n")
