@@ -1,3 +1,7 @@
+* fait
+- redondant
+===========================
+
   dowhile_factorial.cpp
   dowhile_presque_vide.cpp
   file_fstream.cpp
@@ -114,8 +118,8 @@
   procedure_simplest_1a_input.cpp
 * procedure_simplest_1.cpp
 * procedure_simplest_1_input.cpp
-  procedure_simplest_2a_input.cpp
-  procedure_simplest_2.cpp
+- procedure_simplest_2a_input.cpp
+- procedure_simplest_2.cpp
   procedure_simplest_2_input.cpp
   procedure_simplest_3a.cpp
   procedure_simplest_3b.cpp
