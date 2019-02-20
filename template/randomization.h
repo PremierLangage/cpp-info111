@@ -34,3 +34,9 @@ std::vector<std::vector<int>> RANDOM_VECTOR(int N, std::function<std::vector<int
     return v;
 }
 */
+
+// TODO Randomize me
+template<typename T, typename ... Args>
+T RANDOM_CHOICE(T t, Args... args) {
+    return t;
+}
