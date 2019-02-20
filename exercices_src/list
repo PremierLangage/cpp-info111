@@ -96,15 +96,15 @@
   procedure_calling_2g.cpp
   procedure_calling_2g_input.cpp
   procedure_calling_2_input.cpp
-  procedure_loop_no_1a.cpp
-  procedure_loop_no_1.cpp
-  procedure_loop_no_2a.cpp
-  procedure_loop_no_2.cpp
-  procedure_loop_yes_1a.cpp
-  procedure_loop_yes_1.cpp
-  procedure_loop_yes_2a.cpp
-  procedure_loop_yes_2b.cpp
-  procedure_loop_yes_2.cpp
+* procedure_loop_no_1.cpp
+- procedure_loop_no_1a.cpp
+- procedure_loop_no_2a.cpp
+- procedure_loop_no_2.cpp
+- procedure_loop_yes_1a.cpp
+- procedure_loop_yes_1.cpp
+- procedure_loop_yes_2a.cpp
+- procedure_loop_yes_2b.cpp
+- procedure_loop_yes_2.cpp
   procedure_math_1a.cpp
   procedure_math_1b.cpp
   procedure_math_1.cpp
