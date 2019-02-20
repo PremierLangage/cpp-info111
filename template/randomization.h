@@ -8,6 +8,8 @@ const int CI3 = (rand() % 5) - 2;
 const int CI4 = rand() % 4;
 const int CI5 = rand() % 2;
 
+#define PLUSOUMOINS +
+
 #define CONST const auto
 
 int RANDOM_INT(int min, int max) {
