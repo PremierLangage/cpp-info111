@@ -1,5 +1,7 @@
 # cpp-info111
 
+This is an exerciser for PremierLanguage ...
+
 ## vector
 
 Quelques modifications ont été faites sur les exercices "vector" pour ajouté un peu d'aléatoire et cacher des lignes.
