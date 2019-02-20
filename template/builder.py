@@ -117,6 +117,7 @@ def randomize_code(code):
     consts = {}
     consts['X'],consts['Y'],consts['Z'] = random.sample('xyz',3)
     consts['I'],consts['J'],consts['K'],consts['N'] = random.sample('ijkn',4)
+    consts['PLUSOUMOINS'] = str(random.choice(['+', '-']))
     consts['CI1'] = str(random.randint(-2,2))
     consts['CI2'] = str(random.randint(-2,2))
     consts['CI3'] = str(random.randint(-2,2))
