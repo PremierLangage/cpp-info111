@@ -13,6 +13,6 @@ int f(int n) {
 
 int main() {
     int a = I;
-    a - J;
+    a PLUSOUMOINS J;
     cout << f(a) << endl;
 }
