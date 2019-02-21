@@ -19,6 +19,7 @@ def to_language(value):
         '{{1, 2}, {"alice", "bob"}}'
     """
     if isinstance(value, str):
+        # TODO Je ne suis pas sur que ce soit la bonne methode...
         if value == 'REF':
             return '&'
         if value == 'VAL':
@@ -70,6 +71,9 @@ def RANDOM_VECTOR(n, generator, *args):
     return [generator(*args) for i in range(n)]
 
 def RANDOM_VALOUREF():
+    r"""
+    pas sur que ce soit la meilleur des methodes....
+    """
     return str(random.choice(['REF', 'VAL']))
 
     
