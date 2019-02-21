@@ -11,7 +11,7 @@ CONST I2 = RANDOM_INT(6, 10);
                                        << " line " << __LINE__ << ": " #test << endl
 
 
-/* Déclarer la fonction "swap" comme il faut 
+/* Écrivez l'en-tête de la fonction "swap" comme il faut 
  * pour que les ASSERT soient validés */
 /// BEGIN SOLUTION
 void swap(int &Y, int &Z)
