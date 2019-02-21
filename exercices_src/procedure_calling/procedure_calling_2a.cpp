@@ -7,13 +7,17 @@ using namespace std;
 CONST I1 = RANDOM_INT(2, 5);
 CONST I2 = RANDOM_INT(2, 5);
 CONST I3 = RANDOM_INT(2, 5);
+CONST V1 = RANDOM_VALOUREF();
+CONST V2 = RANDOM_VALOUREF();
+CONST V3 = RANDOM_VALOUREF();
+CONST V4 = RANDOM_VALOUREF();
 /// END HIDDEN
 
-void g(int VALOUREF X, int VALOUREF Y) {
+void g(int V1 X, int V2 Y) {
     X = X + Y;
 }
 
-void f(int VALOUREF X, int VALOUREF Y) {
+void f(int V3 X, int V4 Y) {
     X = X + I1;
     g(X, Y);
 }
