@@ -1,8 +1,0 @@
-
-title=Boucles for faciles
-introduction==
-Une collection d'exercices sur les boucles for faciles.
-==
-@ /exercices/for0/0.cpp.pl
-@ /exercices/for0/1.cpp.pl
-@ /exercices/for0/2.cpp.pl

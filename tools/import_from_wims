@@ -37,12 +37,11 @@ import io, os.path, re, sys
 topicnames = {
     "procedure_simplest": u"procédures simples"
 }
-
+# template=/exercises_src/{topicname}/metadata.pl
 template = u"""
 template=/template/wims_{type}.pl
 topicname={topicname}
 @ /exercices_src/{topic}/{basename} [raw_code.cpp]
-# template=/exercises_src/{topicname}/metadata.pl
 code_file=raw_code.cpp
 """
 

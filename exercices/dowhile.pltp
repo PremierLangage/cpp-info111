@@ -1,7 +1,0 @@
-
-title=Boucles do-while
-introduction==
-Une collection d'exercices sur les boucles do-while.
-==
-@ /exercices/dowhile/factorial.cpp.pl
-@ /exercices/dowhile/presque_vide.cpp.pl
