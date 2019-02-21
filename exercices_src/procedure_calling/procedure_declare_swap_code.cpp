@@ -10,13 +10,16 @@ CONST I2 = RANDOM_INT(6, 10);
 #define ASSERT(test) if (!(test)) cout << "Test failed in file " << __FILE__ \
                                        << " line " << __LINE__ << ": " #test << endl
 
+
+/* Déclarer la fonction "swap" comme il faut 
+ * pour que les ASSERT soient validés */
 /// BEGIN SOLUTION
-void swap(int &X, int &Y)
+void swap(int &Y, int &Z)
 /// END SOLUTION
 {
-    int tmp = X;
-    X = Y;
-    Y = tmp;
+    int tmp = Y;
+    Y = Z;
+    Z = tmp;
 }
 
 int main() {
