@@ -1,0 +1,9 @@
+
+title=Procédures mathématiques
+introduction==
+Une collection d'exercices sur les procédures mathématiques.
+==
+@ /exercices/procedure_math/procedure_math_1.cpp.pl
+@ /exercices/procedure_math/procedure_math_2.cpp.pl
+@ /exercices/procedure_math/procedure_math_2b.cpp.pl
+@ /exercices/procedure_math/procedure_math_3.cpp.pl
