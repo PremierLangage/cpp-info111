@@ -17,7 +17,7 @@ void swap(int &X, int &Y) {
     X = Y;
     Y = tmp;
     /// BEGIN HIDDEN
-    cout << "J'ai appeler la procédure 'swap' sur les variable dont les valeurs sont " << X << " et " << Y << ".\n" ;
+    cout << "il faut utiliser la procédure 'swap'.\n" ;
     /// END HIDDEN
 }
 
