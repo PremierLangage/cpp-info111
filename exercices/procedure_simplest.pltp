@@ -1,7 +1,7 @@
 
-title=Procédures simples
+title=Procedures simples
 introduction==
-Une collection d'exercices sur les procédures simples.
+Une collection d'exercices sur les procedures simples.
 ==
 @ /exercices/procedure_simplest/procedure_1_input.cpp.pl
 @ /exercices/procedure_simplest/procedure_ref_1.cpp.pl

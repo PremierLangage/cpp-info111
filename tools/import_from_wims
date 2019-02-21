@@ -86,39 +86,9 @@ def create_template(filename):
     # enfin on ecrit le contenu du .pl
     io.open(pl_fullname, "w").write(template.format(type=type, topicname=topicname, basename=basename, topic=topic))
     exercises[topic].append(pl_fullname)
-    
-    
+        
     # on doit à un moment ajouter le nom du topic et la metadonné dans le dictionnaire topicnames
     # pour l'instant c'est hard codé!...
-
-    
-    # pl_name = None
-    
-    # if topic in topicnames:
-    #     pl_name = basename+".pl"
-    # else:
-    #     for topic, topicname in topicnames.items():
-    #         if basename.startswith(topic+"_"):
-    #             pl_name = basename[len(topic+"_"):]+".pl"
-    #     # TODO: print this only if topic not found
-    #     if pl_name is None:
-    #         print("No topic matched for {}".format(filename))
-    # pl_dirname = os.path.join("exercices", topic)
-    # pl_fullname = os.path.join(pl_dirname, pl_name)
-    # try:
-    #     os.mkdir(pl_dirname)
-    # except FileExistsError:
-    #     pass
-    # match = re.search(type_re, basename)
-    # if match:
-    #     type = match.group(1)
-    # else:
-    #     type = "output"
-    # io.open(pl_fullname, "w").write(template.format(type=type, topicname=topicname, basename=basename))
-    # exercises[topic].append(pl_fullname)
-    # return
-
-
     
 for filename in sys.argv[1:]:
     create_template(filename)
