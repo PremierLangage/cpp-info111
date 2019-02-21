@@ -1,15 +1,11 @@
 
-title=Procedures simples
+title=Procédures simples
 introduction==
-Une collection d'exercices sur les procedures simples.
+Une collection d'exercices sur les procédures simples.
 ==
-@ /exercices/procedure_simplest/1.cpp.pl
-@ /exercices/procedure_simplest/1_input.cpp.pl
-@ /exercices/procedure_simplest/1a_input.cpp.pl
-@ /exercices/procedure_simplest/2.cpp.pl
-@ /exercices/procedure_simplest/2_input.cpp.pl
-@ /exercices/procedure_simplest/2a_input.cpp.pl
-@ /exercices/procedure_simplest/3.cpp.pl
-@ /exercices/procedure_simplest/3a.cpp.pl
-@ /exercices/procedure_simplest/3b.cpp.pl
-@ /exercices/procedure_simplest/4.cpp.pl
+@ /exercices/procedure_simplest/procedure_1_input.cpp.pl
+@ /exercices/procedure_simplest/procedure_ref_1.cpp.pl
+@ /exercices/procedure_simplest/procedure_ref_1_input.cpp.pl
+@ /exercices/procedure_simplest/procedure_ref_2.cpp.pl
+@ /exercices/procedure_simplest/procedure_ref_3.cpp.pl
+@ /exercices/procedure_simplest/procedure_wrong_value_1.cpp.pl

@@ -90,9 +90,6 @@ def create_template(filename):
         type = "output"
 
     # enfin on ecrit le contenu du .pl
-    print topic
-    print topicname
-    print template
     io.open(pl_fullname, "w").write(template.format(type=type, topicname=topicname, basename=basename, topic=topic))
     exercises[topic].append(pl_fullname)
     
@@ -135,7 +132,6 @@ for filename in sys.argv[1:]:
 for topic, topicname in topicnames.items():
     pltp_fullname = os.path.join("exercices", topic + ".pltp")
     fd = io.open(pltp_fullname, "w")
-    print topicname, topicname.capitalize()
     fd.write(template_pltp.format(capitalized_topicname=topicname.capitalize(), topicname=topicname))
     for filename in exercises[topic]:
         fd.write(u"@ /" + filename + "\n")
