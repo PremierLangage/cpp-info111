@@ -26,7 +26,9 @@ int main() {
     int y = I2;
     int z = I3;
     int t = I4;
-    
+
+    /* Appelez exactement 2 fois la fonction "swap" 
+     * pour que les ASSERT soient vérifiez */
     /// BEGIN SOLUTION
     swap(x, y);
     swap(z, t);
