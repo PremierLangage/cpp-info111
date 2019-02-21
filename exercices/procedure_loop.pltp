@@ -1,0 +1,7 @@
+
+title=Procédures avec des boucles
+introduction==
+Une collection d'exercices sur les procédures avec des boucles.
+==
+@ /exercices/procedure_loop/procedure_loop_ref.cpp.pl
+@ /exercices/procedure_loop/procedure_loop_val.cpp.pl

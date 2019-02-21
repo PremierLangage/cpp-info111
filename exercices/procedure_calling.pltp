@@ -1,0 +1,29 @@
+
+title=Appel de procédures
+introduction==
+Une collection d'exercices sur les appel de procédures.
+==
+@ /exercices/procedure_calling/procedure_calling_1_input.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_1_ref_input.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_1_ref_ref.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_1_ref_ref_input.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_1_ref_val.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_1_val_input.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_1_val_ref.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_1_val_val.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2_input.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2a.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2a_input.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2b.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2b_input.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2c.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2c_input.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2d.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2d_input.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2e.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2e_input.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2f.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2f_input.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2g.cpp.pl
+@ /exercices/procedure_calling/procedure_calling_2g_input.cpp.pl
