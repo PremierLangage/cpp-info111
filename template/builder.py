@@ -19,6 +19,10 @@ def to_language(value):
         '{{1, 2}, {"alice", "bob"}}'
     """
     if isinstance(value, str):
+        if value == 'REF':
+            return '&'
+        if value == 'VAL':
+            return ''
         return STRING_QUOTE + value + STRING_QUOTE
     elif isinstance(value, list):
         return VECTOR_OPEN + ", ".join(to_language(v) for v in value) + VECTOR_CLOSE
@@ -66,7 +70,7 @@ def RANDOM_VECTOR(n, generator, *args):
     return [generator(*args) for i in range(n)]
 
 def RANDOM_VALOUREF():
-    return str(random.choice(['&', '']))
+    return str(random.choice(['REF', 'VAL']))
 
     
 locals = {
