@@ -14,11 +14,19 @@ Features:
 - Dans un fichier de liste d'exercices, choisir au hasard n exo parmis p
 - Conserver le code édité par l'étudiant après la soumission
 
+
+
 Questions
 =========
 - difference entre output et result
+R boarf pas trop de réponses...
 
 - Faut-il donner la solution tout de suite à l'étudiant ?
   Si oui, il faudrait lui proposer un exo différent.
 
   On peut éditer failure_message dans template/wims.pl et les sous-classes.
+
+- Verifier si l'affichage est par feuille ou pour tout!
+
+- Pour les notes comment ça se passe ?
+flinguer la feuille et faire des numéros bizarre et tout...
