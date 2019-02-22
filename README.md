@@ -1,4 +1,4 @@
-# cpp-info111
+# PremierLangage
 
 This is an exerciser for PremierLanguage ...
 
@@ -55,6 +55,14 @@ Il faut les mettre en commentaire visible pour les étudiants.
     CONST S = RANDOM_CHOICE("alice", "bob", "charlie");
     CONST P = RANDOM_CHOICE(7, 13, 17, 21);
     /// END HIDDEN
+
+
+## REMARQUES
+
+modifier les phrases des 3 types d'exos
+
+regarder ce que font les boutons sauvgarder et reinitialiser
+
 
 # Running the tests
 
