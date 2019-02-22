@@ -27,7 +27,7 @@ pour qu'il actualise la fiche !
 
 Pour ajouter des consignes autres que : 
 "Quel nombre devrait saisir l'utilisateur pour que le programme C++ suivant affiche 42?"
-"Exécuter pas à pas le programme suivant et saisir ce que vous prévoyez qu'il affiche."
+"Lire attentivement la partie de programme suivant et saisir ce que vous prévoyez qu'il affiche."
 "Compléter le programme suivant en suivant les instructions"
 
 Il faut les mettre en commentaire visible pour les étudiants.

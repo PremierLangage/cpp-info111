@@ -6,8 +6,7 @@ typename=Deviner la sortie
 type=sandbox
 
 text==
-Exécuter pas à pas le programme suivant et saisir ce que vous prévoyez
-qu'il affiche.
+Lire attentivement la partie de programme suivant et saisir ce que vous prévoyez qu'il affiche.
 ==
 
 failure_message=Réponse incorrecte:<pre>{answer}</pre>Le programme a affiché:<pre>{solution_out}</pre>
