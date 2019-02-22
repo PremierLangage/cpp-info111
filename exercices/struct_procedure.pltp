@@ -3,12 +3,5 @@ title=Enregistrements et procédures
 introduction==
 Une collection d'exercices sur les enregistrements et procédures.
 ==
-@ /exercices/struct_procedure/struct_procedure_1.cpp.pl
-@ /exercices/struct_procedure/struct_procedure_1a.cpp.pl
-@ /exercices/struct_procedure/struct_procedure_1b.cpp.pl
-@ /exercices/struct_procedure/struct_procedure_2.cpp.pl
-@ /exercices/struct_procedure/struct_procedure_2a.cpp.pl
-@ /exercices/struct_procedure/struct_procedure_2b.cpp.pl
-@ /exercices/struct_procedure/struct_procedure_3.cpp.pl
-@ /exercices/struct_procedure/struct_procedure_3a.cpp.pl
-@ /exercices/struct_procedure/struct_procedure_3b.cpp.pl
+@ /exercices/struct_procedure/struct_procedure_diff.cpp.pl
+@ /exercices/struct_procedure/struct_procedure_sum.cpp.pl
