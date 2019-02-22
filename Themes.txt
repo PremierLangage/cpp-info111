@@ -1,0 +1,51 @@
+Liste des thèmes pour les exos sur PL:
+
+1 - Révisions
+=============
+
+ - déclaration d'une variable
+ - condition
+ - condition emboitée
+ - else ...
+ - boucle for
+ - boucle while
+ - boucle do {} while
+ - boucle emboitée
+ - fonctions écriture
+ - fonctions appel
+ - instruction return qui quitte la fonction
+
+2 - Portée des variables
+========================
+ - variable qui s'appelle pareille / pas déclarée au bon endroit
+
+3 - Durée de vie d'une variable
+===============================
+ - Appel deux fois la fonction, la deuxième fois on fait une instruction
+   cachée qui initialise la variable avec une valeur aléatoire.
+
+4 - Variable locale / Variable globale
+======================================
+ - Pas le plus important
+ - adresse d'une variable
+
+5 - Appel de fonction
+=====================
+ - comment faire une fonction qui retourne deux résultats ?
+ - passage de paramètres par valeur
+ - adresse d'un paramêtre par valeur
+ - passage de paramètres par référence
+ - adresse d'un paramêtre par référence
+ - retour
+ - double passage par référence
+ - passage d'une référence sur un paramêtre passé par valeur
+ - etc...
+
+6 - Exos avancée (compléments de cours pour les bons)
+=====================================================
+ - Variable statiques dans une fonction
+ - récursion
+ - paramêtre const
+ - pointeur
+
+
