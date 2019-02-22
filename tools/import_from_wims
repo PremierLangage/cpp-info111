@@ -32,7 +32,7 @@ topicnames = {
     "struct_simple": u"enregistrements faciles",
     # "struct_tableaux": u"enregistrements de tableaux",
     # "struct_tableau_struct": u"enregistrements de tableaux d'enregistrements",
-    "test": u"tests des fonctionalités de la plateforme",
+    "tests": u"tests des fonctionalités de la plateforme",
 }
 
 # template=/exercises_src/{topicname}/metadata.pl
