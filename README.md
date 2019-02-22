@@ -1,4 +1,4 @@
-# PremierLangage
+# cpp-info111
 
 This is an exerciser for PremierLanguage ...
 
@@ -27,7 +27,7 @@ pour qu'il actualise la fiche !
 
 Pour ajouter des consignes autres que : 
 "Quel nombre devrait saisir l'utilisateur pour que le programme C++ suivant affiche 42?"
-"Exécuter pas à pas le programme suivant et saisir ce que vous prévoyez qu'il affiche."
+"Lire attentivement la partie de programme suivant et saisir ce que vous prévoyez qu'il affiche."
 "Compléter le programme suivant en suivant les instructions"
 
 Il faut les mettre en commentaire visible pour les étudiants.
@@ -55,14 +55,6 @@ Il faut les mettre en commentaire visible pour les étudiants.
     CONST S = RANDOM_CHOICE("alice", "bob", "charlie");
     CONST P = RANDOM_CHOICE(7, 13, 17, 21);
     /// END HIDDEN
-
-
-## REMARQUES
-
-modifier les phrases des 3 types d'exos
-
-regarder ce que font les boutons sauvgarder et reinitialiser
-
 
 # Running the tests
 
