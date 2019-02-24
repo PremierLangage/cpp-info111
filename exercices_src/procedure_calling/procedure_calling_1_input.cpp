@@ -4,7 +4,7 @@ using namespace std;
 
 /// BEGIN HIDDEN
 #include "randomization.h"
-CONST I1 = RANDOM_INT(2, 5);
+CONST I1 = RANDOM_INT(2, 3);
 CONST I2 = RANDOM_INT(2, 5);
 CONST V1 = RANDOM_VALOUREF();
 CONST V2 = RANDOM_VALOUREF();
