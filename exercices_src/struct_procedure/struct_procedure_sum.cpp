@@ -4,12 +4,12 @@ using namespace std;
 
 /// BEGIN HIDDEN
 #include "randomization.h"
-CONST R1 = double(RANDOM_INT(-2, 5));
-CONST R2 = double(RANDOM_INT(-2, 5));
-CONST R3 = double(RANDOM_INT(-2, 5));
-CONST I1 = double(RANDOM_INT(-2, 5));
-CONST I2 = double(RANDOM_INT(-2, 5));
-CONST I3 = double(RANDOM_INT(-2, 5));
+CONST R1 = RANDOM_INT(-2, 5);
+CONST R2 = RANDOM_INT(-2, 5);
+CONST R3 = RANDOM_INT(-2, 5);
+CONST I1 = RANDOM_INT(-2, 5);
+CONST I2 = RANDOM_INT(-2, 5);
+CONST I3 = RANDOM_INT(-2, 5);
 /// END HIDDEN
 
 struct cpx {
