@@ -33,6 +33,7 @@ topicnames = {
     # "struct_tableaux": u"enregistrements de tableaux",
     # "struct_tableau_struct": u"enregistrements de tableaux d'enregistrements",
     "tests": u"tests des fonctionalités de la plateforme",
+    "controle1": u"notions vu en cours",
 }
 
 # template=/exercises_src/{topicname}/metadata.pl
