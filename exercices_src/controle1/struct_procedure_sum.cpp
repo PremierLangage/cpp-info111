@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+/// BEGIN HIDDEN
+#include "randomization.h"
+CONST R1 = double(RANDOM_INT(-2, 5));
+CONST R2 = double(RANDOM_INT(-2, 5));
+CONST R3 = double(RANDOM_INT(-2, 5));
+CONST I1 = double(RANDOM_INT(-2, 5));
+CONST I2 = double(RANDOM_INT(-2, 5));
+CONST I3 = double(RANDOM_INT(-2, 5));
+/// END HIDDEN
+
+struct cpx {
+    double real;
+    double img;
+};
+
+void sum(cpx x, cpx y, cpx &z) {
+    z.real = x.real + y.real + z.real;
+    z.img = x.img + y.img + z.img;
+}
+
+void multiply(cpx x, cpx y, cpx &z) {
+    z.real = x.real * y.real - (x.img * y.img);
+    z.img = x.real * y.img + x.img * y.real;
+}
+
+int main() {
+    cpx X = { R1, I1 };
+    cpx Y = { R2, I2 };
+    cpx Z = { R3, I3 };
+
+    sum(Y, Z, X);
+
+    multiply(X, Y, Z);
+
+    cout << Z.real << " " << Z.img << endl;
+}
