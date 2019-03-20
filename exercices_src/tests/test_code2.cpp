@@ -1,44 +1,20 @@
-#include <iostream>
-
-using namespace std;
-
 /// BEGIN HIDDEN
-#include "randomization.h"
-CONST I1 = RANDOM_INT(1, 4);
-CONST I2 = RANDOM_INT(5, 9);
-CONST I3 = RANDOM_INT(10, 14);
-CONST I4 = RANDOM_INT(15, 20);
-/// END HIDDEN
+// Objective: test programs with two input zones
+#include <iostream>
+using namespace std;
 #define ASSERT(test) if (!(test)) cout << "Test failed in file " << __FILE__ \
                                        << " line " << __LINE__ << ": " #test << endl
-
-void swap(int &X, int &Y) {
-    int tmp = X;
-    X = Y;
-    Y = tmp;
-    /// BEGIN HIDDEN
-    cout << "il faut utiliser la procédure 'swap'.\n" ;
-    /// END HIDDEN
-}
+/// END HIDDEN
 
 int main() {
-    int x = I1;
-    int y = I2;
-    int z = I3;
-    int t = I4;
-
-    /* Appelez exactement 1 fois la fonction "swap" dans chacun des champs
-     * pour que les ASSERT soient vérifiez */
+    int x;
     /// BEGIN SOLUTION
-    swap(x, y);
+    x = 1;
     /// END SOLUTION
-    ASSERT(x == I2);
-    ASSERT(y == I1);
+    ASSERT(x == 1);
     /// BEGIN SOLUTION
-    swap(z, t);
+    x = 2;
     /// END SOLUTION
-    ASSERT(z == I4);
-    ASSERT(t == I3);
+    ASSERT(x == 2);
     return 0;
 }
-
