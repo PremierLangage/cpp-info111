@@ -19,7 +19,6 @@ def to_language(value):
         '{{1, 2}, {"alice", "bob"}}'
     """
     if isinstance(value, str):
-        # TODO Je ne suis pas sur que ce soit la bonne methode...
         if value == 'REF':
             return '&'
         if value == 'VAL':
