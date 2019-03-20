@@ -3,6 +3,7 @@ import copy, random, re
 STRING_QUOTE = '"'
 VECTOR_OPEN="{"
 VECTOR_CLOSE="}"
+PL_COMMENT="///"
 def to_language(value):
     """
     Return `value` as a string representing a C++ constant
@@ -19,7 +20,6 @@ def to_language(value):
         '{{1, 2}, {"alice", "bob"}}'
     """
     if isinstance(value, str):
-        # TODO Je ne suis pas sur que ce soit la bonne methode...
         if value == 'REF':
             return '&'
         if value == 'VAL':
@@ -29,6 +29,40 @@ def to_language(value):
         return VECTOR_OPEN + ", ".join(to_language(v) for v in value) + VECTOR_CLOSE
     else:
         return str(value)
+
+def uncommented(comment):
+    """
+    Return the uncommented `comment` which must be commented with PL_COMMENT
+
+        >>> commentedcode = '''/// int f(){
+        ... ///     return 0;
+        ...       /// }
+        ... '''
+        >>> code = '''int f(){
+        ...     return 0;
+        ...       }
+        ... '''
+        >>> uncommented(commentedcode) == code
+        True
+        >>> wrongcomment = '''
+        ... /// int f(){
+        ... ///     return 0;
+        ... 
+        ...       /// }
+        ... '''
+        >>> uncommented(wrongcomment)
+        Traceback (most recent call last):
+        ...
+        ValueError: Every lines of this part must be commented with `/// `
+    """
+    pl_comment = re.compile(r'(\s*)' + PL_COMMENT + ' (.*)')
+    res = ''
+    for line in comment.splitlines():
+        match = pl_comment.match(line)
+        if not match:
+            raise ValueError("Every lines of this part must be commented with `{} `".format(PL_COMMENT))
+        res += match.group(1) + match.group(2) + "\n"
+    return res
 
 def RANDOM_INT(min, max):
     r"""
@@ -188,7 +222,7 @@ def split_code(code):
          {'content': 'foo code 3\n',              'type': 'default'}]
 
     """
-    begin_or_end = re.compile(r'\s*/// (BEGIN|END) (\w+)')
+    begin_or_end = re.compile(r'\s*' + PL_COMMENT + ' (BEGIN|END) (\w+)')
     loose_begin_or_end = re.compile('BEGIN|END')
     items = []
     item = {'content': '', 'type': 'default'}
@@ -215,19 +249,26 @@ def insert_answer_items(items):
     r"""
     Insert an answer item after each solution item.
 
-        >>> items = [{'type':'default'}, {'type':'solution'}, {'type':'default'}, {'type':'solution'}, {'type':'solution'}]
+        >>> commentedcode = '''    /// int n = 0;'''
+        >>> items = [{'type':'default'}, {'type':'solution'}, {'type':'default'}, {'type':'solution'}, {'type':'solution'}, {'type':'initsolution', 'content':commentedcode}]
         >>> insert_answer_items(items)
         [{'type': 'default'},
          {'type': 'solution'}, {'type': 'answer'},
          {'type': 'default'},
          {'type': 'solution'}, {'type': 'answer'},
-         {'type': 'solution'}, {'type': 'answer'}]
+         {'type': 'solution'}, {'type': 'answer', 'content': '    int n = 0;\n'}]
     """
     res = []
     for item in items:
-        res.append(item)
-        if item['type'] == 'solution':
-            res.append({'type': 'answer'})
+        if item['type'] == 'initsolution':
+            if res and res[-1]['type'] == 'answer':
+                res[-1]['content'] = uncommented(item['content'])
+            else:
+                raise ValueError("TODO")
+        else:
+            res.append(item)
+            if item['type'] == 'solution':
+                res.append({'type': 'answer'})
     return res
 
 def build_generic(exo):
