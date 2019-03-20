@@ -53,7 +53,7 @@ function setup_editor(form_id, div_id) {
     );
     {# End Verbatim #}
 
-    var input = $('input[id=form_id]');
+    var input = $('input[id="'+form_id+'"]');
 
     {# Verbatim from text_editor.html from standard lib #}
     editor.getSession().on("change", function() {
