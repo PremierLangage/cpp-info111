@@ -28,7 +28,7 @@ topicnames = {
     "struct_procedure": u"enregistrements et procédures",
     # "struct_gros": u"gros enregistrements",
     # "struct_hard": u"enregistrements difficiles",
-    # "struct_profond": u"enregistrements imbriqués",
+    "struct_of_struct": u"enregistrements imbriqués",
     "struct_simple": u"enregistrements faciles",
     # "struct_tableaux": u"enregistrements de tableaux",
     # "struct_tableau_struct": u"enregistrements de tableaux d'enregistrements",

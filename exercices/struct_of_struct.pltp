@@ -1,0 +1,6 @@
+
+title=Enregistrements imbriqués
+introduction==
+Une collection d'exercices sur les enregistrements imbriqués.
+==
+@ /exercices/struct_of_struct/cercles.cpp.pl
