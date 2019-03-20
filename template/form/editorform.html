@@ -67,6 +67,7 @@ function setup_editor(form_id, div_id) {
 
 {% for item in items %}
   {% if item.type == 'answer' %}
+    {% firstof answers__|dict_value:item.key "" as answer_editor__ %}
 
     {# Do not tabulate this div as the tabulation will appear in the editor #}
     <div id="editor_{{item.key}}"
@@ -75,8 +76,11 @@ function setup_editor(form_id, div_id) {
                 border-color: #5bc0de;
                 border-radius: 4px;
                 height: 100px; #E7E7E7 solid;"
-         >{{ answers__|dict_value:item.key }}</div>
-    <input id="form_{{item.key}}" type="hidden" style="display: none;" value="{{ answers__|dict_value:item.key }}">
+         >{{ answer_editor__ }}</div>
+    <input id="form_{{item.key}}"
+           type="hidden"
+           style="display: none;"
+           value="{{ answer_editor__ }}">
     <script>setup_editor("form_{{item.key}}", "editor_{{item.key}}");</script>
   {% elif item.type == 'default' %}
     <pre>{{item.content}}</pre>
