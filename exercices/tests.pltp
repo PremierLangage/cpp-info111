@@ -4,8 +4,8 @@ introduction==
 Une collection d'exercices sur les tests des fonctionalités de la plateforme.
 ==
 @ /exercices/tests/test_code.cpp.pl
-@ /exercices/tests/test_code2.cpp.pl
 @ /exercices/tests/test_input.cpp.pl
+@ /exercices/tests/test_multisolution_code.cpp.pl
 @ /exercices/tests/test_output.cpp.pl
 @ /exercices/tests/test_randomization.cpp.pl
 @ /exercices/tests/test_result.cpp.pl
