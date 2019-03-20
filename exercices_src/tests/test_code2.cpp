@@ -27,18 +27,18 @@ int main() {
     int z = I3;
     int t = I4;
 
-    /* Appelez exactement 2 fois la fonction "swap" 
+    /* Appelez exactement 1 fois la fonction "swap" dans chacun des champs
      * pour que les ASSERT soient vérifiez */
     /// BEGIN SOLUTION
     swap(x, y);
     /// END SOLUTION
+    ASSERT(x == I2);
+    ASSERT(y == I1);
     /// BEGIN SOLUTION
     swap(z, t);
     /// END SOLUTION
-    
-    ASSERT(x == I2);
-    ASSERT(y == I1);
     ASSERT(z == I4);
     ASSERT(t == I3);
     return 0;
 }
+
