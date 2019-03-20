@@ -20,7 +20,7 @@
 <script>
 {% for item in items %}
   {% if item.type == 'answer' %}
-    <!-- Verbatim from text_editor.html from standard lib !-->
+    // Verbatim from text_editor.html from standard lib
     window.define = window.define || ace.define;
     var editor = ace.edit('editor');
 
@@ -61,17 +61,17 @@
     editor.session.setUseSoftTabs(
         {% if editor.spacetab|lower == "false" %}false{% else %}true{% endif %}
     );
-    <!-- End Verbatim!-->
+    // End Verbatim
 
     var input = $('input[id="form_{{item.key}}"]');
 
-    <!-- Verbatim from text_editor.html from standard lib !-->
+    // Verbatim from text_editor.html from standard lib
     editor.getSession().on("change", function() {
         console.log("ON CHANGE");
         console.log(input);
         input.val(editor.getSession().getValue());
     });
-    <!-- End Verbatim!-->
+    // End Verbatim
   {% endif %}
 {% endfor %}
 </script>
