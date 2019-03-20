@@ -7,7 +7,7 @@ author=MPI Info 111's team
 @/template/randomization.h
 
 form=@/template/form/editorform.html
-@ /builder/build.py [builder.py]
+@ lib:/builder/build.py [builder.py]
 @ /template/builder.py [mybuilder.py]
 
 solution_compile_error_message=Erreur interne: le programme solution ne compile pas:<pre>{err}</pre>Code:<pre>{code}</pre>
