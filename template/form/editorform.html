@@ -66,7 +66,7 @@
     var input = $('input[id="form_{{item.key}}"]');
 
     <!-- Verbatim from text_editor.html from standard lib !-->
-    editor.session.on("change", function() {
+    editor.getSession().on("change", function() {
         console.log("ON CHANGE");
         console.log(input)
         input.val(editor.getSession().getValue());
