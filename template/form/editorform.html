@@ -57,8 +57,8 @@ function setup_editor(form_id, div_id) {
 
     {# Verbatim from text_editor.html from standard lib #}
     editor.getSession().on("change", function() {
-        {# console.log("ON CHANGE");
-           console.log(input); #}
+        {# console.log("ON CHANGE"); #}
+        {# console.log(input);       #}
         input.val(editor.getSession().getValue());
     });
     {# End Verbatim #}
