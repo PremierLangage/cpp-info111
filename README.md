@@ -36,6 +36,7 @@ Il faut les mettre en commentaire visible pour les étudiants.
 
 - /// BEGIN|END HIDDEN
 - /// BEGIN|END SOLUTION
+- /// BEGIN|END INITSOLUTION
 
 ## Randomisation
 
