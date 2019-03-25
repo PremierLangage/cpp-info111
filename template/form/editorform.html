@@ -67,7 +67,7 @@ function setup_editor(form_id, div_id) {
 
 {% for item in items %}
   {% if item.type == 'answer' %}
-    {% firstof answers__|dict_value:item.key "" as answer_editor__ %}
+    {% firstof answers__|dict_value:item.key item.content "" as answer_editor__ %}
 
     {# Do not tabulate this div as the tabulation will appear in the editor #}
     <div id="editor_{{item.key}}"
