@@ -1,7 +1,8 @@
 
-title=Tests des fonctionalités de la plateforme
+template=/exercises_src/tests/metadata.pl
+title={topicname}
 introduction==
-Une collection d'exercices sur les tests des fonctionalités de la plateforme.
+Une collection d'exercices sur les {topicname}.
 ==
 @ /exercices/tests/test_code.cpp.pl
 @ /exercices/tests/test_input.cpp.pl
