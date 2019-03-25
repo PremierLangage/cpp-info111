@@ -1,0 +1,13 @@
+template=/exercices_src/file/metadata.pl
+title={{topicname}}
+introduction==
+Une collection d'exercices sur les {{topicname}}.
+==
+@ /exercices/file/fstream.cpp.pl
+@ /exercices/file/istringstream_int1.cpp.pl
+@ /exercices/file/istringstream_int2.cpp.pl
+@ /exercices/file/istringstream_string.cpp.pl
+@ /exercices/file/ostringstream.cpp.pl
+@ /exercices/file/state_float.cpp.pl
+@ /exercices/file/state_int.cpp.pl
+@ /exercices/file/state_open.cpp.pl

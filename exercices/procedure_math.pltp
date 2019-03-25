@@ -1,7 +1,7 @@
-
-title=Procédures mathématiques
+template=/exercices_src/procedure_math/metadata.pl
+title={{topicname}}
 introduction==
-Une collection d'exercices sur les procédures mathématiques.
+Une collection d'exercices sur les {{topicname}}.
 ==
 @ /exercices/procedure_math/procedure_math_1.cpp.pl
 @ /exercices/procedure_math/procedure_math_2.cpp.pl

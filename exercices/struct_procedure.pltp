@@ -1,7 +1,7 @@
-
-title=Enregistrements et procédures
+template=/exercices_src/struct_procedure/metadata.pl
+title={{topicname}}
 introduction==
-Une collection d'exercices sur les enregistrements et procédures.
+Une collection d'exercices sur les {{topicname}}.
 ==
 @ /exercices/struct_procedure/struct_procedure_diff.cpp.pl
 @ /exercices/struct_procedure/struct_procedure_sum.cpp.pl

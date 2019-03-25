@@ -1,0 +1,7 @@
+template=/exercices_src/dowhile/metadata.pl
+title={{topicname}}
+introduction==
+Une collection d'exercices sur les {{topicname}}.
+==
+@ /exercices/dowhile/factorial.cpp.pl
+@ /exercices/dowhile/presque_vide.cpp.pl

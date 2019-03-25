@@ -1,5 +1,4 @@
-
 template=/template/wims_output.pl
-topicname=appel de fonctions simple
+template=/exercices_src/function_call_simple/metadata.pl
 @ /exercices_src/function_call_simple/function_inversion_arguments.cpp [raw_code.cpp]
 code_file=raw_code.cpp

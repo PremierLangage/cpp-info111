@@ -1,7 +1,7 @@
-
-title=Procedures avec des boucles
+template=/exercices_src/procedure_loop/metadata.pl
+title={{topicname}}
 introduction==
-Une collection d'exercices sur les procedures avec des boucles.
+Une collection d'exercices sur les {{topicname}}.
 ==
 @ /exercices/procedure_loop/procedure_loop.cpp.pl
 @ /exercices/procedure_loop/procedure_loop_ref.cpp.pl

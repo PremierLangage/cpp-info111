@@ -1,7 +1,7 @@
-
-title=Notions vu en cours
+template=/exercices_src/controle1/metadata.pl
+title={{topicname}}
 introduction==
-Une collection d'exercices sur les notions vu en cours.
+Une collection d'exercices sur les {{topicname}}.
 ==
 @ /exercices/controle1/function_call_1.cpp.pl
 @ /exercices/controle1/function_inversion_arguments.cpp.pl

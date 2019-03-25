@@ -1,7 +1,7 @@
-
-title=Appel de fonctions simple
+template=/exercices_src/function_call_simple/metadata.pl
+title={{topicname}}
 introduction==
-Une collection d'exercices sur les appel de fonctions simple.
+Une collection d'exercices sur les {{topicname}}.
 ==
 @ /exercices/function_call_simple/function_call_1.cpp.pl
 @ /exercices/function_call_simple/function_call_2.cpp.pl

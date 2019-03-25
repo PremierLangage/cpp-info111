@@ -1,0 +1,53 @@
+template=/exercices_src/vector1D/metadata.pl
+title={{topicname}}
+introduction==
+Une collection d'exercices sur les {{topicname}}.
+==
+@ /exercices/vector1D/1_input.cpp.pl
+@ /exercices/vector1D/2_input.cpp.pl
+@ /exercices/vector1D/3_input.cpp.pl
+@ /exercices/vector1D/recherche1a.cpp.pl
+@ /exercices/vector1D/recherche1b.cpp.pl
+@ /exercices/vector1D/recherche1c.cpp.pl
+@ /exercices/vector1D/recherche2a.cpp.pl
+@ /exercices/vector1D/recherche2b.cpp.pl
+@ /exercices/vector1D/recherche2c.cpp.pl
+@ /exercices/vector1D/recherche3a.cpp.pl
+@ /exercices/vector1D/recherche3b.cpp.pl
+@ /exercices/vector1D/recherche3c.cpp.pl
+@ /exercices/vector1D/recherche4a.cpp.pl
+@ /exercices/vector1D/recherche4b.cpp.pl
+@ /exercices/vector1D/recherche4c.cpp.pl
+@ /exercices/vector1D/recherche5a.cpp.pl
+@ /exercices/vector1D/recherche5b.cpp.pl
+@ /exercices/vector1D/recherche5c.cpp.pl
+@ /exercices/vector1D/recherche6a.cpp.pl
+@ /exercices/vector1D/recherche6b.cpp.pl
+@ /exercices/vector1D/recherche6c.cpp.pl
+@ /exercices/vector1D/recherche7a.cpp.pl
+@ /exercices/vector1D/recherche7b.cpp.pl
+@ /exercices/vector1D/recherche7c.cpp.pl
+@ /exercices/vector1D/tri_1a.cpp.pl
+@ /exercices/vector1D/tri_1b.cpp.pl
+@ /exercices/vector1D/tri_1c.cpp.pl
+@ /exercices/vector1D/tri_2a.cpp.pl
+@ /exercices/vector1D/tri_2b.cpp.pl
+@ /exercices/vector1D/tri_2c.cpp.pl
+@ /exercices/vector1D/tri_3a.cpp.pl
+@ /exercices/vector1D/tri_3b.cpp.pl
+@ /exercices/vector1D/tri_3c.cpp.pl
+@ /exercices/vector1D/tri_4a.cpp.pl
+@ /exercices/vector1D/tri_4b.cpp.pl
+@ /exercices/vector1D/tri_4c.cpp.pl
+@ /exercices/vector1D/tri_5a.cpp.pl
+@ /exercices/vector1D/tri_5b.cpp.pl
+@ /exercices/vector1D/tri_5c.cpp.pl
+@ /exercices/vector1D/tri_6a.cpp.pl
+@ /exercices/vector1D/tri_6b.cpp.pl
+@ /exercices/vector1D/tri_6c.cpp.pl
+@ /exercices/vector1D/tri_7a.cpp.pl
+@ /exercices/vector1D/tri_7b.cpp.pl
+@ /exercices/vector1D/tri_7c.cpp.pl
+@ /exercices/vector1D/tri_8a.cpp.pl
+@ /exercices/vector1D/tri_8b.cpp.pl
+@ /exercices/vector1D/tri_8c.cpp.pl

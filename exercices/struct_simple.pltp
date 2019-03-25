@@ -1,6 +1,6 @@
-
-title=Enregistrements faciles
+template=/exercices_src/struct_simple/metadata.pl
+title={{topicname}}
 introduction==
-Une collection d'exercices sur les enregistrements faciles.
+Une collection d'exercices sur les {{topicname}}.
 ==
 @ /exercices/struct_simple/struct_simple_1.cpp.pl

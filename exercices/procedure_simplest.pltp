@@ -1,7 +1,7 @@
-
-title=Procedures simples
+template=/exercices_src/procedure_simplest/metadata.pl
+title={{topicname}}
 introduction==
-Une collection d'exercices sur les procedures simples.
+Une collection d'exercices sur les {{topicname}}.
 ==
 @ /exercices/procedure_simplest/procedure_1_input.cpp.pl
 @ /exercices/procedure_simplest/procedure_ref_1.cpp.pl

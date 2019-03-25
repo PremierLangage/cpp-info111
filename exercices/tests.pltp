@@ -1,7 +1,7 @@
 template=/exercices_src/tests/metadata.pl
-title={topicname}
+title={{topicname}}
 introduction==
-Une collection d'exercices sur les {topicname}.
+Une collection d'exercices sur les {{topicname}}.
 ==
 @ /exercices/tests/test_code.cpp.pl
 @ /exercices/tests/test_input.cpp.pl

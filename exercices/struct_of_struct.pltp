@@ -1,6 +1,6 @@
-
-title=Enregistrements imbriqués
+template=/exercices_src/struct_of_struct/metadata.pl
+title={{topicname}}
 introduction==
-Une collection d'exercices sur les enregistrements imbriqués.
+Une collection d'exercices sur les {{topicname}}.
 ==
 @ /exercices/struct_of_struct/cercles.cpp.pl

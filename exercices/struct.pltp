@@ -1,0 +1,34 @@
+template=/exercices_src/struct/metadata.pl
+title={{topicname}}
+introduction==
+Une collection d'exercices sur les {{topicname}}.
+==
+@ /exercices/struct/gros_1.cpp.pl
+@ /exercices/struct/gros_1a.cpp.pl
+@ /exercices/struct/gros_2.cpp.pl
+@ /exercices/struct/gros_2a.cpp.pl
+@ /exercices/struct/gros_3.cpp.pl
+@ /exercices/struct/gros_3a.cpp.pl
+@ /exercices/struct/gros_4.cpp.pl
+@ /exercices/struct/gros_4a.cpp.pl
+@ /exercices/struct/hard_1.cpp.pl
+@ /exercices/struct/hard_1_input.cpp.pl
+@ /exercices/struct/hard_2.cpp.pl
+@ /exercices/struct/tableau_struct_1.cpp.pl
+@ /exercices/struct/tableau_struct_1a.cpp.pl
+@ /exercices/struct/tableau_struct_1b.cpp.pl
+@ /exercices/struct/tableau_struct_2.cpp.pl
+@ /exercices/struct/tableau_struct_2a.cpp.pl
+@ /exercices/struct/tableau_struct_2b.cpp.pl
+@ /exercices/struct/tableau_struct_3.cpp.pl
+@ /exercices/struct/tableau_struct_3a.cpp.pl
+@ /exercices/struct/tableau_struct_3b.cpp.pl
+@ /exercices/struct/tableau_struct_4.cpp.pl
+@ /exercices/struct/tableau_struct_4a.cpp.pl
+@ /exercices/struct/tableau_struct_4b.cpp.pl
+@ /exercices/struct/tableaux_1.cpp.pl
+@ /exercices/struct/tableaux_1a.cpp.pl
+@ /exercices/struct/tableaux_2.cpp.pl
+@ /exercices/struct/tableaux_2a.cpp.pl
+@ /exercices/struct/tableaux_3.cpp.pl
+@ /exercices/struct/tableaux_3a.cpp.pl

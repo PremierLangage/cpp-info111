@@ -1,6 +1,6 @@
-
-title=Enregistrements et fonctions
+template=/exercices_src/struct_fonction/metadata.pl
+title={{topicname}}
 introduction==
-Une collection d'exercices sur les enregistrements et fonctions.
+Une collection d'exercices sur les {{topicname}}.
 ==
 @ /exercices/struct_fonction/struct_fonction_1.cpp.pl

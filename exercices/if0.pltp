@@ -1,0 +1,6 @@
+template=/exercices_src/if0/metadata.pl
+title={{topicname}}
+introduction==
+Une collection d'exercices sur les {{topicname}}.
+==
+@ /exercices/if0/sign_result.cpp.pl
