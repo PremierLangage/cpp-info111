@@ -6,7 +6,7 @@ import io, os.path, re, sys
 
 template = u"""template=/template/wims_{type}.pl
 template=/exercices_src/{topic}/metadata.pl
-@ /exercices_src/{topic}/{basename} [raw_code.cpp]
+@ /{filename} [raw_code.cpp]
 code_file=raw_code.cpp
 """
 
@@ -49,7 +49,7 @@ def create_template(filename):
         pass
 
     # Generate the pl file
-    io.open(pl_fullname, "w").write(template.format(type=type, basename=basename, topic=topic))
+    io.open(pl_fullname, "w").write(template.format(type=type, filename=filename, topic=topic))
 
     # Add the exercise to the index
     if topic not in exercises:
