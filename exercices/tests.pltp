@@ -1,4 +1,4 @@
-template=/exercises_src/tests/metadata.pl
+template=/exercices_src/tests/metadata.pl
 title={topicname}
 introduction==
 Une collection d'exercices sur les {topicname}.
