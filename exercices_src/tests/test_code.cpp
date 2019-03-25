@@ -21,6 +21,14 @@ string triangle(int N) {
         s = s + "\n";
     }
     /// END SOLUTION
+    /// BEGIN INITSOLUTION
+    /// for(...){
+    ///     for(...){
+    ///         s = s + "*";
+    ///     }
+    ///     s = s + "\n";
+    /// }
+    /// END INITSOLUTION
     return s;
 }
 
