@@ -2,101 +2,66 @@
 # -*- coding: utf-8 -*
 import io, os.path, re, sys
 
-# This metadata should instead be stored in a file such as
-# exercices_src/<topic>/metadata.pl
+# Templates for pl and pltp files
 
-topicnames = {
-    # "variable": u"variables",
-    # "io": u"entrées-sorties",
-    # "if0": u"conditionnelles simples",
-    # "if": u"conditionnelles",
-    # "for0": u"boucles for faciles",
-    # "for": u"boucles for",
-    # "while": u"boucles while",
-    # "dowhile": u"boucles do-while",
-    # "fornested": u"boucles for imbriquées",
-    "function_call_simple": u"appel de fonctions simple",
-    # "vector1D": u"vecteurs",
-    # "vector2D0": u"vecteurs à deux dimensions faciles",
-    # "vector2D": u"vecteurs à deux dimensions",
-    # "file": u"fichiers",
-    "procedure_calling": u"appel de procédures",
-    "procedure_loop": u"procedures avec des boucles",
-    "procedure_math": u"procédures mathématiques",
-    "procedure_simplest": u"procedures simples",
-    "struct_fonction": u"enregistrements et fonctions",
-    "struct_procedure": u"enregistrements et procédures",
-    # "struct_gros": u"gros enregistrements",
-    # "struct_hard": u"enregistrements difficiles",
-    "struct_of_struct": u"enregistrements imbriqués",
-    "struct_simple": u"enregistrements faciles",
-    # "struct_tableaux": u"enregistrements de tableaux",
-    # "struct_tableau_struct": u"enregistrements de tableaux d'enregistrements",
-    "tests": u"tests des fonctionalités de la plateforme",
-    "controle1": u"notions vu en cours",
-}
-
-# template=/exercises_src/{topicname}/metadata.pl
-template = u"""
-template=/template/wims_{type}.pl
-topicname={topicname}
+template = u"""template=/template/wims_{type}.pl
+template=/exercices_src/{topic}/metadata.pl
 @ /exercices_src/{topic}/{basename} [raw_code.cpp]
 code_file=raw_code.cpp
 """
 
-template_pltp = u"""
-title={capitalized_topicname}
+template_pltp = u"""template=/exercices_src/{topic}/metadata.pl
+title={{{{topicname}}}}
 introduction==
-Une collection d'exercices sur les {topicname}.
+Une collection d'exercices sur les {{{{topicname}}}}.
 ==
 """
 
 type_re = re.compile("_(input|output|result|code|silentcode)\.")
-
-exercises = {topic: [] for topic in topicnames.keys()}
+exercises=dict()
 
 def create_template(filename):
-    topic = os.path.split(os.path.dirname(filename))[-1]
     basename = os.path.basename(filename)
+    topic = os.path.split(os.path.dirname(filename))[1]
+    if topic == 'exercices_src':
+        # Backward compatibility: hande files exercises_src/topic_exo.cpp
+        pieces = basename.split("_")
+        topic = pieces[0]
+        basename = '_'.join(pieces[1:])
 
-    # on récupère le nom français qu'on a dans le topicnames,
-    # si le fichier n'est pas dans les topicnames, on ingnore pour le moment
-    try:
-        topicname = topicnames[topic]
-    except KeyError:
-        return
-           
-    # pour les fichiers dans un sous dossier du type exercises_src/topic/exo.cpp
     pl_name = basename+".pl"
     pl_dirname = os.path.join("exercices", topic)
     pl_fullname = os.path.join(pl_dirname, pl_name)
 
-    # on créé le dir où seront les exos .pl
-    try:
-        os.mkdir(pl_dirname)
-    except OSError:
-        pass
-    match = re.search(type_re, basename)
+    print(filename, basename, topic, pl_name, pl_dirname, pl_fullname)
 
-    # on initialise le type d'exo que l'on a avec output par deffaut
+    # Setup the exercise type, based on the file name.
+    match = re.search(type_re, basename)
     if match:
         type = match.group(1)
     else:
         type = "output"
 
-    # enfin on ecrit le contenu du .pl
-    io.open(pl_fullname, "w").write(template.format(type=type, topicname=topicname, basename=basename, topic=topic))
+    # Create the output directory if not yet existent
+    try:
+        os.mkdir(pl_dirname)
+    except OSError:
+        pass
+
+    # Generate the pl file
+    io.open(pl_fullname, "w").write(template.format(type=type, basename=basename, topic=topic))
+
+    # Add the exercise to the index
+    if topic not in exercises:
+        exercises[topic] = []
     exercises[topic].append(pl_fullname)
-        
-    # on doit à un moment ajouter le nom du topic et la metadonné dans le dictionnaire topicnames
-    # pour l'instant c'est hard codé!...
-    
+
 for filename in sys.argv[1:]:
     create_template(filename)
 
-for topic, topicname in topicnames.items():
+for topic in exercises:
     pltp_fullname = os.path.join("exercices", topic + ".pltp")
     fd = io.open(pltp_fullname, "w")
-    fd.write(template_pltp.format(capitalized_topicname=topicname.capitalize(), topicname=topicname))
+    fd.write(template_pltp.format(topic=topic))
     for filename in exercises[topic]:
         fd.write(u"@ /" + filename + "\n")
