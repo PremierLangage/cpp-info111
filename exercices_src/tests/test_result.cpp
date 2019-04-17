@@ -1,5 +1,6 @@
 /// BEGIN HIDDEN
 #include <iostream>
+#include "randomization.h"
 using namespace std;
 
 int main() {

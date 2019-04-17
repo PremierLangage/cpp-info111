@@ -1,6 +1,7 @@
 /// BEGIN HIDDEN
 // Objective: test programs with two input zones
 #include <iostream>
+#include "randomization.h"
 using namespace std;
 #define ASSERT(test) if (!(test)) cout << "Test failed in file " << __FILE__ \
                                        << " line " << __LINE__ << ": " #test << endl
