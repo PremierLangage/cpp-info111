@@ -1,0 +1,6 @@
+template=/exercices_src/struct_tableaux/metadata.pl
+title={{topicname}}
+introduction==
+Une collection d'exercices sur les {{topicname}}.
+==
+@ /exercices/struct_tableaux/struct_tableaux_insert_code.cpp.pl
