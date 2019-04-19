@@ -9,22 +9,25 @@ struct Boite {
     int nbElts;
 };
 
-/* Ecrire une procedure qui ajoute dans une Boite b un entier x si c'est possible
- * et qui imprime exactement le message "Ajout impossible!\n" sinon.
- */
+/** Ajouter un entier dans une boite si c'est possible
+ * @param[in/out] b : Boite à modifier
+ * @param[in] x : entier à ajouter
+ * @return True si l'entier a été ajouté, false sinon
+ **/
 /// BEGIN SOLUTION
-void ajouteBoite (Boite &b, int x) {
+bool ajouteBoite (Boite &b, int x) {
   if (b.nbElts < NB_MAX) {
     b.tab[b.nbElts] = x;
     b.nbElts++;
+    return true;
   }
   else{
-    cout << "Ajout impossible!\n";
+    return false;
   }
 }
 /// END SOLUTION
 /// BEGIN INITSOLUTION
-/// void ajouteBoite(...) {
+/// bool ajouteBoite(...) {
 /// /* Completer ici */
 /// }
 /// END INITSOLUTION
