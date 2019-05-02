@@ -23,10 +23,10 @@ struct obif {
 
 obif step(obif m) {
     obif nouveau;
-    nouveau.a = m.b + I1
-    nouveau.b = m.c + I2
-    nouveau.c = m.d + I3
-    nouveau.d = I4
+    nouveau.a = m.b + I1;
+    nouveau.b = m.c + I2;
+    nouveau.c = m.d + I3;
+    nouveau.d = I4;
     return nouveau;
 }
 
