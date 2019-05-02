@@ -12,6 +12,11 @@ const int CI5 = rand() % 2;
 
 #define CONST const auto
 
+#define X x
+#define Y y
+#define Z z
+
+
 int RANDOM_INT(int min, int max) {
     return min;
 }
