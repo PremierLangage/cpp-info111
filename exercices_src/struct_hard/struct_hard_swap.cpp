@@ -1,6 +1,8 @@
+/// BEGIN HIDDEN
 #include <iostream>
 
 using namespace std;
+/// END HIDDEN
 
 struct blob {
     string nom;

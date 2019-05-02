@@ -1,0 +1,8 @@
+template=/exercices_src/struct_hard/metadata.pl
+title={{topicname}}
+introduction==
+Une collection d'exercices sur les {{topicname}}.
+==
+@ /exercices/struct_hard/cerise_input.cpp.pl
+@ /exercices/struct_hard/struct_hard_swap.cpp.pl
+@ /exercices/struct_hard/struct_truc.cpp.pl
