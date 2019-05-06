@@ -46,7 +46,8 @@ int main() {
 
     Point3D m = Myst(liste);
     
-    cout << liste.id_nuage << " : " << m.x << ", " << m.y << ", " << m.z << endl;
+    cout << liste.id_nuage << endl;
+    cout << m.x + m.y + m.z << endl;
     return 0;
 }
 

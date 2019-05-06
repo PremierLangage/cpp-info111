@@ -1,14 +1,13 @@
+/// BEGIN HIDDEN
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
-/// BEGIN HIDDEN
 #include "randomization.h"
 CONST V1 = RANDOM_VECTOR(3, RANDOM_INT, -5, 5);
 CONST V2 = RANDOM_VECTOR(3, RANDOM_INT, -5, 5);
 /// END HIDDEN
-
 
 struct Point3D {
     double x;

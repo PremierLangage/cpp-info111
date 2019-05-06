@@ -2,13 +2,17 @@
 #include <iostream>
 
 using namespace std;
+
+#include "randomization.h"
+CONST S = RANDOM_CHOICE("Info121IsTheBest", "ILoveInformatique", "ViiiiiiveLeC++!!", "CoderJoursEtNuits");
+CONST I1 = RANDOM_INT(1,6);
+CONST I2 = RANDOM_INT(7,15);
 /// END HIDDEN
 
 struct blob {
     string nom;
     int a;
     int b;
-    int lg;
     bool lock;
 };
 
@@ -17,19 +21,14 @@ void swap(blob &x) {
     tmp = x.nom[x.a];
     x.nom[x.a] = x.nom[x.b];
     x.nom[x.b] = tmp;
-    x.a = (x.a + x.b) % x.lg;
-    x.b = (x.a * x.b) % x.lg;
-    if (x.a == x.b)
+    x.a++;
+    x.b--;
+    if (x.a >= x.b)
         x.lock = true;
 }
 
 int main() {
-    blob truc = {"info121rocks",
-                 3,
-                 5,
-                 12,
-                 false
-                };
+    blob truc = {S, I1, I2, false};
     while (!truc.lock) swap(truc);
     cout << truc.nom << endl;
     return 0;
