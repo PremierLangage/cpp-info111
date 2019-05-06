@@ -18,6 +18,7 @@ struct tabNotes {
     int nbElts;
 };
 
+// Completer la fonction dont voici la documentation :
 /** Calcule la moyenne d'une serie de notes
  *  @param[in] t: tableau (structure) de notes 
  *  @return: moyenne des notes.
