@@ -239,8 +239,8 @@ def split_code(code):
                     raise ValueError("line '{}' : END `{}` does not match BEGIN `{}`".format(line_nb, type, item['type']))
                 item = {'content': '', 'type': 'default'}
             continue
-        if not loose_begin_or_end.search(line):
-            raise ValueError("line '{}' : '{}' is not correct. The forme should be `'\s*' + PL_COMMENT + ' (BEGIN|END) (\w+)'`".format(line_nb, line))
+            if (not loose_begin_or_end.search(line)):
+                raise ValueError("line '{}' : '{}' is not correct. The forme should be `'\s*' + PL_COMMENT + ' (BEGIN|END) (\w+)'`".format(line_nb, line))
         item['content'] += line + "\n"
     if item['content']:
         items.append(item)
