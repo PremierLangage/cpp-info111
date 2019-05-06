@@ -1,25 +1,24 @@
+/// BEGIN HIDDEN
 #include <iostream>
 
 using namespace std;
 
-/// BEGIN HIDDEN
-#include "randomization.h"
-/// END HIDDEN
 #define NB_MAX 10
+#include "randomization.h"
+CONST I1 = RANDOM_INT(1,20);
+CONST I2 = RANDOM_INT(1,20);
+CONST I3 = RANDOM_INT(1,20);
+CONST I4 = RANDOM_INT(1,20);
+CONST I5 = RANDOM_INT(1,20);
+
+/// END HIDDEN
 
 struct tabNotes {
     int tab[NB_MAX];
     int nbElts;
 };
 
-void ajout(tabNotes &t, int Y) {
-    if (t.nbElts < NB_MAX) {
-        t.tab[t.nbElts] = Y;
-        t.nbElts += 1;
-    }
-}
-
-/** Calcule la moyenne de deux series de notes
+/** Calcule la moyenne d'une serie de notes
  *  @param[in] t: tableau (structure) de notes 
  *  @return: moyenne des notes.
  *
@@ -32,8 +31,8 @@ double moyenneTabNotes(tabNotes t){
         double tmp = 0.0;
         for (int i=0; i<t.nbElts; i++){
             tmp += t.tab[i];
-        }
-        return tmp/t.nbElts;
+	}
+	return tmp/t.nbElts;
     }
 }
 /// END SOLUTION
@@ -49,8 +48,11 @@ double moyenneTabNotes(tabNotes t){
 /// END INITSOLUTION
 
 /// BEGIN HIDDEN
-bool egalMoyenneTabNotes(tabNotes a, tabNotes b){
-    return (moyenneTabNotes(a) == moyenneTabNotes(b));
+void ajout(tabNotes &t, int Y) {
+    if (t.nbElts < NB_MAX) {
+        t.tab[t.nbElts] = Y;
+        t.nbElts += 1;
+    }
 }
 
 
@@ -61,14 +63,23 @@ int main() {
     ajout(X,20);
     
     tabNotes Y;
-    ajout(Y,8);
-    ajout(Y,10);
-    ajout(Y,12);
+    Y.nbElts = 0;
+    ajout(Y,I1);
+    ajout(Y,I2);
+    ajout(Y,I3);
+    ajout(Y,I4);
     
     tabNotes Z;
-    ajout(Y,5);
+    Z.nbElts = 0;
+    ajout(Z,I5);
 
-    cout << egalMoyenneTabNotes(X,Y) << endl;
-    cout << egalMoyenneTabNotes(X,Z) << endl;
+    tabNotes E;
+    E.nbElts = 0;
+    
+    
+    cout << moyenneTabNotes(X) << endl;
+    cout << moyenneTabNotes(Y) << endl;
+    cout << moyenneTabNotes(Z) << endl;
+    cout << moyenneTabNotes(E) << endl;
 }
 /// END HIDDEN
