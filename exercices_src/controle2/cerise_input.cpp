@@ -1,0 +1,1 @@
+../struct_hard/cerise_input.cpp
