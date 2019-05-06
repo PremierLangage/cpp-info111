@@ -11,7 +11,7 @@ struct Point3D {
 };
 
 /** Test l'égalité entre deux Points 3D.
- *  @param[in] x : entier à ajouter
+ *  @param[in] a, b : Points 3D 
  *  @return true si et seulement si les 2 points en entrés sont égaux.
  */
 /// BEGIN SOLUTION

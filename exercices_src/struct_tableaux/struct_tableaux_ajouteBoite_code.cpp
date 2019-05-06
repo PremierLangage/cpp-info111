@@ -1,5 +1,7 @@
 /// BEGIN HIDDEN
-#include<iostream>
+#include <iostream>
+#include <cmath>
+
 using namespace std;
 /// END HIDDEN
 #define NB_MAX 10
@@ -16,14 +18,14 @@ struct Boite {
  **/
 /// BEGIN SOLUTION
 bool ajouteBoite (Boite &b, int x) {
-  if (b.nbElts < NB_MAX) {
-    b.tab[b.nbElts] = x;
-    b.nbElts++;
-    return true;
-  }
-  else{
-    return false;
-  }
+    if (b.nbElts < NB_MAX) {
+        b.tab[b.nbElts] = x;
+        b.nbElts++;
+        return true;
+    }
+    else{
+        return false;
+    }
 }
 /// END SOLUTION
 /// BEGIN INITSOLUTION
@@ -34,16 +36,16 @@ bool ajouteBoite (Boite &b, int x) {
 
 ///BEGIN HIDDEN
 void afficheBoite(Boite b) {
-  for (int i=0; i < b.nbElts; i++){
-    cout << b.tab[i] << " ";
-  }
+    for (int i=0; i < b.nbElts; i++){
+        cout << b.tab[i] << " ";
+    }
 }
 
 int main() {
   Boite b;
   b.nbElts = 0;
   for (int i=0; i < NB_MAX + 2; i++){
-    ajouteBoite(b,i);
+    cout << ajouteBoite(b,i) << endl;
   }
   afficheBoite(b);
   return 0;
