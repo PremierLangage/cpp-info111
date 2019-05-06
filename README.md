@@ -8,7 +8,10 @@ Une fois que des exercices ont été implantés et rangés dans un sous dossier 
 
 # Contribution
 
-Les chargés de TP doivent dans un sous dossier de `exerice_src` créé des exercices qui correspondent au thème.
+Les chargés de TP doivent dans un sous dossier de `exercice_src` créer des exercices qui correspondent au thème.
+Une liste de Thèmes se trouve dans le dossier principal, le but est d'avoir un nombre important d'exercices correspondant à toutes les notions étudiés en cours par les étudiants et de les regroupés au maximum par thèmes. Dans le sous dossier `exercice_src` il y a déjà un certain nombre de sous dossiers correspondant à des thèmes. Certains de ces dossiers ne contiennent qu'un seul exercice ou deux, il faudrait donc en créer d'avantage. Ensuite pour créer un exercice, l'idée est de s'appuyer sur les erreurs fréquentes que l'ont voient dans le travail des étudiants pour faire des exercices simples qui visent un but pédagogique précis.
+Enfin pour créer des exercices il faut suivre les autres instructions disponible ci-dessous et s'inspirer d'exemples. L'un des but principaux est de faire des exercices où les étudiants doivent coder des fonctions. Par exemple comme les fichiers : `exercices_src/struct_tableaux/struct_tableaux_ajouteBoite_code.cpp` et `exercices_src/struct_simple/struct_P3D_eq_code.cpp`
+
 Lors de la conception d'un exercice, il est indispensable de tester que le code compile avec g++ avant de l'envoyer pour relecture. C'est pour cela qu'il faut bien ajouter la ligne `#include "randomization.h"` et faire un lien du fichier `randomisation.h` ce trouvant dans `exercice_src` vers le dossier courant.
 
 Tout exercice devra être relu avant de pouvoir être mis en prod. Une fois qu'une fiche (qui correspond à un dossier) est mise en prod, modifier les fichier exercices ne modifiera pas ceux de la fiche sur PL. Si vous faite une correction il faut prévenir le responsable (hugo.mlodecki) pour qu'il actualise la fiche !
