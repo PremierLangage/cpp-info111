@@ -10,9 +10,10 @@ struct Point3D {
     double z;
 };
 
+// Completer la fonction dont voici la documentation :
 /** Test l'égalité entre deux Points 3D.
  *  @param[in] a, b : Points 3D 
- *  @return true si et seulement si les 2 points en entrés sont égaux.
+ *  @return true si et seulement si les 2 points en entré sont égaux.
  */
 /// BEGIN SOLUTION
 bool egualPoint3D(Point3D a, Point3D b) {
