@@ -34,7 +34,7 @@ bool ajouteBoite (Boite &b, int x) {
 /// }
 /// END INITSOLUTION
 
-///BEGIN HIDDEN
+/// BEGIN HIDDEN
 void afficheBoite(Boite b) {
     for (int i=0; i < b.nbElts; i++){
         cout << b.tab[i] << " ";
