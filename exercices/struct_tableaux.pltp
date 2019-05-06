@@ -3,4 +3,4 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /exercices/struct_tableaux/struct_tableaux_insert_code.cpp.pl
+@ /exercices/struct_tableaux/struct_tableaux_ajouteBoite_code.cpp.pl

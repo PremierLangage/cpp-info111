@@ -9,6 +9,5 @@ Une collection d'exercices sur les {{topicname}}.
 @ /exercices/controle2/struct_P3D_eq_code.cpp.pl
 @ /exercices/controle2/struct_hard_swap.cpp.pl
 @ /exercices/controle2/struct_tableau_struct_notes.cpp.pl
-# @ /exercices/controle2/struct_tableaux_insert_code.cpp.pl
+@ /exercices/controle2/struct_tableaux_insert_code.cpp.pl
 @ /exercices/controle2/struct_truc.cpp.pl
-
