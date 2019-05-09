@@ -6,3 +6,4 @@ Une collection d'exercices sur les {{topicname}}.
 @ /exercices/struct_tableaux/struct_tableaux_ajouteBoite_code.cpp.pl
 @ /exercices/struct_tableaux/struct_tableaux_moyenne_code.cpp.pl
 @ /exercices/struct_tableaux/struct_tableaux_nbElts.cpp.pl
+@ /exercices/struct_tableaux/struct_tableaux_recherche_code.cpp.pl

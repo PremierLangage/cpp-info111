@@ -39,9 +39,7 @@ double indiceMinimumNotes(tabNotes t){
 /// END SOLUTION
 /// BEGIN INITSOLUTION
 /// int indiceMinimumNotes(...) {
-///   if (t.nbElts == 0) {
-///      /* Completer ici. */
-///   }
+///   /* Completer ici. */
 ///   for(...) {
 ///      /* Completer ici. */
 ///   }
