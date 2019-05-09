@@ -1,15 +1,15 @@
+/// BEGIN HIDDEN
 #include <iostream>
 
 using namespace std;
 
-/// BEGIN HIDDEN
 #include "randomization.h"
-CONST A1 = RANDOM_INT(-5, 5);
-CONST A2 = RANDOM_INT(-5, 5);
-CONST A3 = RANDOM_INT(-5, 5);
-CONST B1 = RANDOM_INT(-5, 5);
-CONST B2 = RANDOM_INT(-5, 5);
-CONST B3 = RANDOM_INT(-5, 5);
+CONST A1 = double(RANDOM_INT(-5, 5));
+CONST A2 = double(RANDOM_INT(-5, 5));
+CONST A3 = double(RANDOM_INT(-5, 5));
+CONST B1 = double(RANDOM_INT(-5, 5));
+CONST B2 = double(RANDOM_INT(-5, 5));
+CONST B3 = double(RANDOM_INT(-5, 5));
 /// END HIDDEN
 
 struct Point2D {
@@ -24,11 +24,11 @@ void milieu(Point2D x, Point2D y, Point2D &z) {
 
 
 int main() {
-    Point2D X = { A1, B1 };
-    Point2D Y = { A2, B2 };
-    Point2D Z = { A3, B3 };
+    Point2D x = { A1, B1 };
+    Point2D y = { A2, B2 };
+    Point2D z = { A3, B3 };
 
     milieu(Y, Z, X);
 
-    cout << Z.abs << " " << Z.ord << endl;
+    cout << X.abs << " " << X.ord << endl;
 }
