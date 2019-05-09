@@ -1,8 +1,8 @@
+/// BEGIN HIDDEN
 #include <iostream>
 
 using namespace std;
 
-/// BEGIN HIDDEN
 #include "randomization.h"
 
 CONST I = RANDOM_INT(2, 5);
@@ -20,7 +20,6 @@ void ajout(tabNotes &t, int Y) {
         t.nbElts += 1;
     }
 }
-
 
 int main() {
     tabNotes X;
