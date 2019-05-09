@@ -1,8 +1,8 @@
+/// BEGIN HIDDEN
 #include <iostream>
 
 using namespace std;
 
-/// BEGIN HIDDEN
 #include "randomization.h"
 CONST I = RANDOM_INT(2, 10);
 CONST J = RANDOM_INT(-10, 10);
