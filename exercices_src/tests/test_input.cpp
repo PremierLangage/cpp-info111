@@ -1,5 +1,6 @@
 /// BEGIN HIDDEN
 #include <iostream>
+#include "randomization.h"
 using namespace std;
 
 CONST C = RANDOM_INT(-2,2);

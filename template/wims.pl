@@ -13,7 +13,7 @@ form=@/template/form/editorform.html
 solution_compile_error_message=Erreur interne: le programme solution ne compile pas:<pre>{err}</pre>Code:<pre>{code}</pre>
 solution_error_message=Erreur interne: erreur à l'exécution du programme solution: <pre>{err}</pre>Code:<pre>{code}</pre>
 answer_compile_error_message=Le programme ne compile pas:<pre>{err}</pre>
-failure_message=Le programme a affiché:<pre>{answer_out}</pre>Affichage souhaité:<pre>{solution_out}</pre>
+failure_message= Ce n'est pas la réponse attendue. #Le programme a affiché:<pre>{answer_out}</pre>Affichage souhaité:<pre>{solution_out}</pre>
 
 title=Exercice
 

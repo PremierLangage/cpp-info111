@@ -226,7 +226,7 @@ def split_code(code):
     loose_begin_or_end = re.compile('BEGIN|END')
     items = []
     item = {'content': '', 'type': 'default'}
-    for line in code.splitlines():
+    for (line_nb, line) in enumerate(code.splitlines()):
         match = begin_or_end.match(line)
         if match:
             if item['content']:
@@ -236,10 +236,11 @@ def split_code(code):
                 item = {'content': '', 'type': type}
             else:
                 if type != item['type']:
-                    raise ValueError("END `{}` does not match BEGIN `{}`".format(type, item['type']))
+                    raise ValueError("line '{}' : END `{}` does not match BEGIN `{}`".format(line_nb, type, item['type']))
                 item = {'content': '', 'type': 'default'}
             continue
-        assert not loose_begin_or_end.search(line)
+            if (not loose_begin_or_end.search(line)):
+                raise ValueError("line '{}' : '{}' is not correct. The forme should be `'\s*' + PL_COMMENT + ' (BEGIN|END) (\w+)'`".format(line_nb, line))
         item['content'] += line + "\n"
     if item['content']:
         items.append(item)
