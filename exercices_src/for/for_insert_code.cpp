@@ -31,7 +31,7 @@ int main() {
     t[i] = i;
   }
   permuter(t);
-  cout << "Tableau permuté: "
+  cout << "Tableau permuté: ";
   for(int i=0; i < N; i++){
     cout << t[i] << ", ";
   }
