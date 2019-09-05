@@ -4,7 +4,7 @@
 # should produce no output. The typical use case is when the assesment
 # are achieved exclusively via asserts.
 
-template=/template/wims_code.pl
+template=/cpp-info111/template/wims_code.pl
 name=code
 typename=Compléter un programme avec tests
 type=sandbox

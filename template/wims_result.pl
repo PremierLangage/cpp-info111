@@ -1,6 +1,6 @@
 # Copyright 2018 Nicolas M. Thiéry ...
 
-template=/template/wims_output.pl
+template=/cpp-info111/template/wims_output.pl
 name=deviner le résultat
 typename=Deviner le résultat
 type=sandbox
