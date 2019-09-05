@@ -1,6 +1,6 @@
 # Copyright 2018 Nicolas M. Thiéry ...
 
-template=@ /cpp-info111/template/wims.pl
+template=/cpp-info111/template/wims.pl
 name=code
 typename=Compléter un programme
 type=sandbox
