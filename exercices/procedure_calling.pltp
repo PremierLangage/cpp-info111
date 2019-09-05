@@ -3,10 +3,10 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /exercices/procedure_calling/procedure_calling_1.cpp.pl
-@ /exercices/procedure_calling/procedure_calling_1_input.cpp.pl
-@ /exercices/procedure_calling/procedure_calling_2.cpp.pl
-@ /exercices/procedure_calling/procedure_calling_2_input.cpp.pl
-@ /exercices/procedure_calling/procedure_calling_swap_code.cpp.pl
-@ /exercices/procedure_calling/procedure_heading_swap_code.cpp.pl
-@ /exercices/procedure_calling/procedure_heading_wrong_code.cpp.pl
+@ cpp-info111/exercices/procedure_calling/procedure_calling_1.cpp.pl
+@ cpp-info111/exercices/procedure_calling/procedure_calling_1_input.cpp.pl
+@ cpp-info111/exercices/procedure_calling/procedure_calling_2.cpp.pl
+@ cpp-info111/exercices/procedure_calling/procedure_calling_2_input.cpp.pl
+@ cpp-info111/exercices/procedure_calling/procedure_calling_swap_code.cpp.pl
+@ cpp-info111/exercices/procedure_calling/procedure_heading_swap_code.cpp.pl
+@ cpp-info111/exercices/procedure_calling/procedure_heading_wrong_code.cpp.pl

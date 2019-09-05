@@ -3,5 +3,5 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /exercices/dowhile/factorial.cpp.pl
-@ /exercices/dowhile/presque_vide.cpp.pl
+@ cpp-info111/exercices/dowhile/factorial.cpp.pl
+@ cpp-info111/exercices/dowhile/presque_vide.cpp.pl

@@ -3,6 +3,6 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /exercices/struct_hard/cerise_input.cpp.pl
-@ /exercices/struct_hard/struct_hard_swap.cpp.pl
-@ /exercices/struct_hard/struct_truc.cpp.pl
+@ cpp-info111/exercices/struct_hard/cerise_input.cpp.pl
+@ cpp-info111/exercices/struct_hard/struct_hard_swap.cpp.pl
+@ cpp-info111/exercices/struct_hard/struct_truc.cpp.pl

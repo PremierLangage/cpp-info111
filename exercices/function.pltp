@@ -3,7 +3,7 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /exercices/function/blackjack.cpp.pl
-@ /exercices/function/factorial.cpp.pl
-@ /exercices/function/if.cpp.pl
-@ /exercices/function/max.cpp.pl
+@ cpp-info111/exercices/function/blackjack.cpp.pl
+@ cpp-info111/exercices/function/factorial.cpp.pl
+@ cpp-info111/exercices/function/if.cpp.pl
+@ cpp-info111/exercices/function/max.cpp.pl

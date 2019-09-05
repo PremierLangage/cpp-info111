@@ -3,12 +3,12 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /exercices/for/accumulateur_trivial0.cpp.pl
-@ /exercices/for/accumulateur_trivial0a.cpp.pl
-@ /exercices/for/accumulateur_trivial1_result.cpp.pl
-@ /exercices/for/binomial_input.cpp.pl
-@ /exercices/for/factorial.cpp.pl
-@ /exercices/for/indice.cpp.pl
-@ /exercices/for/odd.cpp.pl
-@ /exercices/for/sortie.cpp.pl
-@ /exercices/for/for_insert_code.cpp.pl
+@ cpp-info111/exercices/for/accumulateur_trivial0.cpp.pl
+@ cpp-info111/exercices/for/accumulateur_trivial0a.cpp.pl
+@ cpp-info111/exercices/for/accumulateur_trivial1_result.cpp.pl
+@ cpp-info111/exercices/for/binomial_input.cpp.pl
+@ cpp-info111/exercices/for/factorial.cpp.pl
+@ cpp-info111/exercices/for/indice.cpp.pl
+@ cpp-info111/exercices/for/odd.cpp.pl
+@ cpp-info111/exercices/for/sortie.cpp.pl
+@ cpp-info111/exercices/for/for_insert_code.cpp.pl

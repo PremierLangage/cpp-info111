@@ -3,8 +3,8 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /exercices/fornested/facile0.cpp.pl
-@ /exercices/fornested/facile0a.cpp.pl
-@ /exercices/fornested/facile1.cpp.pl
-@ /exercices/fornested/facile1a.cpp.pl
-@ /exercices/fornested/input.cpp.pl
+@ cpp-info111/exercices/fornested/facile0.cpp.pl
+@ cpp-info111/exercices/fornested/facile0a.cpp.pl
+@ cpp-info111/exercices/fornested/facile1.cpp.pl
+@ cpp-info111/exercices/fornested/facile1a.cpp.pl
+@ cpp-info111/exercices/fornested/input.cpp.pl

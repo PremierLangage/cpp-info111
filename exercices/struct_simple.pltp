@@ -3,5 +3,5 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /exercices/struct_simple/struct_P3D.cpp.pl
-@ /exercices/struct_simple/struct_P3D_eq_code.cpp.pl
+@ cpp-info111/exercices/struct_simple/struct_P3D.cpp.pl
+@ cpp-info111/exercices/struct_simple/struct_P3D_eq_code.cpp.pl

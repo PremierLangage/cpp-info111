@@ -3,10 +3,10 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /exercices/tests/test_code.cpp.pl
-@ /exercices/tests/test_input.cpp.pl
-@ /exercices/tests/test_multisolution_code.cpp.pl
-@ /exercices/tests/test_output.cpp.pl
-@ /exercices/tests/test_randomization.cpp.pl
-@ /exercices/tests/test_result.cpp.pl
-@ /exercices/tests/test_silentcode.cpp.pl
+@ cpp-info111/exercices/tests/test_code.cpp.pl
+@ cpp-info111/exercices/tests/test_input.cpp.pl
+@ cpp-info111/exercices/tests/test_multisolution_code.cpp.pl
+@ cpp-info111/exercices/tests/test_output.cpp.pl
+@ cpp-info111/exercices/tests/test_randomization.cpp.pl
+@ cpp-info111/exercices/tests/test_result.cpp.pl
+@ cpp-info111/exercices/tests/test_silentcode.cpp.pl

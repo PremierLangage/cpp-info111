@@ -3,17 +3,17 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /exercices/variable/assign.cpp.pl
-@ /exercices/variable/caractere.cpp.pl
-@ /exercices/variable/division_entiere.cpp.pl
-@ /exercices/variable/echange1.cpp.pl
-@ /exercices/variable/echange2.cpp.pl
-@ /exercices/variable/echange3.cpp.pl
-@ /exercices/variable/echange4.cpp.pl
-@ /exercices/variable/echange5.cpp.pl
-@ /exercices/variable/factorial7.cpp.pl
-@ /exercices/variable/string1.cpp.pl
-@ /exercices/variable/string2.cpp.pl
-@ /exercices/variable/string3.cpp.pl
-@ /exercices/variable/string4.cpp.pl
-@ /exercices/variable/trivial.cpp.pl
+@ cpp-info111/exercices/variable/assign.cpp.pl
+@ cpp-info111/exercices/variable/caractere.cpp.pl
+@ cpp-info111/exercices/variable/division_entiere.cpp.pl
+@ cpp-info111/exercices/variable/echange1.cpp.pl
+@ cpp-info111/exercices/variable/echange2.cpp.pl
+@ cpp-info111/exercices/variable/echange3.cpp.pl
+@ cpp-info111/exercices/variable/echange4.cpp.pl
+@ cpp-info111/exercices/variable/echange5.cpp.pl
+@ cpp-info111/exercices/variable/factorial7.cpp.pl
+@ cpp-info111/exercices/variable/string1.cpp.pl
+@ cpp-info111/exercices/variable/string2.cpp.pl
+@ cpp-info111/exercices/variable/string3.cpp.pl
+@ cpp-info111/exercices/variable/string4.cpp.pl
+@ cpp-info111/exercices/variable/trivial.cpp.pl
