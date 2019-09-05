@@ -1,4 +1,4 @@
-template=/exercices_src/for/metadata.pl
+template=/cpp-info111/exercices_src/for/metadata.pl
 title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.

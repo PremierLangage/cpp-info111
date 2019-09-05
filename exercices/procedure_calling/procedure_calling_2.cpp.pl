@@ -1,4 +1,4 @@
-template=/template/wims_output.pl
-template=/exercices_src/procedure_calling/metadata.pl
-@ /exercices_src/procedure_calling/procedure_calling_2.cpp [raw_code.cpp]
+template=/cpp-info111/template/wims_output.pl
+template=/cpp-info111/exercices_src/procedure_calling/metadata.pl
+@ /cpp-info111/exercices_src/procedure_calling/procedure_calling_2.cpp [raw_code.cpp]
 code_file=raw_code.cpp
