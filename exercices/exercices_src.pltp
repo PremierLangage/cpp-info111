@@ -1,7 +1,0 @@
-
-template=/exercises_src/exercices_src/metadata.pl
-title={topicname}
-introduction==
-Une collection d'exercices sur les {topicname}.
-==
-@ /exercices/exercices_src/if0_sign_result.cpp.pl
