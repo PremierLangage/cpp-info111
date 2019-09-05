@@ -6,8 +6,7 @@ author=MPI Info 111's team
 @ /cpp-info111/template/graderCpp.py
 @ /cpp-info111/template/randomization.h
 
-form=@ /form/text_editor.html
-# form=@ /cpp-info111/template/form/editorform.html
+form=@ /cpp-info111/template/form/editorform.html
 @ lib:/builder/build.py [builder.py]
 @ /cpp-info111/template/builder.py [mybuilder.py]
 
