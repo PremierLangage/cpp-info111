@@ -66,4 +66,4 @@ for topic in exercises:
     fd = io.open(pltp_fullname, "w")
     fd.write(template_pltp.format(projectname=projectname, topic=topic))
     for filename in exercises[topic]:
-        fd.write(u"@ /" + filename + "\n")
+        fd.write(u"@ {projectname}/{filename}\n".format(projectname=projectname, filename=filename))
