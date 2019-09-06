@@ -192,7 +192,7 @@ def randomize_code(code):
             # Substitutes all constants
             line = pattern.sub(lambda i: consts[i.group()], line)
             result.append(line)
-    return consts, "\n".join(result)
+    return "\n".join(result), consts
 
 def split_code(code):
     r"""
