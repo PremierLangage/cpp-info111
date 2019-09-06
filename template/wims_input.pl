@@ -6,7 +6,7 @@ typename=Deviner l'entrée
 type=sandbox
 
 text==
-Quel nombre devrait saisir l'utilisateur pour que le programme C++ suivant affiche 42?
+Quel nombre devrait saisir l'utilisateur pour que le programme C++ suivant affiche {{solution_out}}?
 ==
 
 failure_message= Ce n'est pas la réponse attendue. #Réponse incorrecte:<pre>{answer}</pre>Le programme a affiché: <pre>{answer_out}</pre>
@@ -15,6 +15,8 @@ build==
 from mybuilder import build_generic, build_finalize
 def build(exo):
     exo = build_generic(exo)
-    exo['items'] = [{'type':'answer', 'subtype': 'stdin', 'content': ''}] + exo['items'] + [{'type':'solution', 'subtype': 'stdout', 'content': '42'}]
+    exo['solution_out'] = 42
+    exo['items'] = [{'type':'answer', 'subtype': 'stdin', 'content': ''}] + exo['items'] +\
+                   [{'type':'solution', 'subtype': 'stdout', 'content': str(exo['solution_out'])}]
     return build_finalize(exo)
 ==
