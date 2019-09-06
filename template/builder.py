@@ -134,15 +134,15 @@ def randomize_code(code):
 
         >>> import random
         >>> random.seed(0)
-        >>> randomize_code("int XX=3;")
+        >>> randomize_code("int XX=3;")[0]
         'int XX=3;'
-        >>> randomize_code("int X=3; int Y=4; int Z=5;")
+        >>> randomize_code("int X=3; int Y=4; int Z=5;")[0]
         'int y=3; int x=4; int z=5;'
-        >>> randomize_code("I, J, K, N")
+        >>> randomize_code("I, J, K, N")[0]
         'j, k, n, i'
-        >>> randomize_code("CI1, CI2, CI3, CI4, CI5")
+        >>> randomize_code("CI1, CI2, CI3, CI4, CI5")[0]
         '-2, -1, 2, 1, 0'
-        >>> randomize_code("int X=1;\nint Y=CI2;")
+        >>> randomize_code("int X=1;\nint Y=CI2;")[0]
         'int x=1;\nint y=2;'
 
         >>> print(test_code)
@@ -155,7 +155,7 @@ def randomize_code(code):
             vector<int> v = V;
             vector<vector<int>> vv = VV;
         }
-        >>> print(randomize_code(test_code))
+        >>> print(randomize_code(test_code)[0])
         int main () {
             int a = 3 + 4;
             vector<int> v = {5, 5, 5};
@@ -192,7 +192,7 @@ def randomize_code(code):
             # Substitutes all constants
             line = pattern.sub(lambda i: consts[i.group()], line)
             result.append(line)
-    return "\n".join(result)
+    return consts, "\n".join(result)
 
 def split_code(code):
     r"""
@@ -329,7 +329,8 @@ def build_generic(exo):
     if code is None:
         with open(exo['code_file']) as f:
             code = f.read()
-    code = randomize_code(code)
+    code, consts = randomize_code(code)
+    exo['consts'] = consts
     exo['items'] = insert_answer_items(split_code(code))
     return exo
 
