@@ -2,12 +2,15 @@
 #include <iostream>
 #include "randomization.h"
 using namespace std;
+const THRESHOLD = RANDOM_INT(-1,1)
+const RETURN_VALUE_TRUE = RANDOM_INT(4)
+const RETURN_VALUE_FALSE = RANDOM_INT(4)
 /// END HIDDEN
 int f(int X) {
-    if ( X < RANDOM_INT(-1,1) ) {
-        return RANDOM_INT(4);
+    if ( X < THRESHOLD ) {
+        return RETURN_VALUE_TRUE;
     } else {
-        return RANDOM_INT(4);
+        return RETURN_VALUE_FALSE;
     }
 }
 /// BEGIN HIDDEN
