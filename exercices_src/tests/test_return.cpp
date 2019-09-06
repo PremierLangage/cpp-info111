@@ -2,9 +2,9 @@
 #include <iostream>
 #include "randomization.h"
 using namespace std;
-const THRESHOLD = RANDOM_INT(-1,1)
-const RETURN_VALUE_TRUE = RANDOM_INT(4)
-const RETURN_VALUE_FALSE = RANDOM_INT(4)
+CONST int THRESHOLD = RANDOM_INT(-1,1)
+CONST int RETURN_VALUE_TRUE = RANDOM_INT(4)
+CONST int RETURN_VALUE_FALSE = RANDOM_INT(4)
 /// END HIDDEN
 int f(int X) {
     if ( X < THRESHOLD ) {
