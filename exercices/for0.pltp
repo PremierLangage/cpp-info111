@@ -3,6 +3,6 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ cpp-info111/exercices/for0/0.cpp.pl
-@ cpp-info111/exercices/for0/1.cpp.pl
-@ cpp-info111/exercices/for0/2.cpp.pl
+@ /cpp-info111/exercices/for0/0.cpp.pl
+@ /cpp-info111/exercices/for0/1.cpp.pl
+@ /cpp-info111/exercices/for0/2.cpp.pl

@@ -3,6 +3,6 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ cpp-info111/exercices/procedure_loop/procedure_loop.cpp.pl
-@ cpp-info111/exercices/procedure_loop/procedure_loop_ref.cpp.pl
-@ cpp-info111/exercices/procedure_loop/procedure_loop_val.cpp.pl
+@ /cpp-info111/exercices/procedure_loop/procedure_loop.cpp.pl
+@ /cpp-info111/exercices/procedure_loop/procedure_loop_ref.cpp.pl
+@ /cpp-info111/exercices/procedure_loop/procedure_loop_val.cpp.pl

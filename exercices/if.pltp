@@ -3,14 +3,14 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ cpp-info111/exercices/if/booleen0.cpp.pl
-@ cpp-info111/exercices/if/booleen0a.cpp.pl
-@ cpp-info111/exercices/if/booleen1.cpp.pl
-@ cpp-info111/exercices/if/booleen1a.cpp.pl
-@ cpp-info111/exercices/if/booleen2_result.cpp.pl
-@ cpp-info111/exercices/if/booleen3.cpp.pl
-@ cpp-info111/exercices/if/calculation.cpp.pl
-@ cpp-info111/exercices/if/file_correct.cpp.pl
-@ cpp-info111/exercices/if/file_faux.cpp.pl
-@ cpp-info111/exercices/if/oppose.cpp.pl
-@ cpp-info111/exercices/if/semicolon.cpp.pl
+@ /cpp-info111/exercices/if/booleen0.cpp.pl
+@ /cpp-info111/exercices/if/booleen0a.cpp.pl
+@ /cpp-info111/exercices/if/booleen1.cpp.pl
+@ /cpp-info111/exercices/if/booleen1a.cpp.pl
+@ /cpp-info111/exercices/if/booleen2_result.cpp.pl
+@ /cpp-info111/exercices/if/booleen3.cpp.pl
+@ /cpp-info111/exercices/if/calculation.cpp.pl
+@ /cpp-info111/exercices/if/file_correct.cpp.pl
+@ /cpp-info111/exercices/if/file_faux.cpp.pl
+@ /cpp-info111/exercices/if/oppose.cpp.pl
+@ /cpp-info111/exercices/if/semicolon.cpp.pl

@@ -3,9 +3,9 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ cpp-info111/exercices/function_call_simple/function_call_1.cpp.pl
-@ cpp-info111/exercices/function_call_simple/function_call_2.cpp.pl
-@ cpp-info111/exercices/function_call_simple/function_call_3.cpp.pl
-@ cpp-info111/exercices/function_call_simple/function_call_4.cpp.pl
-@ cpp-info111/exercices/function_call_simple/function_inversion_arguments.cpp.pl
-@ cpp-info111/exercices/function_call_simple/reverse_int_code.cpp.pl
+@ /cpp-info111/exercices/function_call_simple/function_call_1.cpp.pl
+@ /cpp-info111/exercices/function_call_simple/function_call_2.cpp.pl
+@ /cpp-info111/exercices/function_call_simple/function_call_3.cpp.pl
+@ /cpp-info111/exercices/function_call_simple/function_call_4.cpp.pl
+@ /cpp-info111/exercices/function_call_simple/function_inversion_arguments.cpp.pl
+@ /cpp-info111/exercices/function_call_simple/reverse_int_code.cpp.pl

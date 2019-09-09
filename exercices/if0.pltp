@@ -3,4 +3,4 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ cpp-info111/exercices/if0/sign_result.cpp.pl
+@ /cpp-info111/exercices/if0/sign_result.cpp.pl

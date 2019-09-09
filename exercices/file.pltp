@@ -3,11 +3,11 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ cpp-info111/exercices/file/fstream.cpp.pl
-@ cpp-info111/exercices/file/istringstream_int1.cpp.pl
-@ cpp-info111/exercices/file/istringstream_int2.cpp.pl
-@ cpp-info111/exercices/file/istringstream_string.cpp.pl
-@ cpp-info111/exercices/file/ostringstream.cpp.pl
-@ cpp-info111/exercices/file/state_float.cpp.pl
-@ cpp-info111/exercices/file/state_int.cpp.pl
-@ cpp-info111/exercices/file/state_open.cpp.pl
+@ /cpp-info111/exercices/file/fstream.cpp.pl
+@ /cpp-info111/exercices/file/istringstream_int1.cpp.pl
+@ /cpp-info111/exercices/file/istringstream_int2.cpp.pl
+@ /cpp-info111/exercices/file/istringstream_string.cpp.pl
+@ /cpp-info111/exercices/file/ostringstream.cpp.pl
+@ /cpp-info111/exercices/file/state_float.cpp.pl
+@ /cpp-info111/exercices/file/state_int.cpp.pl
+@ /cpp-info111/exercices/file/state_open.cpp.pl

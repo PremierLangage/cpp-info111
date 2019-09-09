@@ -3,4 +3,4 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ cpp-info111/exercices/struct_gros/nuage3D.cpp.pl
+@ /cpp-info111/exercices/struct_gros/nuage3D.cpp.pl

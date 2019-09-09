@@ -3,17 +3,17 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ cpp-info111/exercices/io/basic_1_input.cpp.pl
-@ cpp-info111/exercices/io/basic_2_input.cpp.pl
-@ cpp-info111/exercices/io/basic_3_input.cpp.pl
-@ cpp-info111/exercices/io/output_basic_1.cpp.pl
-@ cpp-info111/exercices/io/output_basic_2.cpp.pl
-@ cpp-info111/exercices/io/output_enchaine_1.cpp.pl
-@ cpp-info111/exercices/io/output_enchaine_2.cpp.pl
-@ cpp-info111/exercices/io/output_enchaine_3.cpp.pl
-@ cpp-info111/exercices/io/output_enchaine_4.cpp.pl
-@ cpp-info111/exercices/io/output_enchaine_5.cpp.pl
-@ cpp-info111/exercices/io/output_enchaine_6.cpp.pl
-@ cpp-info111/exercices/io/output_expr_1.cpp.pl
-@ cpp-info111/exercices/io/output_expr_2.cpp.pl
-@ cpp-info111/exercices/io/output_float.cpp.pl
+@ /cpp-info111/exercices/io/basic_1_input.cpp.pl
+@ /cpp-info111/exercices/io/basic_2_input.cpp.pl
+@ /cpp-info111/exercices/io/basic_3_input.cpp.pl
+@ /cpp-info111/exercices/io/output_basic_1.cpp.pl
+@ /cpp-info111/exercices/io/output_basic_2.cpp.pl
+@ /cpp-info111/exercices/io/output_enchaine_1.cpp.pl
+@ /cpp-info111/exercices/io/output_enchaine_2.cpp.pl
+@ /cpp-info111/exercices/io/output_enchaine_3.cpp.pl
+@ /cpp-info111/exercices/io/output_enchaine_4.cpp.pl
+@ /cpp-info111/exercices/io/output_enchaine_5.cpp.pl
+@ /cpp-info111/exercices/io/output_enchaine_6.cpp.pl
+@ /cpp-info111/exercices/io/output_expr_1.cpp.pl
+@ /cpp-info111/exercices/io/output_expr_2.cpp.pl
+@ /cpp-info111/exercices/io/output_float.cpp.pl

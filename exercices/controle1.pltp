@@ -3,15 +3,15 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ cpp-info111/exercices/controle1/function_call_1.cpp.pl
-@ cpp-info111/exercices/controle1/function_inversion_arguments.cpp.pl
-@ cpp-info111/exercices/controle1/procedure_calling_1.cpp.pl
-@ cpp-info111/exercices/controle1/procedure_calling_2.cpp.pl
-@ cpp-info111/exercices/controle1/procedure_heading_swap_code.cpp.pl
-@ cpp-info111/exercices/controle1/procedure_loop.cpp.pl
-@ cpp-info111/exercices/controle1/procedure_math_1.cpp.pl
-@ cpp-info111/exercices/controle1/procedure_ref_1_input.cpp.pl
-@ cpp-info111/exercices/controle1/procedure_ref_2.cpp.pl
-@ cpp-info111/exercices/controle1/struct_fonction_1.cpp.pl
-@ cpp-info111/exercices/controle1/struct_procedure_sum.cpp.pl
-@ cpp-info111/exercices/controle1/struct_simple_1.cpp.pl
+@ /cpp-info111/exercices/controle1/function_call_1.cpp.pl
+@ /cpp-info111/exercices/controle1/function_inversion_arguments.cpp.pl
+@ /cpp-info111/exercices/controle1/procedure_calling_1.cpp.pl
+@ /cpp-info111/exercices/controle1/procedure_calling_2.cpp.pl
+@ /cpp-info111/exercices/controle1/procedure_heading_swap_code.cpp.pl
+@ /cpp-info111/exercices/controle1/procedure_loop.cpp.pl
+@ /cpp-info111/exercices/controle1/procedure_math_1.cpp.pl
+@ /cpp-info111/exercices/controle1/procedure_ref_1_input.cpp.pl
+@ /cpp-info111/exercices/controle1/procedure_ref_2.cpp.pl
+@ /cpp-info111/exercices/controle1/struct_fonction_1.cpp.pl
+@ /cpp-info111/exercices/controle1/struct_procedure_sum.cpp.pl
+@ /cpp-info111/exercices/controle1/struct_simple_1.cpp.pl

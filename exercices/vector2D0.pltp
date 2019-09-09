@@ -3,8 +3,8 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ cpp-info111/exercices/vector2D0/basic_1.cpp.pl
-@ cpp-info111/exercices/vector2D0/det.cpp.pl
-@ cpp-info111/exercices/vector2D0/size_1.cpp.pl
-@ cpp-info111/exercices/vector2D0/size_2.cpp.pl
-@ cpp-info111/exercices/vector2D0/size_3.cpp.pl
+@ /cpp-info111/exercices/vector2D0/basic_1.cpp.pl
+@ /cpp-info111/exercices/vector2D0/det.cpp.pl
+@ /cpp-info111/exercices/vector2D0/size_1.cpp.pl
+@ /cpp-info111/exercices/vector2D0/size_2.cpp.pl
+@ /cpp-info111/exercices/vector2D0/size_3.cpp.pl

@@ -3,12 +3,12 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ cpp-info111/exercices/attic/procedure_bof_calling_1.cpp.pl
-@ cpp-info111/exercices/attic/procedure_bof_calling_2.cpp.pl
-@ cpp-info111/exercices/attic/procedure_bof_calling_2a.cpp.pl
-@ cpp-info111/exercices/attic/procedure_bof_calling_3.cpp.pl
-@ cpp-info111/exercices/attic/procedure_bof_calling_4.cpp.pl
-@ cpp-info111/exercices/attic/procedure_bof_math_4.cpp.pl
-@ cpp-info111/exercices/attic/struct_bof_fonction_1.cpp.pl
-@ cpp-info111/exercices/attic/struct_bof_fonction_2.cpp.pl
-@ cpp-info111/exercices/attic/struct_bof_fonction_3.cpp.pl
+@ /cpp-info111/exercices/attic/procedure_bof_calling_1.cpp.pl
+@ /cpp-info111/exercices/attic/procedure_bof_calling_2.cpp.pl
+@ /cpp-info111/exercices/attic/procedure_bof_calling_2a.cpp.pl
+@ /cpp-info111/exercices/attic/procedure_bof_calling_3.cpp.pl
+@ /cpp-info111/exercices/attic/procedure_bof_calling_4.cpp.pl
+@ /cpp-info111/exercices/attic/procedure_bof_math_4.cpp.pl
+@ /cpp-info111/exercices/attic/struct_bof_fonction_1.cpp.pl
+@ /cpp-info111/exercices/attic/struct_bof_fonction_2.cpp.pl
+@ /cpp-info111/exercices/attic/struct_bof_fonction_3.cpp.pl
