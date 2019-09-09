@@ -19,7 +19,7 @@ Une collection d'exercices sur les {{{{topicname}}}}.
 ==
 """
 
-type_re = re.compile("_(input|output|result|code|silentcode)\.")
+type_re = re.compile("_(input|output|result|return|code|silentcode)\.")
 exercises=dict()
 
 def create_template(filename):

@@ -9,4 +9,5 @@ Une collection d'exercices sur les {{topicname}}.
 @ cpp-info111/exercices/tests/test_output.cpp.pl
 @ cpp-info111/exercices/tests/test_randomization.cpp.pl
 @ cpp-info111/exercices/tests/test_result.cpp.pl
+@ cpp-info111/exercices/tests/test_return.cpp.pl
 @ cpp-info111/exercices/tests/test_silentcode.cpp.pl
