@@ -1,0 +1,6 @@
+template=/cpp-info111/exercices_src/first_time/metadata.pl
+title={{topicname}}
+introduction==
+Un exercice pour la {{topicname}}.
+==
+@ /cpp-info111/exercices/first_time/test_result.cpp.pl
