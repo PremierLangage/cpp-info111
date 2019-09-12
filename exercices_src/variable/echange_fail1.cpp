@@ -1,6 +1,7 @@
 /// BEGIN HIDDEN
 #include <iostream>
 using namespace std;
+#include "randomization.h"
 
 CONST I1 = RANDOM_INT(0, 7);
 CONST I2 = RANDOM_INT(8, 15);

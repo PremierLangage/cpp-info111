@@ -13,8 +13,8 @@ int main() {
     X = I1;
     Y = I2;
 
-    Z = X;
     X = Y;
+    Z = X;
     Y = Z;
     
     cout << X << endl;
