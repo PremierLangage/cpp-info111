@@ -12,12 +12,12 @@ int main() {
     X = I1;
     Y = I2;
 
-    X = Z;
-    Y = X;
-    Z = Y;
+    Z = X;
+    X = Y;
+    Y = Z;
     
-    cout << x << endl;
-    cout << y << endl;
+    cout << X << endl;
+    cout << Y << endl;
 /// BEGIN HIDDEN
     return 0;
 }
