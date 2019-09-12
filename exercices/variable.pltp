@@ -17,4 +17,10 @@ Une collection d'exercices sur les {{topicname}}.
 @ /cpp-info111/exercices/variable/string3.cpp.pl
 @ /cpp-info111/exercices/variable/string4.cpp.pl
 @ /cpp-info111/exercices/variable/trivial.cpp.pl
-@ /cpp-info111/exercices/variable/string.cpp.pl
+@ /cpp-info111/exercices/variable/echange.cpp.pl
+@ /cpp-info111/exercices/variable/echange_code.cpp.pl
+@ /cpp-info111/exercices/variable/echange_fail1.cpp.pl
+@ /cpp-info111/exercices/variable/echange_fail2.cpp.pl
+@ /cpp-info111/exercices/variable/string1_result.cpp.pl
+@ /cpp-info111/exercices/variable/string2_result.cpp.pl
+@ /cpp-info111/exercices/variable/trivial_result.cpp.pl
