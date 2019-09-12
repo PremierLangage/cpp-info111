@@ -3,8 +3,8 @@
 using namespace std;
 #include "randomization.h"
 
-CONST I1 = RANDOM_INT(0, 10);
-CONST I2 = RANDOM_INT(0, 10);
+CONST I1 = RANDOM_INT(0, 7);
+CONST I2 = RANDOM_INT(8, 16);
   
 int main () {
 /// END HIDDEN
