@@ -26,9 +26,9 @@ int main() {
     X = Y;
     Y = Z;
     /// END SOLUTION
+/// BEGIN HIDDEN
     cout << X << endl;
     cout << Y << endl;
-/// BEGIN HIDDEN
     return 0;
 }
 /// END HIDDEN
