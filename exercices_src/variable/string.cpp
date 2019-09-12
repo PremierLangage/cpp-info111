@@ -3,17 +3,11 @@
 #include "randomization.h"
 using namespace std;
 
-string a;
-string b;
-string c;
-
-CONST NAME1 = RANDOM_CHOICE("a", "b", "c");
-CONST NAME2 = RANDOM_CHOICE(a, b, c);
-CONST NAME  = RANDOM_CHOICE(NAME1, NAME2);
+CONST NAMEstr = RANDOM_CHOICE("Bob", "Barbara", "Pierre", "Paul", "Jeanne", "Camille");
 
 int main() {
 /// END HIDDEN
-  string NAME1 = NAME2;
+  string NAME = NAMEstr;
   string r = NAME;
   
 /// BEGIN HIDDEN

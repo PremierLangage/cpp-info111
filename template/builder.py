@@ -166,6 +166,7 @@ def randomize_code(code):
     consts['X'],consts['Y'],consts['Z'] = random.sample('xyz',3)
     consts['I'],consts['J'],consts['K'],consts['N'] = random.sample('ijkn',4)
     consts['PLUSOUMOINS'] = str(random.choice(['+', '-']))
+    consts['NAME'] = str(random.choice(["Alexandre", "Yasmine", "Albert", "Alice", "Antoine", "Anna"])
     
 
     # To be deleted as soon as they are not used anymore in the exercises
