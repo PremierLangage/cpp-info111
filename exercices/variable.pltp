@@ -6,7 +6,7 @@ Une collection d'exercices sur les {{topicname}}.
 @ /cpp-info111/exercices/variable/a_trivial_result.cpp.pl
 @ /cpp-info111/exercices/variable/b_string1_result.cpp.pl
 @ /cpp-info111/exercices/variable/c_echange_fail1.cpp.pl
-@ /cpp-info111/exercices/variable/d_echange.cpp.pl
+@ /cpp-info111/exercices/variable/d_echange_fail2.cpp.pl
 @ /cpp-info111/exercices/variable/e_string2_result.cpp.pl
-@ /cpp-info111/exercices/variable/f_echange_fail2.cpp.pl
-@ /cpp-info111/exercices/variable/g_echange_code.cpp.pl
+@ /cpp-info111/exercices/variable/f_echange_code.cpp.pl
+@ /cpp-info111/exercices/variable/g_echange.cpp.pl
