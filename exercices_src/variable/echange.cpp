@@ -7,15 +7,14 @@ CONST I2 = RANDOM_INT(8, 15);
 
 
 int main() {
-    int X, Y, Z;
 /// END HIDDEN
-    int x, y, z;
-    x = I1;
-    y = I2;
+    int X, Y, Z;
+    X = I1;
+    Y = I2;
 
-    X = x;
-    Y = y;
-    Z = z;
+    X = Z;
+    Y = X;
+    Z = Y;
     
     cout << x << endl;
     cout << y << endl;
