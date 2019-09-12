@@ -3,7 +3,6 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /cpp-info111/exercices/variable/division_entiere.cpp.pl
 @ /cpp-info111/exercices/variable/echange.cpp.pl
 @ /cpp-info111/exercices/variable/echange_code.cpp.pl
 @ /cpp-info111/exercices/variable/echange_fail1.cpp.pl
