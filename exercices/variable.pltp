@@ -3,20 +3,7 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /cpp-info111/exercices/variable/assign.cpp.pl
-@ /cpp-info111/exercices/variable/caractere.cpp.pl
 @ /cpp-info111/exercices/variable/division_entiere.cpp.pl
-@ /cpp-info111/exercices/variable/echange1.cpp.pl
-@ /cpp-info111/exercices/variable/echange2.cpp.pl
-@ /cpp-info111/exercices/variable/echange3.cpp.pl
-@ /cpp-info111/exercices/variable/echange4.cpp.pl
-@ /cpp-info111/exercices/variable/echange5.cpp.pl
-@ /cpp-info111/exercices/variable/factorial7.cpp.pl
-@ /cpp-info111/exercices/variable/string1.cpp.pl
-@ /cpp-info111/exercices/variable/string2.cpp.pl
-@ /cpp-info111/exercices/variable/string3.cpp.pl
-@ /cpp-info111/exercices/variable/string4.cpp.pl
-@ /cpp-info111/exercices/variable/trivial.cpp.pl
 @ /cpp-info111/exercices/variable/echange.cpp.pl
 @ /cpp-info111/exercices/variable/echange_code.cpp.pl
 @ /cpp-info111/exercices/variable/echange_fail1.cpp.pl
