@@ -1,1 +1,1 @@
-arithmétique
+topicname=arithmétique
