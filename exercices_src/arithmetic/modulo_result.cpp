@@ -13,5 +13,5 @@ int main () {
 /// BEGIN HIDDEN
     cout << r << endl;
 }
-/// Objectif Pédagigique : division entière.
+/// Objectif Pédagigique : reste de la division entière.
 /// END HIDDEN
