@@ -3,8 +3,10 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /cpp-info111/exercices/arithmetic/division_entiere.cpp.pl
-@ /cpp-info111/exercices/arithmetic/modulo.cpp.pl
-@ /cpp-info111/exercices/arithmetic/no_parentheses.cpp.pl
-@ /cpp-info111/exercices/arithmetic/parentheses.cpp.pl
-@ /cpp-info111/exercices/arithmetic/variable_division_entiere.cpp.pl
+@ /cpp-info111/exercices/arithmetic/division_entiere_2_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/division_entiere_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/modulo_2_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/modulo_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/priorite1_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/priorite2_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/z_parentheses_result.cpp.pl

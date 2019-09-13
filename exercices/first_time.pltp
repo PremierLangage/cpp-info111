@@ -3,4 +3,5 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
+@ /cpp-info111/exercices/first_time/initial_code.cpp.pl
 @ /cpp-info111/exercices/first_time/test_result.cpp.pl

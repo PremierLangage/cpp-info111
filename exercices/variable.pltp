@@ -3,10 +3,11 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /cpp-info111/exercices/variable/a_trivial_result.cpp.pl
-@ /cpp-info111/exercices/variable/b_string1_result.cpp.pl
-@ /cpp-info111/exercices/variable/c_echange_fail1.cpp.pl
-@ /cpp-info111/exercices/variable/d_echange_fail2.cpp.pl
-@ /cpp-info111/exercices/variable/e_string2_result.cpp.pl
-@ /cpp-info111/exercices/variable/f_echange_code.cpp.pl
-@ /cpp-info111/exercices/variable/g_echange.cpp.pl
+@ /cpp-info111/exercices/variable/0_declaration_float_code.cpp.pl
+@ /cpp-info111/exercices/variable/1_trivial_result.cpp.pl
+@ /cpp-info111/exercices/variable/2_string1_result.cpp.pl
+@ /cpp-info111/exercices/variable/3_echange_fail1_result.cpp.pl
+@ /cpp-info111/exercices/variable/4_echange_code.cpp.pl
+@ /cpp-info111/exercices/variable/5_string2_result.cpp.pl
+@ /cpp-info111/exercices/variable/6_echange_fail2_result.cpp.pl
+@ /cpp-info111/exercices/variable/7_echange_result.cpp.pl
