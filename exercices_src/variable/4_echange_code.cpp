@@ -10,19 +10,19 @@ CONST I4 = RANDOM_INT(500, 1000);
 
 int main() {
     /// END HIDDEN
-    int X, Y, Z;
+    int X, Y;
     X = I1;
     Y = I2;
     /** Echangez les valeurs de X et Y en utilisant uniquement 
      *  des affectations du type a = b où a et b 
-     *  sont des noms de variables, et en utilisant la variable Z.
+     *  sont des noms de variables, et en déclarant un nouvelle variable.
      */
     /// BEGIN HIDDEN
     X += I3;
     Y += I4;
     /// END HIDDEN
     /// BEGIN SOLUTION
-    Z = X;
+    int Z = X;
     X = Y;
     Y = Z;
     /// END SOLUTION

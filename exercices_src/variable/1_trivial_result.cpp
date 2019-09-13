@@ -13,7 +13,6 @@ int main () {
     Y = X;
     X = I2;
     r = X + Y;
-
 /// BEGIN HIDDEN
     cout << r << endl;
     return 0;

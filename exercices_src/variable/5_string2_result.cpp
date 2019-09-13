@@ -8,8 +8,7 @@ CONST NAMEstr = RANDOM_CHOICE("Bob", "Barbara", "Pierre", "Paul", "Jeanne", "Cam
 int main() {
 /// END HIDDEN
   string NAME = NAMEstr;
-  string r = NAMEstr;
-  
+  string r = NAMEstr;  
 /// BEGIN HIDDEN
     cout << r << endl;
     return 0;

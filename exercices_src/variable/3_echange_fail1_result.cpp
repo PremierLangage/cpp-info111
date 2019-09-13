@@ -9,18 +9,17 @@ CONST I2 = RANDOM_INT(8, 15);
 
 int main() {
 /// END HIDDEN
-    int X, Y, Z;
-    X = I1;
-    Y = I2;
+    int a, b;
+    a = I1;
+    b = I2;
 
-    X = Y;
-    Z = X;
-    Y = Z;
-    
-    cout << X << endl;
-    cout << Y << endl;
+    a = b;
+    b = a;
+
+    int r = b;
 /// BEGIN HIDDEN
+    cout << r << endl;
     return 0;
 }
-/// Objectif Pédagogique : faire attention à l'ordre des instructions.
+/// Objectif Pédagogique : comprendre que l'affectation écrase l'ancienne valeur...
 /// END HIDDEN

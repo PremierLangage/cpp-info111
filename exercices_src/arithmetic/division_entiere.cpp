@@ -12,6 +12,7 @@ int main () {
     int X, Y;
     X = I3 / I1;
     Y = I3 / I2;
+    
     cout << X << endl;
     cout << Y << endl;
 /// BEGIN HIDDEN

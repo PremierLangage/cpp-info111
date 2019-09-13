@@ -16,10 +16,10 @@ int main() {
     Z = X;
     X = Y;
     Y = Z;
-    
-    cout << X << endl;
-    cout << Y << endl;
-/// BEGIN HIDDEN
+    int r = Y;
+/// BEGIN HIDDEN    
+    cout << r << endl;
     return 0;
 }
+/// Objectif Pédagogique : échange de variable correct.
 /// END HIDDEN
