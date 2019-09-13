@@ -14,7 +14,7 @@ int main() {
     X = I1;
     Y = I2;
     /** Echangez les valeurs de X et Y en utilisant uniquement 
-     *  des affectations du type `a = b` où `a` et `b` 
+     *  des affectations du type a = b où a et b 
      *  sont des noms de variables, et en utilisant la variable Z.
      */
     /// BEGIN HIDDEN
@@ -31,4 +31,5 @@ int main() {
     cout << Y << endl;
     return 0;
 }
+/// Objectif Pédagogique : comprendre la difference entre valeur et nom d'une variable de type string.
 /// END HIDDEN

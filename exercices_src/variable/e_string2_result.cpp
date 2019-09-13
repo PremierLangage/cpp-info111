@@ -14,4 +14,5 @@ int main() {
     cout << r << endl;
     return 0;
 }
+/// Objectif Pédagogique : comprendre la difference entre valeur et nom d'une variable de type string.
 /// END HIDDEN

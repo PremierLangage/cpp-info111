@@ -22,4 +22,5 @@ int main() {
 /// BEGIN HIDDEN
     return 0;
 }
+/// Objectif Pédagogique : faire attention à l'ordre des instructions.
 /// END HIDDEN

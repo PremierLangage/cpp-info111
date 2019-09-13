@@ -21,4 +21,5 @@ int main() {
 /// BEGIN HIDDEN
     return 0;
 }
+/// Objectif Pédagogique : comprendre que l'affectation écrase l'ancienne valeur...
 /// END HIDDEN
