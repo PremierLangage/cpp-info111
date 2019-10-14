@@ -3,12 +3,12 @@ title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /cpp-info111/exercices/while/1_input.cpp.pl
-@ /cpp-info111/exercices/while/accumulateur.cpp.pl
-@ /cpp-info111/exercices/while/count_subtract.cpp.pl
-@ /cpp-info111/exercices/while/factorial.cpp.pl
-@ /cpp-info111/exercices/while/indices.cpp.pl
-@ /cpp-info111/exercices/while/indices_2.cpp.pl
-@ /cpp-info111/exercices/while/substract.cpp.pl
-@ /cpp-info111/exercices/while/syracuse.cpp.pl
-@ /cpp-info111/exercices/while/vide.cpp.pl
+@ /cpp-info111/exercices/while/while_1_input.cpp.pl
+@ /cpp-info111/exercices/while/while_accumulateur.cpp.pl
+@ /cpp-info111/exercices/while/while_count_subtract.cpp.pl
+@ /cpp-info111/exercices/while/while_factorial.cpp.pl
+@ /cpp-info111/exercices/while/while_indices.cpp.pl
+@ /cpp-info111/exercices/while/while_indices_2.cpp.pl
+@ /cpp-info111/exercices/while/while_substract.cpp.pl
+@ /cpp-info111/exercices/while/while_syracuse.cpp.pl
+@ /cpp-info111/exercices/while/while_vide.cpp.pl
