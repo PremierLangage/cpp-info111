@@ -4,9 +4,8 @@
 #include "randomization.h"
 using namespace std;
 
-CONST S   = RANDOM_INT(4, 7)
-CONST TAB = RANDOM_VECTOR(S, RANDOM_INT, 0, 6);
-CONST I1  = RANDOM_INT(0, S-1)
+CONST TAB = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 6);
+CONST I1  = RANDOM_INT(0, 4)
   
 int main() {
 /// END HIDDEN
