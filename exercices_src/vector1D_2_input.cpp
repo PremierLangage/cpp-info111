@@ -4,13 +4,15 @@
 #include "randomization.h"
 using namespace std;
 
-CONST TAB = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 10);
-
+CONST S   = RANDOM_INT(4, 7)
+CONST TAB = RANDOM_VECTOR(S, RANDOM_INT, 0, 6);
+CONST I1  = RANDOM_INT(0, S-1)
+  
 int main() {
 /// END HIDDEN
     vector<int> tab = TAB;
     int s = 0;
-    cin >> tab[CI4];
+    cin >> tab[I1];
     for (int i = 0; i < tab.size(); i++) {
         if (tab[i] % 2 == 0) {
             s = s + tab[i];
@@ -21,3 +23,4 @@ int main() {
     return 0;
 }
 /// END HIDDEN
+
