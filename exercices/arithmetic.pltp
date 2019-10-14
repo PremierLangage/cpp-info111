@@ -1,5 +1,5 @@
 template=/cpp-info111/exercices_src/arithmetic/metadata.pl
-title={{topicname}}
+title=={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
@@ -10,3 +10,4 @@ Une collection d'exercices sur les {{topicname}}.
 @ /cpp-info111/exercices/arithmetic/priorite1_result.cpp.pl
 @ /cpp-info111/exercices/arithmetic/priorite2_result.cpp.pl
 @ /cpp-info111/exercices/arithmetic/z_parentheses_result.cpp.pl
+
