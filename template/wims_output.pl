@@ -6,7 +6,7 @@ typename=Deviner la sortie
 type=sandbox
 
 text==
-Lire attentivement la partie de programme suivant et saisir ce que vous prévoyez qu'il affiche.
+Lire attentivement la fraction de programme suivant et saisir ce que vous prévoyez qu'il affiche. Attention, des erreurs peuvent apparaitre.
 ==
 
 failure_message= Ce n'est pas la réponse attendue. #Réponse incorrecte:<pre>{answer}</pre>Le programme a affiché:<pre>{solution_out}</pre>
@@ -18,3 +18,4 @@ def build(exo):
     exo['items'].append({'type':'answer', 'subtype': 'stdout'})
     return build_finalize(exo)
 ==
+
