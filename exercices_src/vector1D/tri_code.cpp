@@ -32,7 +32,7 @@ bool estCroissant(vector<int> t){
 /// END INITSOLUTION
 /// BEGIN HIDDEN
 int main(){
-  cout << estCroissant(TAB1) << estCroissant(TAB2) << estCroissant(TAB3) << estCroissant(TAB4) << estCroissant({1,1,2,3}) << estCroissant({-1});
+  cout << estCroissant(TAB1) << estCroissant(TAB2) << estCroissant(TAB3) << estCroissant(TAB4) << estCroissant({1,1,2,3}) << estCroissant({-1}) << estCroissant({-1,-2});
   return 0;
 }
 /// Objectif Pédagogique : fonction de vérification de tableau trié
