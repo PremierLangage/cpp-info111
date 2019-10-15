@@ -9,7 +9,7 @@ text==
 Lire attentivement la fraction de programme suivant et saisir ce que vous prévoyez qu'il affiche. Attention, des erreurs peuvent apparaitre.
 ==
 
-failure_message= Ce n'est pas la réponse attendue. #Réponse incorrecte:<pre>{answer}</pre>Le programme a affiché:<pre>{solution_out}</pre>
+failure_message= Ce n'est pas la réponse attendue. Réponse incorrecte:<pre>{answer}</pre>Le programme a affiché:<pre>{solution_out}</pre>
 
 build==
 from mybuilder import build_generic, build_finalize
