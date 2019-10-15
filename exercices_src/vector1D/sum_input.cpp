@@ -5,7 +5,7 @@
 using namespace std;
 
 CONST TAB = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 6);
-CONST I1  = RANDOM_INT(0, 4);
+CONST I1  = RANDOM_INT(0, 3);
   
 int main() {
 /// END HIDDEN
@@ -21,5 +21,6 @@ int main() {
 }
 /// Objectif Pédagigique : parcourir un tableau
 /// END HIDDEN
+
 
 
