@@ -5,7 +5,7 @@
 using namespace std;
 
 CONST I1  = RANDOM_INT(0, 4);
-CONST TAB = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 6);
+//CONST TAB = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 6);
   
 /// END HIDDEN
 int recherche(int x, vector<int> t) {
@@ -20,8 +20,9 @@ int recherche(int x, vector<int> t) {
 
 
 int main() {
-    vector<int> tab = TAB;
+    vector<int> tab = {1,2,3};
     cout << recherche(I1, tab) << endl;
     return 0;
 }
+
 
