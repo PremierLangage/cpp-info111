@@ -1,27 +1,17 @@
-/// BEGIN HIDDEN
 #include <iostream>
 #include <vector>
 #include "randomization.h"
 using namespace std;
 
 CONST I1  = RANDOM_INT(0, 4);
-//CONST TAB = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 6);
   
-/// END HIDDEN
-int recherche(int x, vector<int> t) {
-    int indice = -1;
-    for (int i = t.size() - 1; i >= 0; i = i - 1) {
-        if (t[i] == x) {
-            indice = i;
-        }
-    }
+int recherche(int x) {
     return indice;
 }
 
 
 int main() {
-    vector<int> tab = {1,2,3};
-    cout << recherche(I1, tab) << endl;
+    cout << recherche(I1) << endl;
     return 0;
 }
 
