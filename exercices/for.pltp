@@ -1,5 +1,5 @@
 template=/cpp-info111/exercices_src/for/metadata.pl
-title={{topicname}}
+title=Boucles for
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
@@ -12,3 +12,4 @@ Une collection d'exercices sur les {{topicname}}.
 @ /cpp-info111/exercices/for/for_insert_code.cpp.pl
 @ /cpp-info111/exercices/for/for_odd.cpp.pl
 @ /cpp-info111/exercices/for/for_sortie.cpp.pl
+
