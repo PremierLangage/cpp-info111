@@ -1,5 +1,5 @@
 template=/cpp-info111/exercices_src/vector1D/metadata.pl
-title={{topicname}}
+title=Tableaux
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
@@ -9,3 +9,4 @@ Une collection d'exercices sur les {{topicname}}.
 @ /cpp-info111/exercices/vector1D/recherche_wright.cpp.pl
 @ /cpp-info111/exercices/vector1D/sum_input.cpp.pl
 @ /cpp-info111/exercices/vector1D/tri_code.cpp.pl
+
