@@ -10,12 +10,12 @@ CONST TAB3 = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 6);
 CONST TAB4 = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 6);
   
 /// END HIDDEN
-bool estCroissant(vector<int> t){
   /** Fonction estCroissant
    * @param t un tableau d’entiers
    * @return bool qui vaut true si et seulement si t est trié
    *         dans l'ordre croissant au sens large
    **/
+bool estCroissant(vector<int> t){
   /// BEGIN SOLUTION
   for(int i = 0; i < (t.size() - 1); i++){
     if(t[i]>t[i+1]){
@@ -33,3 +33,4 @@ int main(){
 }
 /// Objectif Pédagogique : fonction de vérification de tableau trié
 /// EDN HIDDEN
+
