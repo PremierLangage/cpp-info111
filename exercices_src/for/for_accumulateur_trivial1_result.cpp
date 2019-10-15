@@ -1,11 +1,15 @@
 /// BEGIN HIDDEN
 #include <iostream>
+#include "randomization.h"
 using namespace std;
 
-int main() {
+CONST I1 = RANDOM_INT(1, 7);
+CONST I2 = RANDOM_INT(1, 7);
+
+int main () {
 /// END HIDDEN
-    int r = CI4;
-    for ( int i = 1; i <= 3 ; i = i + 1 ) {
+    int r = I1;
+    for ( int i = 1; i <= I2 ; i = i + 1 ) {
         r = r + i;
     }
 /// BEGIN HIDDEN
@@ -13,3 +17,4 @@ int main() {
     return 0;
 }
 /// END HIDDEN
+
