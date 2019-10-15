@@ -3,15 +3,10 @@
 #include "randomization.h"
 using namespace std;
 
-CONST I1  = RANDOM_INT(0, 4);
-  
-int recherche(int x) {
-    return indice;
-}
-
+CONST A  = RANDOM_INT(0, 4);
 
 int main() {
-    cout << recherche(I1) << endl;
+    cout << A << endl;
     return 0;
 }
 
