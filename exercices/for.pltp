@@ -3,9 +3,7 @@ title=Boucles for
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
-@ /cpp-info111/exercices/for/for_accumulateur_trivial0.cpp.pl
-@ /cpp-info111/exercices/for/for_accumulateur_trivial0a.cpp.pl
-@ /cpp-info111/exercices/for/for_accumulateur_trivial1_result.cpp.pl
+@ /cpp-info111/exercices/for/accumulateur_trivial_result.cpp.pl
 @ /cpp-info111/exercices/for/for_binomial_input.cpp.pl
 @ /cpp-info111/exercices/for/for_factorial.cpp.pl
 @ /cpp-info111/exercices/for/for_indice.cpp.pl
