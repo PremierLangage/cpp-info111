@@ -1,5 +1,5 @@
 template=/cpp-info111/exercices_src/arithmetic/metadata.pl
-title={{topicname}}
+title=Arithmétique
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==

@@ -180,7 +180,7 @@ def randomize_code(code):
     for line in code.splitlines():
         pattern = re.compile(r'\b(' + '|'.join(consts.keys()) + r')\b')
 
-        match = re.match(r"CONST (\w+) = (.*?);?$", line)
+        match = re.match(r"CONST\s+(\w+)\s+=\s+(.*?);?$", line)
         if match:
             # Define new constant
             variable, value = match.groups()

@@ -4,7 +4,7 @@
 using namespace std;
 
 CONST I1 = RANDOM_INT(1, 7);
-CONST I2 = RANDOM_INT(3, 6);
+CONST I2 = RANDOM_INT(1, 7);
 
 int main () {
 /// END HIDDEN

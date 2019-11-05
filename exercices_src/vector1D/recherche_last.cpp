@@ -4,8 +4,8 @@
 #include "randomization.h"
 using namespace std;
 
-CONST TAB = RANDOM_VECTOR(RANDOM_INT(4, 7), RANDOM_INT, 0, 6);
-CONST I1  = RANDOM_INT(0, 4);
+CONST I1  = RANDOM_INT(2, 4);
+CONST TAB = RANDOM_VECTOR(RANDOM_INT(6, 10), RANDOM_INT, 2, 4);
   
 /// END HIDDEN
 int recherche(int x, vector<int> t) {

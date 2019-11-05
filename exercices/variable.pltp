@@ -1,5 +1,5 @@
 template=/cpp-info111/exercices_src/variable/metadata.pl
-title={{topicname}}
+title=Variables
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
