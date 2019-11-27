@@ -16,4 +16,5 @@ int main () {
     cout << r << endl;
     return 0;
 }
+/// Objectif Pédagigique : accumulateur avec boucle for
 /// END HIDDEN

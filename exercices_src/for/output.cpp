@@ -18,5 +18,5 @@ int main () {
 /// BEGIN HIDDEN
     return 0;
 }
-/// Objectif Pédagogique : la varible après la boucle
-/// EDN HIDDEN
+/// Objectif Pédagogique : condition de sortie de la boucle
+/// END HIDDEN
