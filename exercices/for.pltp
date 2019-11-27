@@ -1,13 +1,12 @@
 template=/cpp-info111/exercices_src/for/metadata.pl
-title=Boucles for
+title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
 @ /cpp-info111/exercices/for/accumulateur_trivial_result.cpp.pl
-@ /cpp-info111/exercices/for/for_binomial_input.cpp.pl
-@ /cpp-info111/exercices/for/for_factorial.cpp.pl
-@ /cpp-info111/exercices/for/for_indice.cpp.pl
-@ /cpp-info111/exercices/for/for_insert_code.cpp.pl
-@ /cpp-info111/exercices/for/for_odd.cpp.pl
-@ /cpp-info111/exercices/for/for_sortie.cpp.pl
-
+@ /cpp-info111/exercices/for/binomial_input.cpp.pl
+@ /cpp-info111/exercices/for/factorial_result.cpp.pl
+@ /cpp-info111/exercices/for/index.cpp.pl
+@ /cpp-info111/exercices/for/output.cpp.pl
+@ /cpp-info111/exercices/for/proc_insert_code.cpp.pl
+@ /cpp-info111/exercices/for/sum_inverse_code.cpp.pl

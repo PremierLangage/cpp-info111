@@ -1,12 +1,11 @@
 template=/cpp-info111/exercices_src/vector1D/metadata.pl
-title=Tableaux
+title={{topicname}}
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
 @ /cpp-info111/exercices/vector1D/recherche_first_decreasing.cpp.pl
-@ /cpp-info111/exercices/vector1D/sum_input.cpp.pl
 @ /cpp-info111/exercices/vector1D/recherche_first_wrong.cpp.pl
-@ /cpp-info111/exercices/vector1D/tri_code.cpp.pl
 @ /cpp-info111/exercices/vector1D/recherche_last.cpp.pl
 @ /cpp-info111/exercices/vector1D/recherche_wright.cpp.pl
-
+@ /cpp-info111/exercices/vector1D/sum_input.cpp.pl
+@ /cpp-info111/exercices/vector1D/tri_code.cpp.pl
