@@ -3,8 +3,8 @@
 #include "randomization.h"
 using namespace std;
 
-CONST I1 = RANDOM_INT(-4, 4);
-CONST I2 = RANDOM_INT(-4, 4);
+CONST I1 = RANDOM_INT(2, 8);
+CONST I2 = RANDOM_INT(-4, 1);
 
 
 int main() {
@@ -18,3 +18,4 @@ int main() {
     return 0;
 }
 /// END HIDDEN
+
