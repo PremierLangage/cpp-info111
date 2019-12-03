@@ -1,5 +1,5 @@
 template=/cpp-info111/exercices_src/function_call_simple/metadata.pl
-title={{topicname}}
+title=Appels de fonctions simples
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
@@ -9,3 +9,4 @@ Une collection d'exercices sur les {{topicname}}.
 @ /cpp-info111/exercices/function_call_simple/function_call_4.cpp.pl
 @ /cpp-info111/exercices/function_call_simple/function_inversion_arguments.cpp.pl
 @ /cpp-info111/exercices/function_call_simple/reverse_int_code.cpp.pl
+
