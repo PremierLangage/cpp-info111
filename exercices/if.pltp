@@ -1,5 +1,5 @@
 template=/cpp-info111/exercices_src/if/metadata.pl
-title={{topicname}}
+title=Conditionnelles
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
@@ -7,3 +7,4 @@ Une collection d'exercices sur les {{topicname}}.
 @ /cpp-info111/exercices/if/file_wright.cpp.pl
 @ /cpp-info111/exercices/if/file_wrong.cpp.pl
 @ /cpp-info111/exercices/if/semicolon.cpp.pl
+
