@@ -8,11 +8,10 @@ Une collection d'exercices sur les boucles.
 @ /cpp-info111/exercices/for/factorial_result.cpp.pl
 @ /cpp-info111/exercices/for/index.cpp.pl
 @ /cpp-info111/exercices/for/output.cpp.pl
-@ /cpp-info111/exercices/for/proc_insert_code.cpp.pl
 @ /cpp-info111/exercices/for/sum_inverse_code.cpp.pl
 @ /cpp-info111/exercices/while/empty.cpp.pl
 @ /cpp-info111/exercices/while/accumulateur.cpp.pl
-@ /cpp-info111/exercices/while/count_subtract.cpp.pl
+@ /cpp-info111/exercices/while/count_substract.cpp.pl
 @ /cpp-info111/exercices/while/factorial_result.cpp.pl
 @ /cpp-info111/exercices/while/substract_result.cpp.pl
 @ /cpp-info111/exercices/while/syracuse.cpp.pl
