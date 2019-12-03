@@ -4,19 +4,17 @@ introduction==
 Une collection d'exercices sur les boucles.
 ==
 @ /cpp-info111/exercices/for/accumulateur_trivial_result.cpp.pl
-@ /cpp-info111/exercices/for/for_binomial_input.cpp.pl
-@ /cpp-info111/exercices/for/for_factorial.cpp.pl
-@ /cpp-info111/exercices/for/for_indice.cpp.pl
-@ /cpp-info111/exercices/for/for_insert_code.cpp.pl
-@ /cpp-info111/exercices/for/for_odd.cpp.pl
-@ /cpp-info111/exercices/for/for_sortie.cpp.pl
-@ /cpp-info111/exercices/while/while_1_input.cpp.pl
-@ /cpp-info111/exercices/while/while_accumulateur.cpp.pl
-@ /cpp-info111/exercices/while/while_count_subtract.cpp.pl
-@ /cpp-info111/exercices/while/while_factorial.cpp.pl
-@ /cpp-info111/exercices/while/while_indices.cpp.pl
-@ /cpp-info111/exercices/while/while_indices_2.cpp.pl
-@ /cpp-info111/exercices/while/while_substract.cpp.pl
-@ /cpp-info111/exercices/while/while_syracuse.cpp.pl
-@ /cpp-info111/exercices/while/while_vide.cpp.pl
+@ /cpp-info111/exercices/for/binomial_input.cpp.pl
+@ /cpp-info111/exercices/for/factorial_result.cpp.pl
+@ /cpp-info111/exercices/for/index.cpp.pl
+@ /cpp-info111/exercices/for/output.cpp.pl
+@ /cpp-info111/exercices/for/proc_insert_code.cpp.pl
+@ /cpp-info111/exercices/for/sum_inverse_code.cpp.pl
+@ /cpp-info111/exercices/while/empty.cpp.pl
+@ /cpp-info111/exercices/while/accumulateur.cpp.pl
+@ /cpp-info111/exercices/while/count_subtract.cpp.pl
+@ /cpp-info111/exercices/while/factorial_result.cpp.pl
+@ /cpp-info111/exercices/while/substract_result.cpp.pl
+@ /cpp-info111/exercices/while/syracuse.cpp.pl
+
 
