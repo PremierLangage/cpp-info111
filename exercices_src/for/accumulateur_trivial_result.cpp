@@ -9,7 +9,7 @@ CONST IMAX = RANDOM_INT(1, 4);
 
 int main () {
 /// END HIDDEN
-    int r = RINIT;
+    int r = RINIT; 
     for ( int I = 1; I <= IMAX ; I = I + 1 ) {
         r = r + I;
     }
