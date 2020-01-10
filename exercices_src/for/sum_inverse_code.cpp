@@ -8,7 +8,7 @@ using namespace std;
 
 /** Fonction maSomme
  * @param n un entier
- * @return un réél qui est la somme des 1/k pour k entre 1 et n si n est plus grand que 1, 0 sinon
+ * @return un réel qui est la somme des 1/k pour k entre 1 et n si n >= 1, 0 sinon
  **/
 /// BEGIN SOLUTION
 float maSomme(int n){
