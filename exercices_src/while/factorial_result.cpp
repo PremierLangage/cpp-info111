@@ -3,18 +3,18 @@
 #include "randomization.h"
 using namespace std;
 
-CONST I1 = RANDOM_INT(3, 7);
+CONST N0 = RANDOM_INT(3, 5);
 
 int main () {
 /// END HIDDEN
-    int n, r;
+    int N, r;
 
-    n = I1;
+    N = N0;
     r = 1;
 
-    while (n > 0) {
-        r = r * n;
-        n = n - 1;
+    while (N > 0) {
+        r = r * N;
+        N = N - 1;
     }
 /// BEGIN HIDDEN
     cout << r << endl;
@@ -22,4 +22,3 @@ int main () {
     return 0;
 }
 /// END HIDDEN
-

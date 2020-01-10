@@ -1,20 +1,20 @@
 /// BEGIN HIDDEN
+/// Objectif Pédagogique : accumulateur avec boucle for
 #include <iostream>
 #include "randomization.h"
 using namespace std;
 
-CONST I1 = RANDOM_INT(1, 7);
-CONST I2 = RANDOM_INT(1, 7);
+CONST RINIT = RANDOM_INT(1, 7);
+CONST IMAX = RANDOM_INT(1, 4);
 
 int main () {
 /// END HIDDEN
-    int r = I1;
-    for ( int i = 1; i <= I2 ; i = i + 1 ) {
-        r = r + i;
+    int r = RINIT;
+    for ( int I = 1; I <= IMAX ; I = I + 1 ) {
+        r = r + I;
     }
 /// BEGIN HIDDEN
     cout << r << endl;
     return 0;
 }
-/// Objectif Pédagigique : accumulateur avec boucle for
 /// END HIDDEN
