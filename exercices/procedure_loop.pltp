@@ -1,8 +1,9 @@
 template=/cpp-info111/exercices_src/procedure_loop/metadata.pl
-title={{topicname}}
+title=procedures avec des boucles
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
 @ /cpp-info111/exercices/procedure_loop/procedure_loop.cpp.pl
 @ /cpp-info111/exercices/procedure_loop/procedure_loop_ref.cpp.pl
 @ /cpp-info111/exercices/procedure_loop/procedure_loop_val.cpp.pl
+
