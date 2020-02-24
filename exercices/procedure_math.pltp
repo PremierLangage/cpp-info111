@@ -1,5 +1,5 @@
 template=/cpp-info111/exercices_src/procedure_math/metadata.pl
-title={{topicname}}
+title=procédures mathématiques
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
@@ -7,3 +7,4 @@ Une collection d'exercices sur les {{topicname}}.
 @ /cpp-info111/exercices/procedure_math/procedure_math_2.cpp.pl
 @ /cpp-info111/exercices/procedure_math/procedure_math_2b.cpp.pl
 @ /cpp-info111/exercices/procedure_math/procedure_math_3.cpp.pl
+
