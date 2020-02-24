@@ -15,8 +15,9 @@ name=deviner le résultat
 typename=Deviner le résultat
 type=sandbox
 
-failure_message=Réponse incorrecte:<pre>{answer_out}</pre>La fonction renvoie:<pre>{solution_out}</pre>
+failure_message=Ce n'est pas la réponse attendue. La fonction renvoie:<pre>{solution_out}</pre>
 
 text==
 Exécuter pas à pas la fonction suivante. Que renvoie <tt>f({{consts['INPUT']}})</tt>?
 ==
+
