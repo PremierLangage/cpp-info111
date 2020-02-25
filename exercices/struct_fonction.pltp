@@ -1,6 +1,7 @@
 template=/cpp-info111/exercices_src/struct_fonction/metadata.pl
-title={{topicname}}
+title=enregistrements et fonctions
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
 @ /cpp-info111/exercices/struct_fonction/struct_fonction_1.cpp.pl
+
