@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+CONST V22 = RANDOM_VECTOR(2, RANDOM_VECTOR, 2, RANDOM_INT, 0, 5);
 
 int main() {
 /// END HIDDEN
@@ -13,3 +14,4 @@ int main() {
 /// BEGIN HIDDEN
 }
 /// END HIDDEN
+
