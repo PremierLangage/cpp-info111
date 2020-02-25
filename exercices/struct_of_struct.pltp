@@ -1,6 +1,7 @@
 template=/cpp-info111/exercices_src/struct_of_struct/metadata.pl
-title={{topicname}}
+title=enregistrements imbriqués
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
 @ /cpp-info111/exercices/struct_of_struct/cercles.cpp.pl
+
