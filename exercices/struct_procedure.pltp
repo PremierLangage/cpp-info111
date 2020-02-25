@@ -1,5 +1,5 @@
 template=/cpp-info111/exercices_src/struct_procedure/metadata.pl
-title={{topicname}}
+title=enregistrements et procédures
 introduction==
 Une collection d'exercices sur les {{topicname}}.
 ==
