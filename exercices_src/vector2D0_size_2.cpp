@@ -5,9 +5,10 @@ using namespace std;
 
 int main() {
 /// END HIDDEN
-    vector<vector <int>> tab = {{1, 2, 3}, {4, 5, 6}};
+    vector<vector <int>> tab = RANDOM_VECTOR(2, RANDOM_VECTOR, 3, RANDOM_INT, 0, 5);
 
     cout << tab[0].size() << endl;
 /// BEGIN HIDDEN
 }
 /// END HIDDEN
+
