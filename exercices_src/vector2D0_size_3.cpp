@@ -9,7 +9,7 @@ int main() {
 /// END HIDDEN
     vector<vector <int>> tab = V23;
 
-    cout << tab[RANDOM_INT(0,1)].size() << endl;
+    cout << tab[CI1].size() << endl;
 /// BEGIN HIDDEN
 }
 /// END HIDDEN
