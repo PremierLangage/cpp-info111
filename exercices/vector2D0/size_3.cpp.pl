@@ -9,8 +9,8 @@ révisions pour l'examen d'Info 111.
 @ /cpp-info111/exercices/variable/5_string2_result.cpp.pl
 @ /cpp-info111/exercices/arithmetic/division_entiere_2_result.cpp.pl
 @ /cpp-info111/exercices/arithmetic/z_parentheses_result.cpp.pl
-@ /cpp-info111/exercices/io_output_expr_1.cpp
-@ /cpp-info111/exercices/io_output_basic_2.cpp
+@ /cpp-info111/exercices/io_output_expr_1.cpp.pl
+@ /cpp-info111/exercices/io_output_basic_2.cpp.pl
 @ /cpp-info111/exercices/while/empty.cpp.pl
 @ /cpp-info111/exercices/while/accumulateur.cpp.pl
 @ /cpp-info111/exercices/for/output.cpp.pl
