@@ -4,12 +4,12 @@
 using namespace std;
 
 #include "randomization.h"
-CONST A1 = double(RANDOM_INT(-5, 5));
-CONST A2 = double(RANDOM_INT(-5, 5));
-CONST A3 = double(RANDOM_INT(-5, 5));
-CONST B1 = double(RANDOM_INT(-5, 5));
-CONST B2 = double(RANDOM_INT(-5, 5));
-CONST B3 = double(RANDOM_INT(-5, 5));
+CONST A1 = RANDOM_INT(-5, 5);
+CONST A2 = RANDOM_INT(-5, 5);
+CONST A3 = RANDOM_INT(-5, 5);
+CONST B1 = RANDOM_INT(-5, 5);
+CONST B2 = RANDOM_INT(-5, 5);
+CONST B3 = RANDOM_INT(-5, 5);
 /// END HIDDEN
 
 struct Point2D {
@@ -32,3 +32,4 @@ int main() {
 
     cout << X.abs << " " << X.ord << endl;
 }
+
