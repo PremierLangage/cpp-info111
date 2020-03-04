@@ -9,7 +9,8 @@ Une collection d'exercices sur les {{topicname}}.
 @ /cpp-info111/exercices/controle2/struct_P3D.cpp.pl
 @ /cpp-info111/exercices/controle2/struct_P3D_eq_code.cpp.pl
 @ /cpp-info111/exercices/controle2/struct_hard_swap.cpp.pl
-@ /cpp-info111/exercices/controle2/struct_tableau_struct_notes.cpp.pl
-@ /cpp-info111/exercices/controle2/struct_tableaux_ajouteBoite_code.cpp.pl
-@ /cpp-info111/exercices/controle2/struct_tableaux_moyenne_code.cpp.pl
+#@ /cpp-info111/exercices/controle2/struct_tableau_struct_notes.cpp.pl
+#@ /cpp-info111/exercices/controle2/struct_tableaux_ajouteBoite_code.cpp.pl
+#@ /cpp-info111/exercices/controle2/struct_tableaux_moyenne_code.cpp.pl
 @ /cpp-info111/exercices/controle2/struct_truc.cpp.pl
+
