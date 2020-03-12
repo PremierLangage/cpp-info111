@@ -1,10 +1,11 @@
 /// BEGIN HIDDEN
+/// Objectif Pédagogique: modification (volontaire???) du compteur dans la boucle
 #include <iostream>
 #include "randomization.h"
 using namespace std;
 
 CONST I1 = RANDOM_INT(1, 7);
-CONST I2 = RANDOM_INT(10, 16);
+CONST I2 = I1 + RANDOM_INT(2, 6);
 
 int main () {
 /// END HIDDEN
@@ -15,5 +16,4 @@ int main () {
 /// BEGIN HIDDEN
     return 0;
 }
-/// Objectif Pédagogique : modification de la variable dans la boucle
 /// END HIDDEN

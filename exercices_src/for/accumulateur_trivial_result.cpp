@@ -1,5 +1,5 @@
 /// BEGIN HIDDEN
-/// Objectif Pédagogique: accumulateur avec boucle for
+/// Objectif Pédagogique : accumulateur avec boucle for
 #include <iostream>
 #include "randomization.h"
 using namespace std;
@@ -18,4 +18,5 @@ int main () {
     return 0;
 }
 /// END HIDDEN
+
 
