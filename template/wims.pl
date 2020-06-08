@@ -7,7 +7,7 @@ author=MPI Info 111's team
 @ /cpp-info111/template/plutils.py
 @ /cpp-info111/template/graderCpp.py
 @ /cpp-info111/template/randomization.h
-@ /cpp-info111/template/builder.py
+@ /cpp-info111/template/wims_builder.py
 
 form=@ /cpp-info111/template/form/editorform.html
 
