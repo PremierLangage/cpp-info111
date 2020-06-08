@@ -11,4 +11,13 @@ author=MPI Info 111's team
 
 form=@ /cpp-info111/template/form/editorform.html
 
+title=Exercice
+
+build ==
+import wims
+
+def build(exo):
+    builder = wims.WimsOutput()
+    return builder(exo)
+==
 
