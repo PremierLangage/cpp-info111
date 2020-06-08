@@ -1,4 +1,4 @@
-template=/cpp-info111/template/wims_output.pl
+template=/cpp-info111/template/wims.pl
 template=/cpp-info111/exercices_src/first_time/metadata.pl
 template=/cpp-info111/exercices_src/tests/metadata.pl
 @ /cpp-info111/exercices_src/tests/test_output.cpp
