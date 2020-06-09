@@ -18,7 +18,7 @@ text=Undefined
 title=Undefined
 
 build ==
-from wims import buil
+from wims import build
 
 ==
 grader==
