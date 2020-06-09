@@ -13,11 +13,6 @@ class Wims:
         "Le programme a affiché:<pre>{answer_out}</pre>Affichage souhaité:<pre>{solution_out}</pre>"
 
     def build(self, exo):
-        # Prepare the code
-        exo = build_generic(exo)
-        exo = self.build_customize_items(exo)
-        exo = build_finalize(exo)
-
         # Prepare the messages
         for key in ['solution_compile_error_message',
                     'solution_error_message',
@@ -29,6 +24,11 @@ class Wims:
             exo[key] = self.getattr(key)
         if exo['mode'] == 'training':
             exo['failure_message'] += ' ' + exo['failure_int']
+
+        # Prepare the code
+        exo = build_generic(exo)
+        exo = self.build_customize_items(exo)
+        exo = build_finalize(exo)
 
         return exo
 
@@ -87,4 +87,5 @@ builders = {
     "return": WimsReturn,
     "code":   WimsCode,
 }
+
 
