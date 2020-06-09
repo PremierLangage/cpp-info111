@@ -1,4 +1,3 @@
-template=/cpp-info111/template/wims_output.pl
+template=/cpp-info111/template/wims.pl
 template=/cpp-info111/exercices_src/if/metadata.pl
-@ /cpp-info111/exercices_src/if/semicolon.cpp [raw_code.cpp]
-code_file=raw_code.cpp
+@ /cpp-info111/exercices_src/if/semicolon.cpp

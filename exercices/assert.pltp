@@ -1,0 +1,6 @@
+template=/cpp-info111/exercices_src/assert/metadata.pl
+title={{topicname}}
+introduction==
+Une collection d'exercices sur les {{topicname}}.
+==
+@ /cpp-info111/exercices/assert/assert_code.cpp.pl

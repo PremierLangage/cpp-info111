@@ -1,9 +1,0 @@
-template=/cpp-info111/exercices_src/function/metadata.pl
-title={{topicname}}
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
-@ /cpp-info111/exercices/function/blackjack.cpp.pl
-@ /cpp-info111/exercices/function/factorial.cpp.pl
-@ /cpp-info111/exercices/function/if.cpp.pl
-@ /cpp-info111/exercices/function/max.cpp.pl

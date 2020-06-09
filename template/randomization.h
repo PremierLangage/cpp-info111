@@ -1,6 +1,12 @@
+#include <iostream>
 #include <cstdlib>
 #include <vector>
 #include <functional>
+
+/** Infrastructure minimale de test **/
+#define ASSERT(test) if (!(test)) std::cout << "Test failed in file " << __FILE__ \
+				            << " line " << __LINE__ << ": " #test << std::endl
+
 // TODO: how to initialize the seed?
 const int CI1 = (rand() % 5) - 2;
 const int CI2 = (rand() % 5) - 2;
