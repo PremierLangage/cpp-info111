@@ -27,7 +27,7 @@ class Wims:
 
         # Prepare the code
         exo = build_generic(exo)
-        exo = self.build_customize_items(exo)
+        exo = self.build_customize(exo)
         exo = build_finalize(exo)
 
         return exo
