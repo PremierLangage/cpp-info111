@@ -31,6 +31,7 @@ class Wims:
         exo = self.build_customize(exo)
         exo = build_finalize(exo)
 
+        # Demo mode: button to display source code
         if exo['mode'] == 'demo':
             exo['form'] += '{{ hints|component}}'
             exo['hints'] = {
