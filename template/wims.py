@@ -88,5 +88,7 @@ builders = {
     "code":   WimsCode,
 }
 
-
+def build(exo):
+    builder = wims.WimsOutput()
+    return builder.build(exo)
 
