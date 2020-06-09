@@ -17,6 +17,7 @@ form=@ /cpp-info111/template/form/editorform.html
 form+=
 {{ hints|component}}
 ==
+
 hints % { "cid": "hints", "selector": "c-hint" }
 hints.label = Voir les sources
 hints.items %=
