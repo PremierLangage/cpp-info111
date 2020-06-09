@@ -30,7 +30,7 @@ class Wims:
         exo = build_generic(exo)
         exo = self.build_customize(exo)
         exo = build_finalize(exo)
-        exo['form'] += '{{ hints|component}}''
+        exo['form'] += '{{ hints|component}}'
         exo['hints'] = {
             'selector' : "c-hint",
             'cid' : "hints",
