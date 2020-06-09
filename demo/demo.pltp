@@ -3,9 +3,8 @@ introduction==
 Cette feuille d'exercices fait une démonstration des
 différents types d'exercices que l'on peut réaliser
 avec le moteur d'exercices cpp-info111 de la plateforme
-d'enseignement en ligne PLaTon.
-
-Avec ce moteur, chaque exercice est défini par un programme C++ annoté
+d'enseignement en ligne PLaTon. Avec ce moteur, chaque
+exercice est défini par un programme C++ annoté
 (randomisation, zones cachées, zones solutions, ...). 
 
 Chaque section de cette feuille correspond à un mode d'utilisation:
