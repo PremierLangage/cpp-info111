@@ -15,6 +15,7 @@ form=@ /cpp-info111/template/form/editorform.html
 # Configuration
 mode=training
 title=Exercice
+text=
 
 build ==
 import wims
