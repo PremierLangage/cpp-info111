@@ -8,4 +8,3 @@ template=/cpp-info111/exercices_src/tests/metadata.pl
 @ /cpp-info111/exercices_src/tests/test_result.cpp
 @ /cpp-info111/exercices_src/tests/test_return.cpp
 @ /cpp-info111/exercices_src/tests/test_silentcode.cpp
-
