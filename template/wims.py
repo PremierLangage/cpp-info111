@@ -95,6 +95,6 @@ def build(exo):
     # Choose builder, based on the file name.
     code_file = exo["code_file"]
     match = re.search(builders_re, code_file)
-    builder = builders[match.group(1)] if type else WimsOutput
+    builder = builders[match.group(1)] if match else WimsOutput
     return builder.build(exo)
 
