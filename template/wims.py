@@ -92,11 +92,15 @@ builders = {
 builders_re = re.compile("_(input|output|result|return|code|silentcode)\.")
 
 def build(exo):
-    # Choose builder, based on the file name.
+    # Pick one of the code files at random
     code_files = glob.glob("*.cpp")
-    exo['code_file'] = code_file = code_files[0]
+    choice = random.randint(0,len(code_files)-1)
+    exo['code_file'] = code_file = code_files[choice]
+
+    # Choose builder, based on the file name.
     match = re.search(builders_re, code_file)
     builder = builders[match.group(1)] if match else WimsOutput
+
     return builder().build(exo)
 
 
