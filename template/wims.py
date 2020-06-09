@@ -35,7 +35,7 @@ class Wims:
             'cid' : "hints",
             'label' : "Voir les sources",
             'shouldConfirm' : False,
-            'items' = [{'content': "Fichier source de l'exercice:<pre>{}</pre>".format(html.escape(exo['code_source']))}]
+            'items' : [{'content': "Fichier source de l'exercice:<pre>{}</pre>".format(html.escape(exo['code_source']))}]
         }
 
         return exo
