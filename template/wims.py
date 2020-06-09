@@ -81,12 +81,19 @@ class WimsCode(Wims):
     typename = "Compléter un programme"
     text     = "Compléter le programme suivant en suivant les instructions"
 
+class WimsSilentCode(WimsCode):
+    name         = "silentcode"
+    typename     = "Compléter un programme avec tests"
+    text         = "Compléter le programme suivant pour que les tests passent"
+    failure_hint = "Erreurs:<pre>{answer_out}</pre>"
+
 builders = {
-    "input":  WimsInput,
-    "output": WimsOutput,
-    "result": WimsResult,
-    "return": WimsReturn,
-    "code":   WimsCode,
+    "input":      WimsInput,
+    "output":     WimsOutput,
+    "result":     WimsResult,
+    "return":     WimsReturn,
+    "code":       WimsCode,
+    "silentcode": WimsSilentCode
 }
 
 builders_re = re.compile("_(input|output|result|return|code|silentcode)\.")
@@ -102,3 +109,4 @@ def build(exo):
     builder = builders[match.group(1)] if match else WimsOutput
 
     return builder().build(exo)
+
