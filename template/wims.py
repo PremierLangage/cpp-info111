@@ -38,7 +38,7 @@ class Wims:
 class WimsOutput(Wims):
     name = "deviner la sortie"
     typename = "Deviner la sortie"
-    text = "Lire attentivement le fragment de programme suivant" \
+    text = "Lire attentivement le fragment de programme suivant " \
         "et saisir ce que vous prévoyez qu'il affiche. " \
         "Attention, des boggues peuvent avoir été glissés dans le code."
 
@@ -88,7 +88,12 @@ builders = {
     "code":   WimsCode,
 }
 
+builders_re = re.compile("_(input|output|result|return|code|silentcode)\.")
+
 def build(exo):
-    builder = wims.WimsOutput()
+    # Choose builder, based on the file name.
+    code_file = exo["code_file"]
+    match = re.search(builders_re, code_file)
+    builder = builders[match.group(1)] if type else WimsOutput
     return builder.build(exo)
 
