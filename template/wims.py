@@ -21,7 +21,7 @@ class Wims:
                     'name',
                     'typename',
                     'text']:
-            exo[key] = self.getattr(key)
+            exo[key] = getattr(self, key)
         if exo['mode'] == 'training':
             exo['failure_message'] += ' ' + exo['failure_int']
 
@@ -87,5 +87,6 @@ builders = {
     "return": WimsReturn,
     "code":   WimsCode,
 }
+
 
 
