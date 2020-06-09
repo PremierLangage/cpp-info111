@@ -33,12 +33,12 @@ class Wims:
 
         # Demo mode: button to display source code
         if exo['mode'] == 'demo':
-            content = ""
+            content = "Fichier source de l'exercice"
             if 'code_file' in exo:
-                content += 'File: {}<br>'.format(exo['code_file'])
+                content += '({})'.format(exo['code_file'])
                 # TODO: at this stage we don't have the full path name to implement "Edit online"
                 # content += '<a href="https://github.com/PremierLangage/cpp-info111/tree/master/{}">Éditer en ligne</a>'.format(exo['code_file'])
-            content += "Fichier source de l'exercice:<pre>{}</pre>".format(html.escape(exo['code_source']))
+            content += ":<pre>{}</pre>".format(html.escape(exo['code_source']))
             exo['form'] += '{{ hints|component}}'
             exo['hints'] = {
                 'selector' : "c-hint",
