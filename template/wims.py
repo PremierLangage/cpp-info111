@@ -94,7 +94,7 @@ builders_re = re.compile("_(input|output|result|return|code|silentcode)\.")
 def build(exo):
     # Choose builder, based on the file name.
     code_files = glob.glob("*.cpp")
-    code_file = code_files[0]
+    exo['code_file'] = code_file = code_files[0]
     match = re.search(builders_re, code_file)
     builder = builders[match.group(1)] if match else WimsOutput
     return builder().build(exo)
