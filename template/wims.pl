@@ -12,6 +12,8 @@ author=MPI Info 111's team
 
 form=@ /cpp-info111/template/form/editorform.html
 
+# Configuration
+mode=training
 title=Exercice
 
 build ==
@@ -49,5 +51,6 @@ if __name__ == "__main__":
 
     sys.exit(0)
 ==
+
 
 
