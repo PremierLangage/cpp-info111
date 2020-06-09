@@ -96,7 +96,7 @@ def build(exo):
     code_file = exo["code_file"]
     match = re.search(builders_re, code_file)
     builder = builders[match.group(1)] if match else WimsOutput
-    print(STDERR, "{} / {} / {} / {}".format(code_file, builder, bool(match), match.group(1)))
+    #print(STDERR, "{} / {} / {} / {}".format(code_file, builder, bool(match), match.group(1)))
     return builder.build(exo)
 
 
