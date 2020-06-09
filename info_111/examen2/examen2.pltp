@@ -1,0 +1,23 @@
+title=Info 111: Examen de deuxième session (partie PLaTon)
+introduction==
+TODO: mettre les consignes ici ou sur e-campus
+==
+
+# TODO: prototypes de fonctions
+# TODO: appel de fonctions basique
+# TODO: implantation fonctions basique
+# TODO: assert
+
+# TODO: vecteurs 1D: allocation
+@ vector1D.pl
+
+# TODO: vecteurs 2D basique
+# TODO: vecteurs 2D: allocation
+@ vector2D.pl
+@ vector2D.pl
+
+# complexité
+
+# algos simples: tri fusion?
+
+# flux?
