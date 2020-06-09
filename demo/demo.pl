@@ -23,8 +23,6 @@ hints.label = Voir les sources
 hints.items %=
 [
     { "content": "**Hint 1**" },
-    { "content": "**Hint 2**"  },
-    { "content": "**Hint 3**", "css": "warning-state"  }
 ]
 ==
 
