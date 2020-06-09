@@ -1,4 +1,4 @@
-import glob, re
+import glob, random, re
 from wims_builder import build_generic, build_finalize
 
 class Wims:
