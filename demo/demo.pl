@@ -3,6 +3,7 @@ title=Mode démo
 template=/cpp-info111/template/wims.pl
 mode=demo
 settings.allow_reroll = true
+settings.one_shot = true
 @ /cpp-info111/exercices_src/tests/test_code.cpp
 @ /cpp-info111/exercices_src/tests/test_input.cpp
 @ /cpp-info111/exercices_src/tests/test_multisolution_code.cpp
