@@ -30,7 +30,13 @@ class Wims:
         exo = build_generic(exo)
         exo = self.build_customize(exo)
         exo = build_finalize(exo)
-        exo['hints']['items'] = [{'content': "Fichier source de l'exercice:<pre>{}</pre>".format(html.escape(exo['code_source']))}]
+        exo['hints'] = {
+            'selector" : "c-hint",
+            'cid" : "hints",
+            'label" : "Voir les sources",
+            'shouldConfirm' : "false",
+            'items' = [{'content': "Fichier source de l'exercice:<pre>{}</pre>".format(html.escape(exo['code_source']))}]
+        }
 
         return exo
 
