@@ -19,7 +19,7 @@ import wims
 
 def build(exo):
     builder = wims.WimsOutput()
-    return builder(exo)
+    return builder.build(exo)
 ==
 grader==
 import sys
