@@ -91,7 +91,7 @@ builders = {
 
 builders_re = re.compile("_(input|output|result|return|code|silentcode)\.")
 
-def build(exo):
+def build(exo,d):
     # Choose builder, based on the file name.
     code_file = exo["code_file"]
     match = re.search(builders_re, code_file)
