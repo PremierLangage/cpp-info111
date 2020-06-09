@@ -57,7 +57,7 @@ class WimsInput(Wims):
     failure_hint = \
         "Le programme a affiché:<pre>{solution_out}</pre>"
 
-    def build_customize(exo):
+    def build_customize(self, exo):
         exo['solution_out'] = 42
         exo['items'] = [{'type':'answer', 'subtype': 'stdin', 'content': ''}] + exo['items'] +\
                    [{'type':'solution', 'subtype': 'stdout', 'content': str(exo['solution_out'])}]
