@@ -14,7 +14,8 @@ form=@ /cpp-info111/template/form/editorform.html
 
 # Configuration
 mode=training
-text=
+text=Undefined
+title=Undefined
 
 build ==
 import wims
