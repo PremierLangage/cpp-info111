@@ -30,6 +30,7 @@ class Wims:
         exo = build_generic(exo)
         exo = self.build_customize(exo)
         exo = build_finalize(exo)
+        raise RuntimeError("hint {}".format(exo['hints']['items'][0]["content"]))
 
         return exo
 
@@ -109,4 +110,5 @@ def build(exo):
     builder = builders[match.group(1)] if match else WimsOutput
 
     return builder().build(exo)
+
 
