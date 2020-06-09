@@ -35,6 +35,9 @@ class Wims:
             'cid' : "hints",
             'label' : "Voir les sources",
             'shouldConfirm' : False,
+            'confirmTitle' = 'Voir les sources?'
+            'confirmOkTitle': 'Oui',
+            'confirmNoTitle': 'Non',
             'items' : [{'content': "Fichier source de l'exercice:<pre>{}</pre>".format(html.escape(exo['code_source']))}]
         }
 
