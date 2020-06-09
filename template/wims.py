@@ -35,7 +35,7 @@ class Wims:
         if exo['mode'] == 'demo':
             content = "Fichier source de l'exercice:<pre>{}</pre>".format(html.escape(exo['code_source']))
             if 'code_file' in exo:
-                content += '<a href="https://github.com/PremierLangage/cpp-info111/tree/master/{}">Éditer en ligne</a>'.format(exo['code_file'])
+                content = '<a href="https://github.com/PremierLangage/cpp-info111/tree/master/{}">Éditer en ligne</a>'.format(exo['code_file']) + content
             exo['form'] += '{{ hints|component}}'
             exo['hints'] = {
                 'selector' : "c-hint",
