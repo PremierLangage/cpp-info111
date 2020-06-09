@@ -14,11 +14,8 @@ settings.reroll_threshold = -1
 @ /cpp-info111/exercices_src/tests/test_silentcode.cpp
 
 form=@ /cpp-info111/template/form/editorform.html
-form+=
-{{ hints|component}}
-==
+#form+=
+#{{ hints|component}}
+#==
 
-hints % { "cid": "hints", "selector": "c-hint" }
-hints.shouldConfirm = false
-hints.label = Voir les sources
 
