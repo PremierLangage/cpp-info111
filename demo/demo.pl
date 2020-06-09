@@ -18,15 +18,7 @@ form+=
 {{ hints|component}}
 ==
 hints % { "cid": "hints", "selector": "c-hint" }
-hints.label = **Stucked?** Ask a hint.
-hints.confirmMessage ==
-The usage of a hint may affect your final score!
-==
-
-hints.shouldConfirm % true
-hints.confirmTitle = Are you sure you want a hint ?
-hints.confirmOkTitle = Yes
-hints.confirmNoTitle = No
+hints.label = Voir les sources
 hints.items %=
 [
     { "content": "**Hint 1**" },
