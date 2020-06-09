@@ -18,11 +18,8 @@ text=Undefined
 title=Undefined
 
 build ==
-import wims
+from wims import buil
 
-def build(exo):
-    builder = wims.WimsOutput()
-    return builder.build(exo)
 ==
 grader==
 import sys
