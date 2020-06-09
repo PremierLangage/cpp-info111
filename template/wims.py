@@ -1,4 +1,4 @@
-import glob, random, re
+import html, glob, random, re
 from wims_builder import build_generic, build_finalize
 
 class Wims:
@@ -30,7 +30,7 @@ class Wims:
         exo = build_generic(exo)
         exo = self.build_customize(exo)
         exo = build_finalize(exo)
-        exo['hints']['items'] = [{'content': "<pre>{}</pre>".format(exo['code_source'])}]
+        exo['hints']['items'] = [{'content': "<pre>{}</pre>".format(html.escape(exo['code_source']))}]
 
         return exo
 
