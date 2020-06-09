@@ -330,7 +330,7 @@ def build_generic(exo):
     if code is None:
         with open(exo['code_file']) as f:
             code = f.read()
-    exo['original_code'] = code
+    exo['code_source'] = code
     code, consts = randomize_code(code)
     exo['consts'] = consts
     exo['items'] = insert_answer_items(split_code(code))
