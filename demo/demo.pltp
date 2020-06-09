@@ -2,14 +2,22 @@ title=Démo du moteur d'exercices cpp-info111 de PLaTon
 introduction==
 Cette feuille d'exercices fait une démonstration des
 différents types d'exercices que l'on peut réaliser
-avec le moteur d'exercices cpp-info111 de PLaTon.
+avec le moteur d'exercices cpp-info111 de la plateforme
+d'enseignement en ligne PLaTon.
 
-Chaque exercice ci-dessous correspond à un mode d'utilisation.
-Après avoir fait le premier exercice, choisissez nouveau tirage
-pour en 
+Avec ce moteur, chaque exercice est défini par un programme C++ annoté
+(randomisation, zones cachées, zones solutions, ...). 
+
+Chaque section de cette feuille correspond à un mode d'utilisation:
+démo, entrainement (avec indications), examen (sans indications).
+Après avoir fait le premier exercice, cliquez sur *Nouveau Tirage*
+pour essayer d'autres types d'exercices (bug: pour le moment, dans
+cette fiche, il faut vraiment avoir réussi le premier exercice pour
+accéder à ce boutton).
 ==
 @ demo.pl
 @ demo-training.pl
 @ demo-exam.pl
+
 
 
