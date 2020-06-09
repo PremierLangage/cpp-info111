@@ -1,4 +1,5 @@
-topicname=Déémo du moteur d'exercices cpp-info111 de PLaTon
+topicname=Démo du moteur d'exercices cpp-info111 de PLaTon
+mode=training
 template=/cpp-info111/template/wims.pl
 @ /cpp-info111/exercices_src/tests/test_code.cpp
 @ /cpp-info111/exercices_src/tests/test_input.cpp
