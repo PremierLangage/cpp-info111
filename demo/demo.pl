@@ -12,4 +12,3 @@ settings.reroll_threshold = -1
 @ /cpp-info111/exercices_src/tests/test_result.cpp
 @ /cpp-info111/exercices_src/tests/test_return.cpp
 @ /cpp-info111/exercices_src/tests/test_silentcode.cpp
-
