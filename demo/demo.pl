@@ -19,7 +19,7 @@ form+=
 ==
 
 hints % { "cid": "hints", "selector": "c-hint" }
-hints.shouldConfirm = false
+hints.shouldConfirm = False
 hints.label = Voir les sources
 hints.items %=
 [
