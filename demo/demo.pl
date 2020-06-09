@@ -1,4 +1,4 @@
-topicname=Démo du moteur d'exercices cpp-info111 de PLaTon
+topicname=Démo PLaTon/cpp-info111, mode démo
 title=Mode démo
 template=/cpp-info111/template/wims.pl
 mode=demo
