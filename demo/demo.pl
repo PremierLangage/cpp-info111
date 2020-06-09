@@ -22,7 +22,7 @@ hints % { "cid": "hints", "selector": "c-hint" }
 hints.label = Voir les sources
 hints.items %=
 [
-    { "content": "**Hint 1**" },
+    { "content": "Source: <pre>{{ mode }}</pre>" },
 ]
 ==
 
