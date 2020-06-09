@@ -31,17 +31,18 @@ class Wims:
         exo = self.build_customize(exo)
         exo = build_finalize(exo)
 
-        exo['form'] += '{{ hints|component}}'
-        exo['hints'] = {
-            'selector' : "c-hint",
-            'cid' : "hints",
-            'label' : "Voir les sources",
-            'shouldConfirm' : False,
-            'confirmTitle' : 'Voir les sources?',
-            'confirmOkTitle': 'Oui',
-            'confirmNoTitle': 'Non',
-            'items' : [{'content': "Fichier source de l'exercice:<pre>{}</pre>".format(html.escape(exo['code_source']))}]
-        }
+        if exo['mode'] == 'demo':
+            exo['form'] += '{{ hints|component}}'
+            exo['hints'] = {
+                'selector' : "c-hint",
+                'cid' : "hints",
+                'label' : "Voir les sources",
+                'shouldConfirm' : False,
+                'confirmTitle' : 'Voir les sources?',
+                'confirmOkTitle': 'Oui',
+                'confirmNoTitle': 'Non',
+                'items' : [{'content': "Fichier source de l'exercice:<pre>{}</pre>".format(html.escape(exo['code_source']))}]
+            }
 
         return exo
 
