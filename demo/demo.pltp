@@ -1,6 +1,8 @@
 title=Démo du moteur d'exercices cpp-info111 de PLaTon
 introduction==
-
+Cette feuille d'exercices fait une démonstration des
+différents types d'exercices que l'on peut réaliser
+avec le moteur d'exercices cpp-info111 de PLaTon.
 ==
 @ demo.pl
 @ demo-training.pl
