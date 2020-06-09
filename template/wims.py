@@ -23,7 +23,7 @@ class Wims:
                     'text']:
             exo[key] = getattr(self, key)
         if exo['mode'] == 'training':
-            exo['failure_message'] += ' ' + exo['failure_hint']
+            exo['failure_message'] += ' ' + getattr(self, 'failure_hint')
 
         # Prepare the code
         exo = build_generic(exo)
