@@ -1,4 +1,4 @@
-import re
+import glob, re
 from wims_builder import build_generic, build_finalize
 
 class Wims:
@@ -93,7 +93,8 @@ builders_re = re.compile("_(input|output|result|return|code|silentcode)\.")
 
 def build(exo):
     # Choose builder, based on the file name.
-    code_file = exo["code_file"]
+    code_files = glob.glob("*.cpp")
+    code_file = code_files[0]
     match = re.search(builders_re, code_file)
     builder = builders[match.group(1)] if match else WimsOutput
     return builder().build(exo)
