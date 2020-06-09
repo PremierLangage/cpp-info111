@@ -1,4 +1,4 @@
-topicname=Démo mode entrainement
+topicname=Démo, mode entrainement
 title=Mode entrainement
 template=/cpp-info111/template/wims.pl
 mode=training
