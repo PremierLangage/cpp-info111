@@ -13,7 +13,7 @@ author=MPI Info 111's team
 form=@ /cpp-info111/template/form/editorform.html
 
 # Configuration
-mode=examtraining
+mode=training
 text=Undefined
 title=Undefined
 
@@ -49,6 +49,7 @@ if __name__ == "__main__":
 
     sys.exit(0)
 ==
+
 
 
 
