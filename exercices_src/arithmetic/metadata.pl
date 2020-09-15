@@ -1,1 +1,3 @@
-topicname=arithmétique
+title=arithmétique
+
+author=Plusieurs 
