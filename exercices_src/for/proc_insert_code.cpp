@@ -9,10 +9,10 @@ CONST n = RANDOM_INT(4,8);
 /// END HIDDEN
 #define N n
 
-/** Permute les éléments d'un tableau qu'on considère rempli.
- *  Tous les éléments sont décalés vers la droite et le dernier élément est mis en première position.
+/** Permute les Ã©lÃ©ments d'un tableau qu'on considÃ¨re rempli.
+ *  Tous les Ã©lÃ©ments sont dÃ©calÃ©s vers la droite et le dernier Ã©lÃ©ment est mis en premiÃ¨re position.
  * @param[in] tab: le tableau d'entiers de taille N
- *  @return ne renvoit rien car c'est une procédure
+ *  @return ne renvoit rien car c'est une procÃ©dure
 **/
 void permuter(int tab[]) {
         /// BEGIN SOLUTION
@@ -31,7 +31,7 @@ int main() {
     t[i] = i;
   }
   permuter(t);
-  cout << "Tableau permuté: ";
+  cout << "Tableau permutÃ©: ";
   for(int i=0; i < N; i++){
     cout << t[i] << ", ";
   }

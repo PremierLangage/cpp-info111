@@ -1,14 +1,10 @@
 template=/cpp-info111/exercices_src/tests/metadata.pl
-title={{topicname}}
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
-@ /cpp-info111/exercices/tests/test_code.cpp.pl
-@ /cpp-info111/exercices/tests/test_input.cpp.pl
-@ /cpp-info111/exercices/tests/test_multisolution_code.cpp.pl
 @ /cpp-info111/exercices/tests/test_output.cpp.pl
-@ /cpp-info111/exercices/tests/test_randomization.cpp.pl
-@ /cpp-info111/exercices/tests/test_result.cpp.pl
-@ /cpp-info111/exercices/tests/test_return.cpp.pl
 @ /cpp-info111/exercices/tests/test_silentcode.cpp.pl
-
+@ /cpp-info111/exercices/tests/test_multisolution_silentcode.cpp.pl
+@ /cpp-info111/exercices/tests/test_complexite_silentcode.cpp.pl
+@ /cpp-info111/exercices/tests/test_return.cpp.pl
+@ /cpp-info111/exercices/tests/test_randomization.cpp.pl
+@ /cpp-info111/exercices/tests/test_input.cpp.pl
+@ /cpp-info111/exercices/tests/test_code.cpp.pl
+@ /cpp-info111/exercices/tests/test_result.cpp.pl

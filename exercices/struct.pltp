@@ -1,11 +1,7 @@
 template=/cpp-info111/exercices_src/struct/metadata.pl
-title={{topicname}}
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
+@ /cpp-info111/exercices/struct/tableaux_2a.cpp.pl
+@ /cpp-info111/exercices/struct/tableaux_3a.cpp.pl
 @ /cpp-info111/exercices/struct/tableaux_1.cpp.pl
 @ /cpp-info111/exercices/struct/tableaux_1a.cpp.pl
 @ /cpp-info111/exercices/struct/tableaux_2.cpp.pl
-@ /cpp-info111/exercices/struct/tableaux_2a.cpp.pl
 @ /cpp-info111/exercices/struct/tableaux_3.cpp.pl
-@ /cpp-info111/exercices/struct/tableaux_3a.cpp.pl

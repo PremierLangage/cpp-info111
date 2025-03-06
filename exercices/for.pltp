@@ -1,0 +1,12 @@
+template=/cpp-info111/exercices_src/for/metadata.pl
+@ /cpp-info111/exercices/for/proc_insert_code.cpp.pl
+@ /cpp-info111/exercices/for/forSommeInverse_code.cpp.pl
+@ /cpp-info111/exercices/for/factorial_result.cpp.pl
+@ /cpp-info111/exercices/for/binomial_input.cpp.pl
+@ /cpp-info111/exercices/for/forSommeCarre_code.cpp.pl
+@ /cpp-info111/exercices/for/sum_inverse_code.cpp.pl
+@ /cpp-info111/exercices/for/output.cpp.pl
+@ /cpp-info111/exercices/for/index.cpp.pl
+@ /cpp-info111/exercices/for/forProduit_code.cpp.pl
+@ /cpp-info111/exercices/for/forSomme_code.cpp.pl
+@ /cpp-info111/exercices/for/accumulateur_trivial_result.cpp.pl

@@ -1,0 +1,36 @@
+title=Info 111: Entrainement examen de deuxième session
+introduction==
+
+Cette feuille n'est pas notée. Elle ressemble à celle de l'examen,
+avec une sélection d'exercices types. Comme le jour de l'examen, les
+exercices sont randomisés: vous en recevez chacun une variante
+différente.
+
+Le jour de l'examen, vous pourrez répondre à chaque exercice autant de
+fois que vous le souhaiterez. Dès que vous aurez une bonne réponse,
+vous marquerez la totalité des points de l'exercice.
+
+==
+
+@ for0.pl
+@ for.pl
+
+@function_prototype.pl
+@function_call_simple.pl
+@function_call.pl
+#@function_implementation.pl # TODO
+@function_test.pl
+
+@ vector1D_cours.pl
+@ vector1D_parcours.pl
+@ vector1D_recherche.pl
+@ vector1D_recherche_avancee.pl
+
+@ vector2D_cours.pl
+@ vector2D_parcours.pl
+@ vector2D_recherche.pl
+
+# Autres thèmes potentiels:
+# - complexité
+# - fichiers?
+# - algos simples: tri fusion?  

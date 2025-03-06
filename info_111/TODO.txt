@@ -1,0 +1,155 @@
+
+Exos modifiés:
+vector1D/nbPlusGrandQueDix_code
+vector2D0/creationTab2D4etapes_code
+vector2D/nbPlusGrandQueDixTab2D_code
+function_call_simple/appel1_code
+function_call_simple/appel2_code
+function_call_simple/appelProcedure1_code
+
+Exos ajoutés:
+vector1D/nbPlusPetitsQueDix_code -> truc auto fait mais pas ajouté examen
+vector2D/rechercheTab2D_code -> truc auto fait mais pas ajouté examen
+vector2D/nbPlusPetitsQueDixTab2D_code
+function_call_simple/appel3_code
+function_call_simple/appel4_code
+function_call_simple/appelProcedure2_code
+function_call_simple/appelProcedure3_code
+
+Pour vérifier la randomisation: être dans exercices_src et taper
+../tools/randomize_code cheminFichier
+
+TODO lundi matin:
+- Ajouter des exos dans ceux tirés au sort parmi peu (dont prototypes).
+- Randomiser les valeurs demandées dans les 2 exos créations de tableaux
+
+Idées ajout d'exos:
+- Exos tab 2D (recherche du maximum/minimum + somme des éléments de la ligne/colonne X + nb lignes/colonnes, en affichage ou en fonction ?)
+- Exos fonctions en-tête et appel : faire des variations avec plus ou moins de paramètres (voire pas de paramètre du tout).
+- Dans Tab1D ajouter:
+    tests tous divisibles par X
+    somme des éléments entre les indices X et Y
+    contient uniquement des éléments divisibles par X
+    recherche d'élément dans un tableau
+    et voir aussi feuille2 Jupyter de semaine 5
+- exos sur les booléens (renvoie true seulement si l'un des deux est divisible par 3, etc.)
+- exos sur les boucles imbriquées (affichage avec des étoiles de carré, rectangle, triangle...)
+
+Rappeler à Nicolas gestion des tiers temps -> relever les notes à 18h05.
+
+
+TODO sur mes exos:
+
+Randomisation incrémente -> augmente de X toujours nommé incrémente.
+Vérifier que que la réponse à prototype1 est considérée fausse s'ils écrivent int au lieu de bool.
+Pour prototype2 ça ne se verra sans doute pas s'ils respectent int /float ou s'ils mettent float partout -> modifier en mettant float partout ?
+Pour les exos d'appel de fonction : nommer toutes les fonctions pareil (bidule) pour qu'ils puissent moins facilement tricher en communiquant leur exercice aux camarades ?
+Ajouter des tests aléatoires dans le exos sur les tableaux 2D ?
+Faire des exos sur le max dans les vecteurs 2D comme ceux des vecteurs 1D, ou un peu lourd ?
+
+- Est-ce normal que quand je teste chez moi, random_vector me renvoie toujours le même tableau ? J'imagine que oui et que c'est une histoire de graine, comment vérifier que c'est vraiment aléatoire dans PL ?
+- Vérifier la complétude des tests dans les fichiers ajoutés (cout sur quelles valeurs ?) -> Pas le temps je pense
+
+
+Exercices ajoutés par Adeline dans exercices_src:
+
+for0:
+  forDescendant_code
+  forDiviseurs_code
+  forMultiples_code
+  forTrivial_code
+  forProduit_code
+  forSomme_code
+  forSommeCarre_code
+  forSommeInverse_code
+
+function:
+  appel1_code
+  appel2_code
+  appelProcedure_code
+  prototype1_code
+  prototype2_code
+  prototype3_code
+  prototype4_code
+  prototype5_code
+
+  aireRectangle
+  distance
+  maximum
+  minimum
+  valeurAbsolue
+  
+vector1D:
+  accesTabSimple_code
+  creationTab3etapes_code
+  creationTabSimple_code
+  estCroissant_code
+  estPositif_code
+  incrementeTab_code
+  maxTab_code
+  maxTabPremierePosition_code
+  maxTabDernierePosition_code
+  minTab_code
+  minTabPremierePosition_code
+  minTabDernierePosition_code
+  modifTabSimple_code
+  nbPlusGrandQueDix_code
+  sontEgauxTab_code
+
+vector2D:
+  accesTab2DSimple_code.cpp
+  creationTab2D4etapes_code.cpp
+  creationTab2DSimple_code.cpp
+  estCarre_code.cpp
+  estPositifTab2D_code.cpp
+  estRectangle_code.cpp
+  incrementeTab2D_code.cpp
+  modifTab2DSimple_code.cpp
+  nbPlusGrandQueDixTab2D_code.cpp
+  sontEgauxTab2D_code.cpp
+
+
+TODO ajout d'exos:
+- Exos où on demande le corps de la fonction avec fonction sans tableau un peu plus évoluée (pour l'instant il n'y a que des fonctions triviales ou des fonctions avec tableaux)
+- Exos boucles un peu plus évolués ; exos avec des boucles while
+- Dans Tab1D ajouter:
+    tests tous divisibles par X
+    somme des éléments entre les indices X et Y
+    contient uniquement des éléments divisibles par X
+    recherche d'élément dans un tableau
+    et voir aussi feuille2 Jupyter de semaine 5
+
+Autres idées:
+- Appels fonctions : Corriger l'erreur avec un programme où la fonction est void alors qu'elle renvoie qqc qui est utilisé dans le main, ou inversement fonction int qui devrait être void (pour qu'il sachent comment corriger, faire que le main ne soit pas éditable) ?
+- recherche d'un élément (ou autre du même type) : version fausse avec le return dans la boucle à corriger ?
+- construction d'un tableau :
+prog principal à compléter pour que le tableau existe réellement
+code à corriger où il manque l'une des 3 étapes
+
+
+TODO pour plus tard :
+
+Est-ce que les liens sont dans gitignore (ou de toute façon ignorés par git) ? J'ai l'impression que ceux que j'ai créés sur randomization.h n'ont pas été poussés.
+Préciser dans le readme qu'il faut maintenant compiler en C++17 pour que la randomisation ne pose pas de pb de compilation.
+Re-structurer les dossiers et fichiers en suivant le découpage en exos de l'examen de rattrappage.
+Mettre les .o dans le gitignore si ça ne pose pas de problème par ailleurs.
+Mettre à jour et ranger les exos non rangés du dossier exercices_src
+Je trouve que dans la démo de PL sur e-campus, la partie "Démo: randomisation de code" est incompréhensible.
+Je pense qu'il devrait y avoir dans le readme la liste des types d'exos possibles, même avec l'existence de la démo, d'autant que simplement avec la démo on ne peut pas savoir dans quels cas la réponse de l'étudiant est considérée comme juste ou pas.
+Dans le fichier demo_randomization.pl on n'évoque pas CI1 qui semble exister d'après test_output.cpp. Je ne sais pas ce que c'est ni comment ça s'utilise.
+
+Pour les substitutions, remplacer X, I par XX, II etc afin de diminuer le risque d'une substitution non voulue ?
+
+Ajouter dans l'exemple de randomisation que la substitution se fait aussi dans du texte quelconque (doc, commentaire...)
+
+Faire la démo de sorte que les différents types d'exos soient séparés
+
+Mettre à jour le readme pour qu'il pointe vers la démo, et que tous les types d'exos y soient : result, return, silent_code... (pour ce dernier : variation sur output, ne doit faire aucun affichage)
+
+Pas de output en exam non surveillé... sauf si on cache des choses -> à vérifier
+
+Remettre un petit warning pour les exos piège, même si l'ancien
+"Lire attentivement le fragment de programme suivant et saisir ce que vous prévoyez qu'il affiche.
+ Attention, des boggues peuvent avoir été glissés dans le code."
+ N'avait pas plu à Fatma Gara.
+ 

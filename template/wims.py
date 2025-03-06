@@ -60,8 +60,7 @@ class WimsOutput(Wims):
     name = "deviner la sortie"
     typename = "Deviner la sortie"
     text = "Lire attentivement le fragment de programme suivant " \
-        "et saisir ce que vous prévoyez qu'il affiche. " \
-        "Attention, des boggues peuvent avoir été glissés dans le code."
+        "et saisir ce que vous prévoyez qu'il affiche. "
 
     failure_hint = \
         "Le programme a affiché:<pre>{solution_out}</pre>"

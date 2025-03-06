@@ -1,0 +1,13 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*
+
+# Caveat: can only be run from, e.g. exercise_src or some subdirectory
+
+import sys, io
+sys.path.extend(["../template", "../../template"])
+
+from wims_builder import randomize_code
+
+file = sys.argv[1]
+with io.open(file) as fd:
+    print(randomize_code(fd.read())[0])

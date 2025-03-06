@@ -33,3 +33,8 @@
 
 *.log
 __pycache__
+
+# Misc
+*.pyc
+TAGS
+exercices_src/_tests

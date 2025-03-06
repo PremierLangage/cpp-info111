@@ -13,14 +13,16 @@ author=MPI Info 111's team
 form=@ /cpp-info111/template/form/editorform.html
 
 # Configuration
-mode=training
+mode=demo
 text=Undefined
 title=Undefined
+settings.allow_reroll = true
+settings.reroll_threshold = -1
 
 build ==
 from wims import build
-
 ==
+
 grader==
 import sys
 from graderCpp import grader_generic
@@ -49,7 +51,5 @@ if __name__ == "__main__":
 
     sys.exit(0)
 ==
-
-
 
 

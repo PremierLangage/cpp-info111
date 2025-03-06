@@ -1,8 +1,7 @@
 template=/cpp-info111/exercices_src/for0/metadata.pl
-title={{topicname}}
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
-@ /cpp-info111/exercices/for0/0.cpp.pl
 @ /cpp-info111/exercices/for0/1.cpp.pl
 @ /cpp-info111/exercices/for0/2.cpp.pl
+@ /cpp-info111/exercices/for0/forDiviseurs_code.cpp.pl
+@ /cpp-info111/exercices/for0/forTrivial_code.cpp.pl
+@ /cpp-info111/exercices/for0/forMultiples_code.cpp.pl
+@ /cpp-info111/exercices/for0/forDescendant_code.cpp.pl

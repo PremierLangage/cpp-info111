@@ -1,16 +1,12 @@
 /// BEGIN HIDDEN
 #include <iostream>
-
+#include "randomization.h"
 using namespace std;
 
-#include "randomization.h"
 CONST I1 = RANDOM_INT(1, 4);
 CONST I2 = RANDOM_INT(5, 9);
 CONST I3 = RANDOM_INT(10, 14);
 CONST I4 = RANDOM_INT(15, 20);
-
-#define ASSERT(test) if (!(test)) cout << "Test failed in file " << __FILE__ \
-                                       << " line " << __LINE__ << ": " #test << endl
 
 /// END HIDDEN
 void swap(int &X, int &Y) {

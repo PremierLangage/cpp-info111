@@ -1,12 +1,8 @@
 template=/cpp-info111/exercices_src/while/metadata.pl
-title={{topicname}}
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
-@ /cpp-info111/exercices/while/accumulateur.cpp.pl
-@ /cpp-info111/exercices/while/count_substract.cpp.pl
-@ /cpp-info111/exercices/while/empty.cpp.pl
-@ /cpp-info111/exercices/while/factorial_result.cpp.pl
-@ /cpp-info111/exercices/while/simple_input.cpp.pl
-@ /cpp-info111/exercices/while/substract_result.cpp.pl
 @ /cpp-info111/exercices/while/syracuse.cpp.pl
+@ /cpp-info111/exercices/while/simple_input.cpp.pl
+@ /cpp-info111/exercices/while/count_substract.cpp.pl
+@ /cpp-info111/exercices/while/factorial_result.cpp.pl
+@ /cpp-info111/exercices/while/accumulateur.cpp.pl
+@ /cpp-info111/exercices/while/empty.cpp.pl
+@ /cpp-info111/exercices/while/substract_result.cpp.pl

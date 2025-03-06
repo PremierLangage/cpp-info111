@@ -1,7 +1,12 @@
+CPP=$(filter-out exercices_src/_tests/%, $(wildcard exercices_src/*.cpp exercices_src/*/*.cpp))
+#CPP=$(wildcard exercices_src/*.cpp exercices_src/*/*.cpp)
+
 import_from_wims:
-	python tools/import_from_wims exercices_src/*.cpp exercices_src/*/*.cpp
+	python3 tools/import_from_wims $(CPP)
 
 test:
-	pyflakes template/builder.py template/graderCpp.py
-	cd template; python -m doctest -o NORMALIZE_WHITESPACE -o ELLIPSIS builder.py
+	pyflakes template/wims_builder.py template/graderCpp.py template/wims.py
+	cd template; python -m doctest -o NORMALIZE_WHITESPACE -o ELLIPSIS wims_builder.py
 	cd template; python -m doctest -o NORMALIZE_WHITESPACE -o ELLIPSIS  graderCpp.py
+	cd template; python -m doctest -o NORMALIZE_WHITESPACE -o ELLIPSIS wims.py
+	cd exercices_src; make test

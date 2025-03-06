@@ -1,14 +1,8 @@
 template=/cpp-info111/exercices_src/arithmetic/metadata.pl
-title=Arithmétique
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
-@ /cpp-info111/exercices/arithmetic/division_entiere_2_result.cpp.pl
 @ /cpp-info111/exercices/arithmetic/division_entiere_result.cpp.pl
-@ /cpp-info111/exercices/arithmetic/modulo_2_result.cpp.pl
-@ /cpp-info111/exercices/arithmetic/modulo_result.cpp.pl
-@ /cpp-info111/exercices/arithmetic/priorite1_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/division_entiere_2_result.cpp.pl
 @ /cpp-info111/exercices/arithmetic/priorite2_result.cpp.pl
 @ /cpp-info111/exercices/arithmetic/z_parentheses_result.cpp.pl
-
-
+@ /cpp-info111/exercices/arithmetic/modulo_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/modulo_2_result.cpp.pl
+@ /cpp-info111/exercices/arithmetic/priorite1_result.cpp.pl

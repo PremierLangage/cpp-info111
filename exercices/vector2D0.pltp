@@ -1,10 +1,10 @@
 template=/cpp-info111/exercices_src/vector2D0/metadata.pl
-title={{topicname}}
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
-@ /cpp-info111/exercices/vector2D0/basic_1.cpp.pl
-@ /cpp-info111/exercices/vector2D0/det.cpp.pl
-@ /cpp-info111/exercices/vector2D0/size_1.cpp.pl
-@ /cpp-info111/exercices/vector2D0/size_2.cpp.pl
-@ /cpp-info111/exercices/vector2D0/size_3.cpp.pl
+@ /cpp-info111/exercices/vector2D0/creationTab2D4etapes_code.cpp.pl
+@ /cpp-info111/exercices/vector2D0/acces.cpp.pl
+@ /cpp-info111/exercices/vector2D0/acces_code.cpp.pl
+@ /cpp-info111/exercices/vector2D0/nombreColonnes.cpp.pl
+@ /cpp-info111/exercices/vector2D0/accesDeterminant.cpp.pl
+@ /cpp-info111/exercices/vector2D0/acces_input.cpp.pl
+@ /cpp-info111/exercices/vector2D0/nombreLignes.cpp.pl
+@ /cpp-info111/exercices/vector2D0/modifTab2DSimple_code.cpp.pl
+@ /cpp-info111/exercices/vector2D0/creationTab2DSimple_code.cpp.pl

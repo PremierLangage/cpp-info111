@@ -4,9 +4,10 @@
 #include "randomization.h"
 using namespace std;
 
-CONST TAB = RANDOM_VECTOR(RANDOM_INT(5, 7), RANDOM_INT, 0, 6);
-CONST I1  = RANDOM_INT(0, 4);
-  
+CONST N = RANDOM_INT(3, 5);
+CONST TAB = RANDOM_VECTOR(N, RANDOM_INT, 0, 5);
+CONST I1  = RANDOM_INT(0, N-1);
+
 int main() {
 /// END HIDDEN
     vector<int> tab = TAB;

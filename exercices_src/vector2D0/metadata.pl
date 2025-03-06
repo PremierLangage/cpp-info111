@@ -1,1 +1,1 @@
-topicname=vecteurs à deux dimensions faciles
+title=vecteurs à deux dimensions faciles

@@ -1,14 +1,17 @@
 /// BEGIN HIDDEN
-#define ASSERT(test) if (!(test)) std::cout << "Test failed: " #test << std::endl
 #include<iostream>
+#include "randomization.h"
+
+CONST C = RANDOM_INT(-2, 2);
+
 int main() {
 /// END HIDDEN
      int I;
-     // Initialiser la variable I à la valeur CI1
+     // Initialiser la variable I à la valeur C
      /// BEGIN SOLUTION
-     I = CI1;
+     I = C;
      /// END SOLUTION
 /// BEGIN HIDDEN
-     ASSERT( I == CI1 );
+     ASSERT( I == C );
 }
 /// END HIDDEN

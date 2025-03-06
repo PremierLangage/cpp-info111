@@ -1,9 +1,5 @@
 template=/cpp-info111/exercices_src/struct_tableaux/metadata.pl
-title={{topicname}}
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
-@ /cpp-info111/exercices/struct_tableaux/struct_tableaux_ajouteBoite_code.cpp.pl
-@ /cpp-info111/exercices/struct_tableaux/struct_tableaux_moyenne_code.cpp.pl
 @ /cpp-info111/exercices/struct_tableaux/struct_tableaux_nbElts.cpp.pl
+@ /cpp-info111/exercices/struct_tableaux/struct_tableaux_moyenne_code.cpp.pl
+@ /cpp-info111/exercices/struct_tableaux/struct_tableaux_ajouteBoite_code.cpp.pl
 @ /cpp-info111/exercices/struct_tableaux/struct_tableaux_recherche_code.cpp.pl

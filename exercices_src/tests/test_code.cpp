@@ -3,6 +3,9 @@
 #include<string>
 using namespace std;
 #include "randomization.h"
+
+CONST C1 = RANDOM_INT(-2, 2);
+
 /// END HIDDEN
 /** Dessine un triangle
  * @param N
@@ -34,7 +37,7 @@ string triangle(int N) {
 
 /// BEGIN HIDDEN
 int main() {
-     int N = CI1+5;
+     int N = C1 + 5;
      cout << "Résultat de triangle(" << N << "):" << endl;
      cout << triangle(N);
 }

@@ -1,15 +1,11 @@
+/// BEGIN HIDDEN
 #include <iostream>
-
+#include "randomization.h"
 using namespace std;
 
-/// BEGIN HIDDEN
-#include "randomization.h"
 CONST I1 = RANDOM_INT(2, 5);
 CONST I2 = RANDOM_INT(6, 10);
 /// END HIDDEN
-#define ASSERT(test) if (!(test)) cout << "Test failed in file " << __FILE__ \
-                                       << " line " << __LINE__ << ": " #test << endl
-
 
 /* Écrivez l'en-tête de la fonction "swap" comme il faut 
  * pour que les ASSERT soient validés */

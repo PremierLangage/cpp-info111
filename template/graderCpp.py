@@ -71,7 +71,7 @@ def compile_and_run(code, input=""):
     log = {'code': code}
     with open("code.cpp", "w") as f :
         f.write(code)
-    gcc_cmd = "g++ -Wall -Wno-sign-compare -Wno-unused-value -pedantic -std=c++11 " + "code.cpp -o code"
+    gcc_cmd = "g++ -Wall -Wno-sign-compare -Wno-unused-value -pedantic -std=c++17 " + "code.cpp -o code"
     log['compile_err'] = os.system(gcc_cmd + "> compilCstdout.log 2> compilCstderr.log ")
     # Get back the standard/error output of compilation
     with open("compilCstderr.log", "r") as f:
@@ -148,7 +148,7 @@ def grader_input(exo):
 
 def compile_and_run_items(items, variant):
     r"""
-        >>> import graderCpp, builder
+        >>> import graderCpp, wims_builder as builder
 
         >>> items = builder.split_code(graderCpp.test_code_coucou)
         >>> items = items + [{'type': 'answer', 'subtype': 'stdout', 'content':'foo'}]
@@ -199,7 +199,7 @@ def grader_generic(exo):
         ...             'answer_compile_error_message': 'answer compile error:<pre>{err}</pre>',
         ...            }
 
-        >>> import graderCpp, builder
+        >>> import graderCpp, wims_builder as builder
         >>> items = builder.split_code(test_code_input)
         >>> items = [{'type': 'answer', 'key': 'in', 'subtype': 'stdin'}] + items + [{'type': 'solution',  'subtype': 'stdout', 'content':'42'}]
 
@@ -236,7 +236,7 @@ def grader_generic(exo):
         >>> exo = exo_base.copy()
         >>> exo.update({'items': items, 'response': {'in': '    i = 41'} })
         >>> graderCpp.grader_generic(exo)
-        {'success': False, 'feedback': 'answer compile error:<pre>code.cpp: ...:\ncode.cpp:4:16: ...</pre>'}
+        {'success': False, 'feedback': 'answer compile error:<pre>code.cpp: ...:\ncode.cpp:4:11: ...</pre>'}
     """
     items = exo['items']
     response = exo['response']
@@ -284,3 +284,4 @@ def grade(grader):
     exo = plutils.getpldic()
     response = grader(exo)
     print(json.dumps(response))
+

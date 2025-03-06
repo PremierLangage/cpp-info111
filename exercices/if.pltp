@@ -1,10 +1,5 @@
 template=/cpp-info111/exercices_src/if/metadata.pl
-title=Conditionnelles
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
-@ /cpp-info111/exercices/if/booleen_or_result.cpp.pl
-@ /cpp-info111/exercices/if/file_wright.cpp.pl
-@ /cpp-info111/exercices/if/file_wrong.cpp.pl
 @ /cpp-info111/exercices/if/semicolon.cpp.pl
-
+@ /cpp-info111/exercices/if/file_wright.cpp.pl
+@ /cpp-info111/exercices/if/booleen_or_result.cpp.pl
+@ /cpp-info111/exercices/if/file_wrong.cpp.pl

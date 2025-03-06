@@ -1,8 +1,4 @@
 template=/cpp-info111/exercices_src/struct_procedure/metadata.pl
-title=enregistrements et procédures
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
-@ /cpp-info111/exercices/struct_procedure/struct_procedure_milieu_points.cpp.pl
 @ /cpp-info111/exercices/struct_procedure/struct_procedure_sum.cpp.pl
 @ /cpp-info111/exercices/struct_procedure/struct_procedure_diff.cpp.pl
+@ /cpp-info111/exercices/struct_procedure/struct_procedure_milieu_points.cpp.pl

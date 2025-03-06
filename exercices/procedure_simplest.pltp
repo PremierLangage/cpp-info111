@@ -1,14 +1,8 @@
 template=/cpp-info111/exercices_src/procedure_simplest/metadata.pl
-title=procédures simples
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
-@ /cpp-info111/exercices/procedure_simplest/procedure_1_input.cpp.pl
-@ /cpp-info111/exercices/procedure_simplest/procedure_ref_1.cpp.pl
-@ /cpp-info111/exercices/procedure_simplest/procedure_ref_1_input.cpp.pl
-@ /cpp-info111/exercices/procedure_simplest/procedure_ref_2.cpp.pl
-@ /cpp-info111/exercices/procedure_simplest/procedure_ref_3.cpp.pl
 @ /cpp-info111/exercices/procedure_simplest/procedure_ref_val_1.cpp.pl
+@ /cpp-info111/exercices/procedure_simplest/procedure_ref_1.cpp.pl
+@ /cpp-info111/exercices/procedure_simplest/procedure_ref_2.cpp.pl
+@ /cpp-info111/exercices/procedure_simplest/procedure_1_input.cpp.pl
+@ /cpp-info111/exercices/procedure_simplest/procedure_ref_1_input.cpp.pl
+@ /cpp-info111/exercices/procedure_simplest/procedure_ref_3.cpp.pl
 @ /cpp-info111/exercices/procedure_simplest/procedure_wrong_value_1.cpp.pl
-
-

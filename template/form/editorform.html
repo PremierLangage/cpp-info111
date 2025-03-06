@@ -79,6 +79,9 @@ function setup_editor(form_id, div_id) {
       <script>setup_editor("form_{{item.key}}", "editor_{{item.key}}");</script>
     {% endwith %}
   {% elif item.type == 'default' %}
-    <pre>{{item.content}}</pre>
+    <div id="test" {% if mode == 'exam' %} onmousedown='return false;' onselectstart='return false;' {% endif %}>
+      <pre>{{item.content}}</pre>
+    </div>
   {% endif %}
 {% endfor %}
+

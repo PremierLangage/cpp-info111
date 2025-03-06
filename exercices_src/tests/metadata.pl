@@ -1,1 +1,1 @@
-topicname=tests des fonctionalités de la plateforme
+title=tests des fonctionalités de la plateforme

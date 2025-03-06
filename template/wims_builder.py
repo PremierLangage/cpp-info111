@@ -139,11 +139,9 @@ def randomize_code(code):
         >>> randomize_code("int X=3; int Y=4; int Z=5;")[0]
         'int y=3; int x=4; int z=5;'
         >>> randomize_code("I, J, K, N")[0]
-        'j, k, n, i'
-        >>> randomize_code("CI1, CI2, CI3, CI4, CI5")[0]
-        '-2, -1, 2, 1, 0'
-        >>> randomize_code("int X=1;\nint Y=CI2;")[0]
-        'int x=1;\nint y=2;'
+        'n, k, i, j'
+        >>> randomize_code("int X=1;\nint Y=2;")[0]
+        'int z=1;\nint x=2;'
 
         >>> print(test_code)
         CONST N = RANDOM_INT(3,3);
@@ -168,13 +166,6 @@ def randomize_code(code):
     consts['PLUSOUMOINS'] = str(random.choice(['+', '-']))
     consts['NAME'] = str(random.choice(["Alexandre", "Yasmine", "Albert", "Alice", "Antoine", "Anna"]))
     
-
-    # To be deleted as soon as they are not used anymore in the exercises
-    consts['CI1'] = str(random.randint(-2,2))
-    consts['CI2'] = str(random.randint(-2,2))
-    consts['CI3'] = str(random.randint(-2,2))
-    consts['CI4'] = str(random.randint(0,3))
-    consts['CI5'] = str(random.randint(0,1))
 
     result = []
     for line in code.splitlines():
@@ -300,15 +291,11 @@ def build_generic(exo):
     - do its own magic, modifying `exo` in place if so it wishes
     - filter `exo` through `build_finalize`
 
-        >>> import graderCpp, builder
+        >>> import graderCpp, wims_builder
         >>> exo = build_generic({'code': graderCpp.test_code_generic,
         ...                     'seed': 34,
-        ...                     'typename':'foo',
-        ...                     'topicname':'bar',
         ...                     'solution_failure_message': ' '
         ...                     })
-        >>> exo['title']
-        'foo: bar'
         >>> exo['items']
         [{'content': '#include<iostream>\nint main() {\n', 'type': 'hidden'},
          {'content': '     int i;\n', 'type': 'default'},
@@ -325,7 +312,6 @@ def build_generic(exo):
         if key in exo:
             exo[key] = exo[key].strip()
     random.seed(exo['seed'])
-    exo['title'] = "{typename}: {topicname}".format(typename=exo['typename'], topicname=exo['topicname'])
     code = exo.get('code')
     if code is None:
         with open(exo['code_file']) as f:
@@ -348,5 +334,4 @@ def build_finalize(exo):
             item['key'] = "answer{}".format(i)
             i += 1
     return exo
-
 

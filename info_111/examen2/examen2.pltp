@@ -1,0 +1,36 @@
+title=Info 111: Examen de deuxième session (partie PLaTon)
+introduction==
+Mardi 16 juin, 14h-18h (19h20 pour les tiers-temps)
+
+Barème indicatif: environ un point par exercice.
+
+Vous pouvez répondre à chaque exercice autant de fois que vous le
+souhaitez. Dès que vous avez une bonne réponse, vous marquez la
+totalité des points de l'exercice. Vous pouvez faire les exercices
+dans l'ordre que vous souhaitez, sans forcément passer par "Suivant",
+en sélectionnant l'exercice dans la barre de gauche.
+
+N'oubliez pas que l'examen comporte une autre partie dans une autre activité e-campus, gardez du temps pour la 2e partie.
+
+Votre note sera automatiquement relevée à 18h. Si vous continuez après 18h, ce que vous ferez ne sera pas pris en compte (sauf si vous avez un tiers-temps).
+==
+
+@ for0.pl
+@ for.pl
+@ for.pl
+
+@function_prototype.pl
+@function_prototype.pl
+@function_call_simple.pl
+@function_implementation.pl
+@function_call.pl
+@function_test.pl
+
+@ vector1D_cours.pl
+@ vector1D_parcours.pl
+@ vector1D_recherche.pl
+@ vector1D_recherche_avancee.pl
+
+@ vector2D_cours.pl
+@ vector2D_parcours.pl
+@ vector2D_recherche.pl

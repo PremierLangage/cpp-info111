@@ -6,27 +6,29 @@ projectname="cpp-info111"
 
 # Templates for pl and pltp files
 
-template = u"""template=/{projectname}/template/wims_{type}.pl
+template_pl = u"""template=/{projectname}/template/wims.pl
 template=/{projectname}/exercices_src/{topic}/metadata.pl
-@ /{projectname}/{filename} [raw_code.cpp]
-code_file=raw_code.cpp
 """
 
 template_pltp = u"""template=/{projectname}/exercices_src/{topic}/metadata.pl
-title={{{{topicname}}}}
-introduction==
-Une collection d'exercices sur les {{{{topicname}}}}.
-==
 """
 
 type_re = re.compile("_(input|output|result|return|code|silentcode)\.")
+
+exercises_src=dict()
 exercises=dict()
+
+def generate_pl(pl_fullname, filenames, topic):
+    with io.open(pl_fullname, "w") as fd:
+        fd.write(template_pl.format(type=type, projectname=projectname, topic=topic))
+        for filename in filenames:
+            fd.write("@ /{projectname}/{filename}\n".format(projectname=projectname, filename=filename))
 
 def create_template(filename):
     basename = os.path.basename(filename)
     topic = os.path.split(os.path.dirname(filename))[1]
     if topic == 'exercices_src':
-        # Backward compatibility: hande files exercises_src/topic_exo.cpp
+        # Backward compatibility: handle files exercises_src/topic_exo.cpp
         pieces = basename.split("_")
         topic = pieces[0]
         basename = '_'.join(pieces[1:])
@@ -37,13 +39,6 @@ def create_template(filename):
 
     print(filename, basename, topic, pl_name, pl_dirname, pl_fullname)
 
-    # Setup the exercise type, based on the file name.
-    match = re.search(type_re, basename)
-    if match:
-        type = match.group(1)
-    else:
-        type = "output"
-
     # Create the output directory if not yet existent
     try:
         os.mkdir(pl_dirname)
@@ -51,19 +46,24 @@ def create_template(filename):
         pass
 
     # Generate the pl file
-    io.open(pl_fullname, "w").write(template.format(type=type, projectname=projectname, filename=filename, topic=topic))
+    generate_pl(pl_fullname, [filename], topic=topic)
 
     # Add the exercise to the index
     if topic not in exercises:
+        exercises_src[topic] = []
         exercises[topic] = []
+    exercises_src[topic].append(filename)
     exercises[topic].append(pl_fullname)
 
 for filename in sys.argv[1:]:
     create_template(filename)
 
 for topic in exercises:
-    pltp_fullname = os.path.join("exercices", topic + ".pltp")
+    pl_fullname = os.path.join("exercices", topic + ".pl")
+    pltp_fullname = pl_fullname+"tp"
     fd = io.open(pltp_fullname, "w")
     fd.write(template_pltp.format(projectname=projectname, topic=topic))
     for filename in exercises[topic]:
         fd.write(u"@ /{projectname}/{filename}\n".format(projectname=projectname, filename=filename))
+
+    generate_pl(pl_fullname, exercises_src[topic], topic=topic)

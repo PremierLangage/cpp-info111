@@ -1,12 +1,22 @@
 template=/cpp-info111/exercices_src/vector1D/metadata.pl
-title=Tableaux
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
-@ /cpp-info111/exercices/vector1D/recherche_first_decreasing.cpp.pl
+@ /cpp-info111/exercices/vector1D/creationTab3etapes_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/minTabPremierePosition_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/maxTabPremierePosition_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/modifTabSimple_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/incrementeTab_code.cpp.pl
 @ /cpp-info111/exercices/vector1D/sum_input.cpp.pl
-@ /cpp-info111/exercices/vector1D/recherche_first_wrong.cpp.pl
-@ /cpp-info111/exercices/vector1D/tri_code.cpp.pl
 @ /cpp-info111/exercices/vector1D/recherche_last.cpp.pl
+@ /cpp-info111/exercices/vector1D/creationTabSimple_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/nbPlusPetitsQueDix_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/estCroissant_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/recherche_first_wrong.cpp.pl
+@ /cpp-info111/exercices/vector1D/minTabDernierePosition_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/maxTabDernierePosition_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/estPositif_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/minTab_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/maxTab_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/sontEgauxTab_code.cpp.pl
+@ /cpp-info111/exercices/vector1D/accesTabSimple_code.cpp.pl
 @ /cpp-info111/exercices/vector1D/recherche_wright.cpp.pl
-
+@ /cpp-info111/exercices/vector1D/recherche_first_decreasing.cpp.pl
+@ /cpp-info111/exercices/vector1D/nbPlusGrandQueDix_code.cpp.pl

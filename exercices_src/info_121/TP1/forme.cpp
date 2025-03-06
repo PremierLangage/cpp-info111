@@ -1,10 +1,7 @@
 #include <iostream>
 #include <string.h>
+#include "randomization.h"
 using namespace std;
-
-/** Infrastructure minimale de test **/
-#define ASSERT(test) if (!(test)) cout << "Test failed in file " << __FILE__ \
-				       << " line " << __LINE__ << ": " #test << endl
 
 
 /** La forme d'un individu

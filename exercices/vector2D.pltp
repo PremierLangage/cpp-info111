@@ -1,13 +1,16 @@
 template=/cpp-info111/exercices_src/vector2D/metadata.pl
-title={{topicname}}
-introduction==
-Une collection d'exercices sur les {{topicname}}.
-==
-@ /cpp-info111/exercices/vector2D/1_input.cpp.pl
-@ /cpp-info111/exercices/vector2D/2a_input.cpp.pl
-@ /cpp-info111/exercices/vector2D/2b_input.cpp.pl
-@ /cpp-info111/exercices/vector2D/loop_0.cpp.pl
-@ /cpp-info111/exercices/vector2D/loop_1.cpp.pl
-@ /cpp-info111/exercices/vector2D/loop_2.cpp.pl
-@ /cpp-info111/exercices/vector2D/loop_3.cpp.pl
-@ /cpp-info111/exercices/vector2D/loop_4.cpp.pl
+@ /cpp-info111/exercices/vector2D/incrementeTab2D_code.cpp.pl
+@ /cpp-info111/exercices/vector2D/sommesParLignes.cpp.pl
+@ /cpp-info111/exercices/vector2D/sommeDerniereLigne.cpp.pl
+@ /cpp-info111/exercices/vector2D/nbPlusGrandQueDixTab2D_code.cpp.pl
+@ /cpp-info111/exercices/vector2D/estPositifTab2D_code.cpp.pl
+@ /cpp-info111/exercices/vector2D/somme.cpp.pl
+@ /cpp-info111/exercices/vector2D/rechercheTab2D_code.cpp.pl
+@ /cpp-info111/exercices/vector2D/sommeColonneMystere_input.cpp.pl
+@ /cpp-info111/exercices/vector2D/estRectangle_code.cpp.pl
+@ /cpp-info111/exercices/vector2D/sontEgauxTab2D_code.cpp.pl
+@ /cpp-info111/exercices/vector2D/affiche.cpp.pl
+@ /cpp-info111/exercices/vector2D/sommePartiellesParLignes.cpp.pl
+@ /cpp-info111/exercices/vector2D/estCarre_code.cpp.pl
+@ /cpp-info111/exercices/vector2D/sommeLigneMystere_input.cpp.pl
+@ /cpp-info111/exercices/vector2D/nbPlusPetitsQueDixTab2D_code.cpp.pl

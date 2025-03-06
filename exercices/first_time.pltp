@@ -1,9 +1,3 @@
 template=/cpp-info111/exercices_src/first_time/metadata.pl
-title=Première fiche
-introduction==
-Découverte de Premier Language.
-==
 @ /cpp-info111/exercices/first_time/initial_code.cpp.pl
 @ /cpp-info111/exercices/first_time/test_result.cpp.pl
-@ /cpp-info111/exercices/tests/test_output.cpp.pl
-
